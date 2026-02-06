@@ -8,6 +8,11 @@ export const generatePlan = async (req, res) => {
             return res.status(400).json({ message: "userId is required for saving the plan" });
         }
 
+        // hardcoded for now
+        if (typeof userId !== 'string' || !/^[0-9a-fA-F]{24}$/.test(userId.trim())) {
+            return res.status(400).json({ message: "Invalid userId format. Must be a 24-character hex string." });
+        }
+
         const plan = await travelPlanService.generatePlanService(userId, destination, tripLength, interests);
         res.status(200).json(plan);
     } catch (err) {
