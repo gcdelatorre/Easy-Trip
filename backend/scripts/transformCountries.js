@@ -35,6 +35,7 @@ const transformData = () => {
                 destinationDescription: '', // To be filled by Gemini
                 capital: (country.capital && country.capital.length > 0) ? country.capital[0] : 'N/A',
                 timezone: (country.timezones && country.timezones.length > 0) ? country.timezones[0] : 'N/A',
+                primaryLanguage: Object.values(country.languages || {})[0] || 'N/A',
                 languages: country.languages || {}, // Stores all languages used
                 currency: currency,
                 weatherSummary: '', // To be filled by Gemini

@@ -4,6 +4,7 @@
         "destinationDescription": "A tiny, independent principality situated between France and Spain in the Pyrenees mountains. It is known for its ski resorts and a tax-haven status that encourages duty-free shopping.",
         "capital": "Andorra la Vella",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Catalan",
         "languages": {
             "cat": "Catalan"
         },
@@ -24,6 +25,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Port of Spain",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -44,6 +46,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Belgrade",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Serbian",
         "languages": {
             "srp": "Serbian"
         },
@@ -64,6 +67,7 @@
         "destinationDescription": "An island nation in northwestern Europe made up of England, Scotland, Wales, and Northern Ireland. It features historic castles, rolling countryside, and vibrant cities like London.",
         "capital": "London",
         "timezone": "UTC-08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -84,6 +88,7 @@
         "destinationDescription": "The largest country in the world, spanning Eastern Europe and Northern Asia. It offers diverse landscapes from the icy tundra to the historic splendor of Moscow and Saint Petersburg.",
         "capital": "Moscow",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Russian",
         "languages": {
             "rus": "Russian"
         },
@@ -104,6 +109,7 @@
         "destinationDescription": "A dynamic city and special administrative region of China known for its iconic skyline, bustling harbor, and fusion of Eastern and Western cultures.",
         "capital": "City of Victoria",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "zho": "Chinese"
@@ -125,6 +131,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "El Aaiún",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "Berber",
         "languages": {
             "ber": "Berber",
             "mey": "Hassaniya",
@@ -147,6 +154,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "Montevideo",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -167,6 +175,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Bridgetown",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -187,6 +196,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Ramallah",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -207,6 +217,7 @@
         "destinationDescription": "A vibrant country in North America known for its rich history, ancient Mayan and Aztec ruins, stunning beaches, and world-renowned cuisine.",
         "capital": "Mexico City",
         "timezone": "UTC-08:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -227,6 +238,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Lilongwe",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "nya": "Chewa"
@@ -248,6 +260,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "N/A",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "N/A",
         "languages": {},
         "currency": {
             "code": "N/A",
@@ -266,6 +279,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
         "capital": "Nouméa",
         "timezone": "UTC+11:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -286,6 +300,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Longyearbyen",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Norwegian",
         "languages": {
             "nor": "Norwegian"
         },
@@ -306,6 +321,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:30 region.",
         "capital": "Kingston",
         "timezone": "UTC+11:30",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "pih": "Norfuk"
@@ -327,6 +343,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
         "capital": "Flying Fish Cove",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -347,6 +364,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
         "capital": "Ulan Bator",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Mongolian",
         "languages": {
             "mon": "Mongolian"
         },
@@ -367,6 +385,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Riga",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Latvian",
         "languages": {
             "lav": "Latvian"
         },
@@ -387,6 +406,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
         "capital": "Bandar Seri Begawan",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "Malay",
         "languages": {
             "msa": "Malay"
         },
@@ -407,6 +427,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Kyiv",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Ukrainian",
         "languages": {
             "ukr": "Ukrainian"
         },
@@ -427,6 +448,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
         "capital": "Pyongyang",
         "timezone": "UTC+09:00",
+        "primaryLanguage": "Korean",
         "languages": {
             "kor": "Korean"
         },
@@ -447,6 +469,7 @@
         "destinationDescription": "A Northern European nation bordering Scandinavia and Russia, famous for its pristine lakes, northern lights, and being the home of Santa Claus in Lapland.",
         "capital": "Helsinki",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Finnish",
         "languages": {
             "fin": "Finnish",
             "swe": "Swedish"
@@ -468,6 +491,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "The Valley",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -488,6 +512,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Baku",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Azerbaijani",
         "languages": {
             "aze": "Azerbaijani"
         },
@@ -508,6 +533,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "George Town",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -528,6 +554,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Tashkent",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "Russian",
         "languages": {
             "rus": "Russian",
             "uzb": "Uzbek"
@@ -549,6 +576,7 @@
         "destinationDescription": "The 'Emerald Isle' is known for its lush green landscapes, ancient Celtic history, friendly pubs, and the dramatic coastline of the Wild Atlantic Way.",
         "capital": "Dublin",
         "timezone": "UTC",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "gle": "Irish"
@@ -570,6 +598,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Saint Helier",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French",
@@ -592,6 +621,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Kigali",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French",
@@ -614,6 +644,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Sarajevo",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Bosnian",
         "languages": {
             "bos": "Bosnian",
             "hrv": "Croatian",
@@ -636,6 +667,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Warsaw",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Polish",
         "languages": {
             "pol": "Polish"
         },
@@ -656,6 +688,7 @@
         "destinationDescription": "A coastal nation in Southern Europe known for its seafaring history, port wine, stunning Algarve beaches, and the historic charm of Lisbon and Porto.",
         "capital": "Lisbon",
         "timezone": "UTC-01:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -676,6 +709,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Port-au-Prince",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "hat": "Haitian Creole"
@@ -697,6 +731,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:30 region.",
         "capital": "Tehran",
         "timezone": "UTC+03:30",
+        "primaryLanguage": "Persian (Farsi)",
         "languages": {
             "fas": "Persian (Farsi)"
         },
@@ -717,6 +752,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Port-aux-Français",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -737,6 +773,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Addis Ababa",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Amharic",
         "languages": {
             "amh": "Amharic"
         },
@@ -757,6 +794,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Astana",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "Kazakh",
         "languages": {
             "kaz": "Kazakh",
             "rus": "Russian"
@@ -778,6 +816,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Bamako",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -798,6 +837,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Managua",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -818,6 +858,7 @@
         "destinationDescription": "A major European power known for its historic cities, fairytale castles, the Black Forest, and world-class beer culture.",
         "capital": "Berlin",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "German",
         "languages": {
             "deu": "German"
         },
@@ -838,6 +879,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Tallinn",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Estonian",
         "languages": {
             "est": "Estonian"
         },
@@ -858,6 +900,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Tunis",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -878,6 +921,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Marigot",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -898,6 +942,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Yaoundé",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French"
@@ -919,6 +964,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
         "capital": "Palikir",
         "timezone": "UTC+10:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -939,6 +985,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Philipsburg",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French",
@@ -961,6 +1008,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Nicosia",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Greek",
         "languages": {
             "ell": "Greek",
             "tur": "Turkish"
@@ -982,6 +1030,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Rabat",
         "timezone": "UTC",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "ber": "Berber"
@@ -1003,6 +1052,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-08:00 region.",
         "capital": "Adamstown",
         "timezone": "UTC-08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1023,6 +1073,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Willemstad",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "nld": "Dutch",
@@ -1045,6 +1096,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Oranjestad",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Dutch",
         "languages": {
             "nld": "Dutch",
             "pap": "Papiamento"
@@ -1066,6 +1118,7 @@
         "destinationDescription": "A diverse European country known for its passion, tapas, historical architecture like the Alhambra, and sunny Costa del Sol.",
         "capital": "Madrid",
         "timezone": "UTC",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish",
             "cat": "Catalan",
@@ -1089,6 +1142,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Libreville",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -1109,6 +1163,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Mariehamn",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Swedish",
         "languages": {
             "swe": "Swedish"
         },
@@ -1129,6 +1184,7 @@
         "destinationDescription": "A Scandinavian country comprising the Jutland Peninsula and numerous islands, known for its high quality of life and design.",
         "capital": "Copenhagen",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Danish",
         "languages": {
             "dan": "Danish"
         },
@@ -1149,6 +1205,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Fort-de-France",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -1169,6 +1226,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Saint John's",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1189,6 +1247,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Mbabane",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "ssw": "Swazi"
@@ -1210,6 +1269,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
         "capital": "Taipei",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "Chinese",
         "languages": {
             "zho": "Chinese"
         },
@@ -1230,6 +1290,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
         "capital": "Port Vila",
         "timezone": "UTC+11:00",
+        "primaryLanguage": "Bislama",
         "languages": {
             "bis": "Bislama",
             "eng": "English",
@@ -1252,6 +1313,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-10:00 region.",
         "capital": "Avarua",
         "timezone": "UTC-10:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "rar": "Cook Islands Māori"
@@ -1273,6 +1335,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:30 region.",
         "capital": "West Island",
         "timezone": "UTC+06:30",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1293,6 +1356,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-01:00 region.",
         "capital": "Praia",
         "timezone": "UTC-01:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -1313,6 +1377,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Minsk",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Belarusian",
         "languages": {
             "bel": "Belarusian",
             "rus": "Russian"
@@ -1334,6 +1399,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Prague",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Czech",
         "languages": {
             "ces": "Czech",
             "slk": "Slovak"
@@ -1355,6 +1421,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Lima",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "Aymara",
         "languages": {
             "aym": "Aymara",
             "que": "Quechua",
@@ -1377,6 +1444,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
         "capital": "Dili",
         "timezone": "UTC+09:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese",
             "tet": "Tetum"
@@ -1398,6 +1466,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Windhoek",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Afrikaans",
         "languages": {
             "afr": "Afrikaans",
             "deu": "German",
@@ -1426,6 +1495,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
         "capital": "Fakaofo",
         "timezone": "UTC+13:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "smo": "Samoan",
@@ -1448,6 +1518,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Kinshasa",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "kon": "Kikongo",
@@ -1472,6 +1543,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Castries",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1492,6 +1564,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "Paramaribo",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "Dutch",
         "languages": {
             "nld": "Dutch"
         },
@@ -1512,6 +1585,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Gitega",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "run": "Kirundi"
@@ -1533,6 +1607,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Tbilisi",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Georgian",
         "languages": {
             "kat": "Georgian"
         },
@@ -1553,6 +1628,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Accra",
         "timezone": "UTC",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1573,6 +1649,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
         "capital": "Diego Garcia",
         "timezone": "UTC+06:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1593,6 +1670,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Cairo",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -1613,6 +1691,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "Cayenne",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -1633,6 +1712,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "Majuro",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "mah": "Marshallese"
@@ -1654,6 +1734,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Bissau",
         "timezone": "UTC",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese",
             "pov": "Upper Guinea Creole"
@@ -1675,6 +1756,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "Suva",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fij": "Fijian",
@@ -1697,6 +1779,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Lusaka",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1717,6 +1800,7 @@
         "destinationDescription": "A Nordic island nation defined by its dramatic landscape with volcanoes, geysers, hot springs, and lava fields.",
         "capital": "Reykjavik",
         "timezone": "UTC",
+        "primaryLanguage": "Icelandic",
         "languages": {
             "isl": "Icelandic"
         },
@@ -1737,6 +1821,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Hamilton",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1757,6 +1842,7 @@
         "destinationDescription": "A vast South American country known for its festive Carnival, the Amazon rainforest, and iconic beaches like Copacabana.",
         "capital": "Brasília",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -1777,6 +1863,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
         "capital": "Ngerulmud",
         "timezone": "UTC+09:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "pau": "Palauan"
@@ -1798,6 +1885,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Khartoum",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "eng": "English"
@@ -1819,6 +1907,7 @@
         "destinationDescription": "A massive island continent known for the Outback, the Great Barrier Reef, and unique wildlife like kangaroos and koalas.",
         "capital": "Canberra",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1839,6 +1928,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
         "capital": "Phnom Penh",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Khmer",
         "languages": {
             "khm": "Khmer"
         },
@@ -1859,6 +1949,7 @@
         "destinationDescription": "An island country in the southwestern Pacific Ocean, famous for its breathtaking landscapes and being the filming location for Middle-earth.",
         "capital": "Wellington",
         "timezone": "UTC-11:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "mri": "Māori",
@@ -1881,6 +1972,7 @@
         "destinationDescription": "An archipelago of over 7,000 islands known for its incredible biodiversity, white sand beaches, and friendly, hospitable locals.",
         "capital": "Manila",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fil": "Filipino"
@@ -1902,6 +1994,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Ouagadougou",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -1922,6 +2015,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "Tórshavn",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "Danish",
         "languages": {
             "dan": "Danish",
             "fao": "Faroese"
@@ -1943,6 +2037,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Freetown",
         "timezone": "UTC",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1963,6 +2058,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "St. George's",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -1983,6 +2079,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Sucre",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Aymara",
         "languages": {
             "aym": "Aymara",
             "grn": "Guaraní",
@@ -2006,6 +2103,7 @@
         "destinationDescription": "A landlocked mountainous country in Central Europe, famous for the Alps, luxury watches, and high-quality cheese and chocolate.",
         "capital": "Bern",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "gsw": "Swiss German",
@@ -2029,6 +2127,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Kingstown",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2049,6 +2148,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Quito",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -2069,6 +2169,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Victoria",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Seychellois Creole",
         "languages": {
             "crs": "Seychellois Creole",
             "eng": "English",
@@ -2091,6 +2192,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Pretoria",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Afrikaans",
         "languages": {
             "afr": "Afrikaans",
             "eng": "English",
@@ -2121,6 +2223,7 @@
         "destinationDescription": "A vast South Asian country with a diverse landscape from the Himalayas to the Indian Ocean coast, rich in history and spirituality.",
         "capital": "New Delhi",
         "timezone": "UTC+05:30",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "hin": "Hindi",
@@ -2143,6 +2246,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Monrovia",
         "timezone": "UTC",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2163,6 +2267,7 @@
         "destinationDescription": "A tech-forward nation with a rich heritage, famous for its palaces, mountain temples, and global K-pop influence in cities like Seoul.",
         "capital": "Seoul",
         "timezone": "UTC+09:00",
+        "primaryLanguage": "Korean",
         "languages": {
             "kor": "Korean"
         },
@@ -2183,6 +2288,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Vilnius",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Lithuanian",
         "languages": {
             "lit": "Lithuanian"
         },
@@ -2203,6 +2309,7 @@
         "destinationDescription": "A sunny, tropical island city-state in Southeast Asia, known for its cleanliness, efficiency, and melting pot of cultures.",
         "capital": "Singapore",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "zho": "Chinese",
@@ -2226,6 +2333,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "San Juan",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "spa": "Spanish"
@@ -2247,6 +2355,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Belmopan",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Belizean Creole",
         "languages": {
             "bjz": "Belizean Creole",
             "eng": "English",
@@ -2269,6 +2378,7 @@
         "destinationDescription": "Known for its flat landscape of canals, tulip fields, windmills, and cycling routes.",
         "capital": "Amsterdam",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Dutch",
         "languages": {
             "nld": "Dutch"
         },
@@ -2289,6 +2399,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Asmara",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "eng": "English",
@@ -2311,6 +2422,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Plymouth",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2331,6 +2443,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Saint-Denis",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -2351,6 +2464,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-02:00 region.",
         "capital": "King Edward Point",
         "timezone": "UTC-02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2371,6 +2485,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
         "capital": "Dhaka",
         "timezone": "UTC+06:00",
+        "primaryLanguage": "Bengali",
         "languages": {
             "ben": "Bengali"
         },
@@ -2391,6 +2506,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Sana'a",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -2411,6 +2527,7 @@
         "destinationDescription": "Famous for its deep coastal fjords, mountains, and the midnight sun; a paradise for outdoor enthusiasts.",
         "capital": "Oslo",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Norwegian Nynorsk",
         "languages": {
             "nno": "Norwegian Nynorsk",
             "nob": "Norwegian Bokmål",
@@ -2433,6 +2550,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Ljubljana",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Slovene",
         "languages": {
             "slv": "Slovene"
         },
@@ -2453,6 +2571,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Muscat",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -2473,6 +2592,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Maputo",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -2493,6 +2613,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Tripoli",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -2513,6 +2634,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "N'Djamena",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "fra": "French"
@@ -2534,6 +2656,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Georgetown",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2554,6 +2677,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
         "capital": "Bishkek",
         "timezone": "UTC+06:00",
+        "primaryLanguage": "Kyrgyz",
         "languages": {
             "kir": "Kyrgyz",
             "rus": "Russian"
@@ -2575,6 +2699,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Djibouti",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "fra": "French"
@@ -2596,6 +2721,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
         "capital": "Saipan",
         "timezone": "UTC+10:00",
+        "primaryLanguage": "Carolinian",
         "languages": {
             "cal": "Carolinian",
             "cha": "Chamorro",
@@ -2618,6 +2744,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-12:00 region.",
         "capital": "Washington, D.C.",
         "timezone": "UTC-12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2638,6 +2765,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Lomé",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -2658,6 +2786,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:30 region.",
         "capital": "Sri Jayawardenepura Kotte",
         "timezone": "UTC+05:30",
+        "primaryLanguage": "Sinhala",
         "languages": {
             "sin": "Sinhala",
             "tam": "Tamil"
@@ -2679,6 +2808,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Moroni",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "fra": "French",
@@ -2701,6 +2831,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Havana",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -2721,6 +2852,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
         "capital": "Hagåtña",
         "timezone": "UTC+10:00",
+        "primaryLanguage": "Chamorro",
         "languages": {
             "cha": "Chamorro",
             "eng": "English",
@@ -2743,6 +2875,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "Buenos Aires",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "Guaraní",
         "languages": {
             "grn": "Guaraní",
             "spa": "Spanish"
@@ -2764,6 +2897,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "Mata-Utu",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -2784,6 +2918,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
         "capital": "Thimphu",
         "timezone": "UTC+06:00",
+        "primaryLanguage": "Dzongkha",
         "languages": {
             "dzo": "Dzongkha"
         },
@@ -2804,6 +2939,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Beirut",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "fra": "French"
@@ -2825,6 +2961,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "N/A",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2845,6 +2982,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Maseru",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "sot": "Sotho"
@@ -2866,6 +3004,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Mogadishu",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "som": "Somali"
@@ -2887,6 +3026,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Roseau",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -2907,6 +3047,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Budapest",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Hungarian",
         "languages": {
             "hun": "Hungarian"
         },
@@ -2927,6 +3068,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Luxembourg",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "German",
         "languages": {
             "deu": "German",
             "fra": "French",
@@ -2949,6 +3091,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "City of San Marino",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Italian",
         "languages": {
             "ita": "Italian"
         },
@@ -2969,6 +3112,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:30 region.",
         "capital": "Kabul",
         "timezone": "UTC+04:30",
+        "primaryLanguage": "Dari",
         "languages": {
             "prs": "Dari",
             "pus": "Pashto",
@@ -2991,6 +3135,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Nouakchott",
         "timezone": "UTC",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -3011,6 +3156,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Algiers",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -3031,6 +3177,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Basse-Terre",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3051,6 +3198,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Zagreb",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Croatian",
         "languages": {
             "hrv": "Croatian"
         },
@@ -3071,6 +3219,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Sofia",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Bulgarian",
         "languages": {
             "bul": "Bulgarian"
         },
@@ -3091,6 +3240,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
         "capital": "Alofi",
         "timezone": "UTC-11:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "niu": "Niuean"
@@ -3112,6 +3262,7 @@
         "destinationDescription": "The world's largest archipelago, home to diverse ethnic groups, stunning volcanoes, and the spiritual heart of Bali.",
         "capital": "Jakarta",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Indonesian",
         "languages": {
             "ind": "Indonesian"
         },
@@ -3132,6 +3283,7 @@
         "destinationDescription": "Famous for its medieval towns, Renaissance architecture, and as the headquarters of the EU and NATO.",
         "capital": "Brussels",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "German",
         "languages": {
             "deu": "German",
             "fra": "French",
@@ -3154,6 +3306,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "Yaren",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "nau": "Nauru"
@@ -3175,6 +3328,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-10:00 region.",
         "capital": "Papeetē",
         "timezone": "UTC-10:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3195,6 +3349,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Baghdad",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "arc": "Aramaic",
@@ -3217,6 +3372,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Antananarivo",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "mlg": "Malagasy"
@@ -3238,6 +3394,7 @@
         "destinationDescription": "A country known for its bustling cities, serene landscapes like Ha Long Bay, and a world-class street food culture.",
         "capital": "Hanoi",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Vietnamese",
         "languages": {
             "vie": "Vietnamese"
         },
@@ -3258,6 +3415,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Port Louis",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French",
@@ -3280,6 +3438,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
         "capital": "Pago Pago",
         "timezone": "UTC-11:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "smo": "Samoan"
@@ -3301,6 +3460,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Yamoussoukro",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3321,6 +3481,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Kralendijk",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "nld": "Dutch",
@@ -3343,6 +3504,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Vaduz",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "German",
         "languages": {
             "deu": "German"
         },
@@ -3363,6 +3525,7 @@
         "destinationDescription": "Renowned for its art treasures, historic ruins like the Colosseum, and world-famous pizza and pasta across regions from Tuscany to Sicily.",
         "capital": "Rome",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Italian",
         "languages": {
             "ita": "Italian",
             "cat": "Catalan"
@@ -3384,6 +3547,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Basseterre",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3404,6 +3568,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Doha",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -3424,6 +3589,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Ankara",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Turkish",
         "languages": {
             "tur": "Turkish"
         },
@@ -3444,6 +3610,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Charlotte Amalie",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3464,6 +3631,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Luanda",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -3484,6 +3652,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Nairobi",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "swa": "Swahili"
@@ -3505,6 +3674,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Riyadh",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -3525,6 +3695,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Juba",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3545,6 +3716,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Cockburn Town",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3565,6 +3737,7 @@
         "destinationDescription": "A vast North American country with breathtaking natural beauty, from the Rocky Mountains to the Great Lakes and vibrant multicultural cities.",
         "capital": "Ottawa",
         "timezone": "UTC-08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French"
@@ -3586,6 +3759,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Niamey",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3606,6 +3780,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Gibraltar",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3626,6 +3801,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Kuwait City",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -3646,6 +3822,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Caracas",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -3666,6 +3843,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "Banjul",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3686,6 +3864,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Asunción",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Guaraní",
         "languages": {
             "grn": "Guaraní",
             "spa": "Spanish"
@@ -3707,6 +3886,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Santiago",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -3727,6 +3907,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Skopje",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Macedonian",
         "languages": {
             "mkd": "Macedonian"
         },
@@ -3747,6 +3928,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
         "capital": "N/A",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese",
             "zho": "Chinese"
@@ -3768,6 +3950,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Yerevan",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Armenian",
         "languages": {
             "hye": "Armenian"
         },
@@ -3788,6 +3971,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Gaborone",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "tsn": "Tswana"
@@ -3809,6 +3993,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:45 region.",
         "capital": "Kathmandu",
         "timezone": "UTC+05:45",
+        "primaryLanguage": "Nepali",
         "languages": {
             "nep": "Nepali"
         },
@@ -3829,6 +4014,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "São Tomé",
         "timezone": "UTC",
+        "primaryLanguage": "Portuguese",
         "languages": {
             "por": "Portuguese"
         },
@@ -3849,6 +4035,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Porto-Novo",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3869,6 +4056,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
         "capital": "Honiara",
         "timezone": "UTC+11:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -3889,6 +4077,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Conakry",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3909,6 +4098,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Mamoudzou",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3929,6 +4119,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Nuuk",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Greenlandic",
         "languages": {
             "kal": "Greenlandic"
         },
@@ -3949,6 +4140,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Monaco",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -3969,6 +4161,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Islamabad",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "urd": "Urdu"
@@ -3990,6 +4183,7 @@
         "destinationDescription": "A Southeast Asian country known for its beaches, rainforests, and a mix of Malay, Chinese, Indian, and European cultural influences.",
         "capital": "Kuala Lumpur",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "msa": "Malay"
@@ -4011,6 +4205,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Pristina",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Albanian",
         "languages": {
             "sqi": "Albanian",
             "srp": "Serbian"
@@ -4032,6 +4227,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Chișinău",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Romanian",
         "languages": {
             "ron": "Romanian"
         },
@@ -4052,6 +4248,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "Funafuti",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "tvl": "Tuvaluan"
@@ -4073,6 +4270,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
         "capital": "Saint-Pierre",
         "timezone": "UTC-03:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -4093,6 +4291,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
         "capital": "Dakar",
         "timezone": "UTC",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -4113,6 +4312,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Panama City",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4133,6 +4333,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Valletta",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "mlt": "Maltese"
@@ -4154,6 +4355,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Kampala",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "swa": "Swahili"
@@ -4175,6 +4377,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Tirana",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Albanian",
         "languages": {
             "sqi": "Albanian"
         },
@@ -4195,6 +4398,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
         "capital": "Abu Dhabi",
         "timezone": "UTC+04:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -4215,6 +4419,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "San José",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4235,6 +4440,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Gustavia",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -4255,6 +4461,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "Jamestown",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -4275,6 +4482,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Jerusalem",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic",
             "heb": "Hebrew"
@@ -4296,6 +4504,7 @@
         "destinationDescription": "A landlocked Alpine nation known for its imperial history, classical music, and world-renowned ski slopes.",
         "capital": "Vienna",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "German",
         "languages": {
             "deu": "German"
         },
@@ -4316,6 +4525,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
         "capital": "Vientiane",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Lao",
         "languages": {
             "lao": "Lao"
         },
@@ -4336,6 +4546,7 @@
         "destinationDescription": "A global center for art, fashion, and gastronomy, featuring legendary landmarks like the Eiffel Tower and the sun-drenched French Riviera.",
         "capital": "Paris",
         "timezone": "UTC-10:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French"
         },
@@ -4356,6 +4567,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
         "capital": "Port Moresby",
         "timezone": "UTC+10:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "hmo": "Hiri Motu",
@@ -4378,6 +4590,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Santo Domingo",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4398,6 +4611,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
         "capital": "Nuku'alofa",
         "timezone": "UTC+13:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "ton": "Tongan"
@@ -4419,6 +4633,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Kingston",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "jam": "Jamaican Patois"
@@ -4440,6 +4655,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "N/A",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Norwegian",
         "languages": {
             "nor": "Norwegian"
         },
@@ -4460,6 +4676,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Bratislava",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Slovak",
         "languages": {
             "slk": "Slovak"
         },
@@ -4480,6 +4697,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
         "capital": "South Tarawa",
         "timezone": "UTC+12:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "gil": "Gilbertese"
@@ -4501,6 +4719,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Amman",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -4521,6 +4740,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Malé",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "Maldivian",
         "languages": {
             "div": "Maldivian"
         },
@@ -4541,6 +4761,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Podgorica",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Montenegrin",
         "languages": {
             "cnr": "Montenegrin"
         },
@@ -4561,6 +4782,7 @@
         "destinationDescription": "An island nation blending ancient traditions with futuristic technology, famous for its temples, mountains, and incredible culinary scene.",
         "capital": "Tokyo",
         "timezone": "UTC+09:00",
+        "primaryLanguage": "Japanese",
         "languages": {
             "jpn": "Japanese"
         },
@@ -4581,6 +4803,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "San Salvador",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4601,6 +4824,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Bogotá",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4621,6 +4845,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Harare",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Chibarwe",
         "languages": {
             "bwg": "Chibarwe",
             "eng": "English",
@@ -4655,6 +4880,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Malabo",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "por": "Portuguese",
@@ -4677,6 +4903,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
         "capital": "Beijing",
         "timezone": "UTC+08:00",
+        "primaryLanguage": "Chinese",
         "languages": {
             "zho": "Chinese"
         },
@@ -4697,6 +4924,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Tegucigalpa",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -4717,6 +4945,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "Douglas",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "glv": "Manx"
@@ -4738,6 +4967,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Brazzaville",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "kon": "Kikongo",
@@ -4760,6 +4990,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:30 region.",
         "capital": "Naypyidaw",
         "timezone": "UTC+06:30",
+        "primaryLanguage": "Burmese",
         "languages": {
             "mya": "Burmese"
         },
@@ -4780,6 +5011,7 @@
         "destinationDescription": "The cradle of Western civilization, featuring thousands of islands, ancient ruins like the Parthenon, and stunning blue-domed buildings.",
         "capital": "Athens",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Greek",
         "languages": {
             "ell": "Greek"
         },
@@ -4800,6 +5032,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
         "capital": "Apia",
         "timezone": "UTC+13:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "smo": "Samoan"
@@ -4821,6 +5054,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Stanley",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -4841,6 +5075,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Dodoma",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "swa": "Swahili"
@@ -4862,6 +5097,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Bangui",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "French",
         "languages": {
             "fra": "French",
             "sag": "Sango"
@@ -4883,6 +5119,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Bucharest",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Romanian",
         "languages": {
             "ron": "Romanian"
         },
@@ -4903,6 +5140,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
         "capital": "Washington DC",
         "timezone": "UTC-11:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -4923,6 +5161,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Dushanbe",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "Russian",
         "languages": {
             "rus": "Russian",
             "tgk": "Tajik"
@@ -4944,6 +5183,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
         "capital": "Nassau",
         "timezone": "UTC-05:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -4964,6 +5204,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Abuja",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -4984,6 +5225,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
         "capital": "Vatican City",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Italian",
         "languages": {
             "ita": "Italian",
             "lat": "Latin"
@@ -5005,6 +5247,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
         "capital": "Manama",
         "timezone": "UTC+03:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -5025,6 +5268,7 @@
         "destinationDescription": "A Southeast Asian gem known for its ornate temples, tropical beaches, and vibrant street food culture in cities like Bangkok.",
         "capital": "Bangkok",
         "timezone": "UTC+07:00",
+        "primaryLanguage": "Thai",
         "languages": {
             "tha": "Thai"
         },
@@ -5045,6 +5289,7 @@
         "destinationDescription": "A Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains.",
         "capital": "Stockholm",
         "timezone": "UTC+01:00",
+        "primaryLanguage": "Swedish",
         "languages": {
             "swe": "Swedish"
         },
@@ -5065,6 +5310,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
         "capital": "Road Town",
         "timezone": "UTC-04:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English"
         },
@@ -5085,6 +5331,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
         "capital": "St. Peter Port",
         "timezone": "UTC+00:00",
+        "primaryLanguage": "English",
         "languages": {
             "eng": "English",
             "fra": "French",
@@ -5107,6 +5354,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
         "capital": "Guatemala City",
         "timezone": "UTC-06:00",
+        "primaryLanguage": "Spanish",
         "languages": {
             "spa": "Spanish"
         },
@@ -5127,6 +5375,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
         "capital": "Damascus",
         "timezone": "UTC+02:00",
+        "primaryLanguage": "Arabic",
         "languages": {
             "ara": "Arabic"
         },
@@ -5147,6 +5396,7 @@
         "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
         "capital": "Ashgabat",
         "timezone": "UTC+05:00",
+        "primaryLanguage": "Russian",
         "languages": {
             "rus": "Russian",
             "tuk": "Turkmen"
