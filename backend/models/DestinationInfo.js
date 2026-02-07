@@ -46,11 +46,6 @@ const DestinationInfoSchema = new mongoose.Schema(
       default: []
     },
 
-    // Optional metadata
-    source: {
-      type: String                  // "manual", "restcountries", "openweather"
-    },
-
     lastUpdated: {
       type: Date,
       default: Date.now

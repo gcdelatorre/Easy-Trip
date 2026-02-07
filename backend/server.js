@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import travelPlanRoutes from './routes/travelPlanRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import destinationInfoRoutes from './routes/destinationInfoRoutes.js';
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ const PORT = process.env.PORT || 5000;
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/plans', travelPlanRoutes);
+app.use('/api/destinations', destinationInfoRoutes);
 
 const startServer = async () => {
     try {
