@@ -8,6 +8,14 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         trim: true
     },
+    name: {
+        type: String,
+        required: true
+    },
+    picture: {
+        type: String,
+        default: null
+    },
     passwordHash: {
         type: String,
         required: function () {

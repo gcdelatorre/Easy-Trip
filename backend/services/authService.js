@@ -27,9 +27,10 @@ export const findOrCreateUser = async (googlePayload) => {
     if (!user) {
         user = await User.create({
             email,
+            name,
+            picture,
             oauthId: sub,
             oauthProvider: 'google',
-            // You can add more fields if needed, like picture or name
         });
     } else if (!user.oauthId) {
         // Link existing email user to Google OAuth if they haven't used it before
