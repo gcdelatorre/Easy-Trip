@@ -1,5 +1,5 @@
 import DestinationInfo from "../models/DestinationInfo.js";
 
 export const getDestinationInfo = async (country) => {
-    return await DestinationInfo.findOne({ country })
+    return await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } });
 }
