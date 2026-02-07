@@ -9,7 +9,7 @@ export const getBackgroundPhoto = async (req, res) => {
             return res.status(404).json({ message: "Query is required" });
         }
         
-        const finalQuery = `${query} travel landscape landmark popular`
+        const finalQuery = `${query} scenery landmark tourist spot`
         
         const imageUrl = await searchPhoto(finalQuery)
         if (!imageUrl) {
