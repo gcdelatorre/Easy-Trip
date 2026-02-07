@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.use(protect);
 
-router.get('/lookup/:country', destinationInfoController.getDestinationInfoByCountry);
+router.get('/:country', destinationInfoController.getDestinationInfoByCountry);
 
 export default router;

@@ -25,6 +25,11 @@ const DestinationInfoSchema = new mongoose.Schema(
         },
 
         // Language (MVP: single primary language only)
+        primaryLanguage: {
+            type: String,
+            required: true
+        },
+
         languages: {
             type: Object,
             required: true
