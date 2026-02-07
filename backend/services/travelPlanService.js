@@ -65,16 +65,16 @@ Notes:
     return newPlan;
 };
 
-export const getAllPlansService = async () => {
-    return await TravelPlan.find();
+export const getAllPlansService = async (userId) => {
+    return await TravelPlan.find({ userId });
 };
 
-export const getPlanByIdService = async (id) => {
-    return await TravelPlan.findById(id);
+export const getPlanByIdService = async (userId, id) => {
+    return await TravelPlan.findOne({ _id: id, userId });
 };
 
-export const deletePlanService = async (id) => {
-    return await TravelPlan.findByIdAndDelete(id);
+export const deletePlanService = async (userId, id) => {
+    return await TravelPlan.findOneAndDelete({ _id: id, userId });
 };
 
 export const createPlanService = async (userId, plan, rawAIOutput) => {
