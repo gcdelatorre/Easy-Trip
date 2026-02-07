@@ -1,0 +1,326 @@
+{
+    "Andorra": {
+        "description": "A tiny, independent principality situated between France and Spain in the Pyrenees mountains. It is known for its ski resorts and a tax-haven status that encourages duty-free shopping.",
+        "climate": "Alpine climate with cold, snowy winters and mild, pleasant summers.",
+        "modes": [
+            "Bus",
+            "Taxi",
+            "Car Rental"
+        ]
+    },
+    "United Kingdom": {
+        "description": "An island nation in northwestern Europe made up of England, Scotland, Wales, and Northern Ireland. It features historic castles, rolling countryside, and vibrant cities like London.",
+        "climate": "Temperate maritime climate with cool summers, mild winters, and frequent rainfall.",
+        "modes": [
+            "Train",
+            "Bus",
+            "Tube/Metro"
+        ]
+    },
+    "Russia": {
+        "description": "The largest country in the world, spanning Eastern Europe and Northern Asia. It offers diverse landscapes from the icy tundra to the historic splendor of Moscow and Saint Petersburg.",
+        "climate": "Varies significantly, but generally continental with very cold winters and warm summers.",
+        "modes": [
+            "Train",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "Hong Kong": {
+        "description": "A dynamic city and special administrative region of China known for its iconic skyline, bustling harbor, and fusion of Eastern and Western cultures.",
+        "climate": "Subtropical with hot, humid summers and mild, dry winters.",
+        "modes": [
+            "MTR (Metro)",
+            "Ferry",
+            "Bus"
+        ]
+    },
+    "Mexico": {
+        "description": "A vibrant country in North America known for its rich history, ancient Mayan and Aztec ruins, stunning beaches, and world-renowned cuisine.",
+        "climate": "Varies from tropical to desert, generally warm and sunny year-round.",
+        "modes": [
+            "Bus",
+            "Metro",
+            "Taxi"
+        ]
+    },
+    "Finland": {
+        "description": "A Northern European nation bordering Scandinavia and Russia, famous for its pristine lakes, northern lights, and being the home of Santa Claus in Lapland.",
+        "climate": "Cold temperate climate with long, snowy winters and short, mild summers.",
+        "modes": [
+            "Train",
+            "Bus",
+            "Tram"
+        ]
+    },
+    "Ireland": {
+        "description": "The 'Emerald Isle' is known for its lush green landscapes, ancient Celtic history, friendly pubs, and the dramatic coastline of the Wild Atlantic Way.",
+        "climate": "Temperate maritime climate, mild and humid with frequent rain showers.",
+        "modes": [
+            "Bus",
+            "Train",
+            "Car Rental"
+        ]
+    },
+    "Germany": {
+        "description": "A major European power known for its historic cities, fairytale castles, the Black Forest, and world-class beer culture.",
+        "climate": "Temperate seasonal climate with moderate rainfall and distinct seasons.",
+        "modes": [
+            "Train (ICE)",
+            "S-Bahn/U-Bahn",
+            "Bus"
+        ]
+    },
+    "Portugal": {
+        "description": "A coastal nation in Southern Europe known for its seafaring history, port wine, stunning Algarve beaches, and the historic charm of Lisbon and Porto.",
+        "climate": "Mediterranean climate with hot, dry summers and mild, rainy winters.",
+        "modes": [
+            "Train",
+            "Tram",
+            "Bus"
+        ]
+    },
+    "Japan": {
+        "description": "An island nation blending ancient traditions with futuristic technology, famous for its temples, mountains, and incredible culinary scene.",
+        "climate": "Temperate with four distinct seasons; snowy in the north and subtropical in the south.",
+        "modes": [
+            "Shinkansen (Bullet Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "France": {
+        "description": "A global center for art, fashion, and gastronomy, featuring legendary landmarks like the Eiffel Tower and the sun-drenched French Riviera.",
+        "climate": "Temperate with Mediterranean influences in the south and oceanic in the west.",
+        "modes": [
+            "TGV (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "Italy": {
+        "description": "Renowned for its art treasures, historic ruins like the Colosseum, and world-famous pizza and pasta across regions from Tuscany to Sicily.",
+        "climate": "Mediterranean with hot, dry summers and mild, wet winters.",
+        "modes": [
+            "Train",
+            "Vaporetto (Venice)",
+            "Bus"
+        ]
+    },
+    "Canada": {
+        "description": "A vast North American country with breathtaking natural beauty, from the Rocky Mountains to the Great Lakes and vibrant multicultural cities.",
+        "climate": "Varies from temperate in the south to arctic in the north; cold winters and warm summers.",
+        "modes": [
+            "Train",
+            "Bus",
+            "Plane"
+        ]
+    },
+    "Australia": {
+        "description": "A massive island continent known for the Outback, the Great Barrier Reef, and unique wildlife like kangaroos and koalas.",
+        "climate": "Generally arid to semi-arid, with temperate climates in the southeast and southwest.",
+        "modes": [
+            "Train",
+            "Bus",
+            "Plane"
+        ]
+    },
+    "South Korea": {
+        "description": "A tech-forward nation with a rich heritage, famous for its palaces, mountain temples, and global K-pop influence in cities like Seoul.",
+        "climate": "Temperate with four distinct seasons; cold winters and humid, hot summers.",
+        "modes": [
+            "KTX (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "Switzerland": {
+        "description": "A landlocked mountainous country in Central Europe, famous for the Alps, luxury watches, and high-quality cheese and chocolate.",
+        "climate": "Temperate, but varies with altitude; snowy in the mountains and mild in the valleys.",
+        "modes": [
+            "Train",
+            "Tram",
+            "Boat"
+        ]
+    },
+    "Thailand": {
+        "description": "A Southeast Asian gem known for its ornate temples, tropical beaches, and vibrant street food culture in cities like Bangkok.",
+        "climate": "Tropical monsoon climate with hot, rainy, and cool seasons.",
+        "modes": [
+            "Tuk-tuk",
+            "Bus",
+            "BTS (Skytrain)"
+        ]
+    },
+    "Brazil": {
+        "description": "A vast South American country known for its festive Carnival, the Amazon rainforest, and iconic beaches like Copacabana.",
+        "climate": "Mostly tropical, with a temperate climate in the southern regions.",
+        "modes": [
+            "Bus",
+            "Metro",
+            "Plane"
+        ]
+    },
+    "Spain": {
+        "description": "A diverse European country known for its passion, tapas, historical architecture like the Alhambra, and sunny Costa del Sol.",
+        "climate": "Mediterranean with hot, dry summers and mild winters.",
+        "modes": [
+            "AVE (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "USA": {
+        "description": "A diverse nation of 50 states covering a vast swath of North America, known for iconic cities like NYC and natural wonders like the Grand Canyon.",
+        "climate": "Ranges from tropical in Florida to arctic in Alaska; mostly temperate.",
+        "modes": [
+            "Plane",
+            "Car Rental",
+            "Bus"
+        ]
+    },
+    "Philippines": {
+        "description": "An archipelago of over 7,000 islands known for its incredible biodiversity, white sand beaches, and friendly, hospitable locals.",
+        "climate": "Tropical maritime climate; hot, humid, and prone to monsoons.",
+        "modes": [
+            "Jeepney",
+            "Tricycle",
+            "Ferry"
+        ]
+    },
+    "Vietnam": {
+        "description": "A country known for its bustling cities, serene landscapes like Ha Long Bay, and a world-class street food culture.",
+        "climate": "Tropical in the south, monsoonal in the north; generally humid.",
+        "modes": [
+            "Motorbike taxi",
+            "Bus",
+            "Train"
+        ]
+    },
+    "Greece": {
+        "description": "The cradle of Western civilization, featuring thousands of islands, ancient ruins like the Parthenon, and stunning blue-domed buildings.",
+        "climate": "Mediterranean with hot, dry summers and mild, rainy winters.",
+        "modes": [
+            "Ferry",
+            "Bus",
+            "Scooter"
+        ]
+    },
+    "Austria": {
+        "description": "A landlocked Alpine nation known for its imperial history, classical music, and world-renowned ski slopes.",
+        "climate": "Temperate continental with cold winters and cool to warm summers.",
+        "modes": [
+            "Train (ÖBB)",
+            "Tram",
+            "Bus"
+        ]
+    },
+    "Belgium": {
+        "description": "Famous for its medieval towns, Renaissance architecture, and as the headquarters of the EU and NATO.",
+        "climate": "Temperate maritime climate with mild winters and cool summers.",
+        "modes": [
+            "Train",
+            "Tram",
+            "Bus"
+        ]
+    },
+    "Czech Republic": {
+        "description": "A country in Central Europe known for its ornate castles, native beers, and the historic beauty of Prague.",
+        "climate": "Temperate continental with relatively hot summers and cold, cloudy winters.",
+        "modes": [
+            "Tram",
+            "Metro",
+            "Train"
+        ]
+    },
+    "Denmark": {
+        "description": "A Scandinavian country comprising the Jutland Peninsula and numerous islands, known for its high quality of life and design.",
+        "climate": "Temperate climate, mild and humid with frequent rainfall.",
+        "modes": [
+            "Bicycle",
+            "Train",
+            "Bus"
+        ]
+    },
+    "Norway": {
+        "description": "Famous for its deep coastal fjords, mountains, and the midnight sun; a paradise for outdoor enthusiasts.",
+        "climate": "Temperate maritime along the coast; colder and more continental inland.",
+        "modes": [
+            "Ferry",
+            "Train",
+            "Bus"
+        ]
+    },
+    "Sweden": {
+        "description": "A Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains.",
+        "climate": "Temperate in the south, subarctic in the north; cold winters and mild summers.",
+        "modes": [
+            "Train",
+            "Metro",
+            "Bus"
+        ]
+    },
+    "Netherlands": {
+        "description": "Known for its flat landscape of canals, tulip fields, windmills, and cycling routes.",
+        "climate": "Temperate maritime with cool summers and mild winters.",
+        "modes": [
+            "Bicycle",
+            "Train",
+            "Tram"
+        ]
+    },
+    "Iceland": {
+        "description": "A Nordic island nation defined by its dramatic landscape with volcanoes, geysers, hot springs, and lava fields.",
+        "climate": "Subpolar oceanic climate, cold and windy with frequent weather changes.",
+        "modes": [
+            "Car Rental",
+            "Bus",
+            "Plane"
+        ]
+    },
+    "New Zealand": {
+        "description": "An island country in the southwestern Pacific Ocean, famous for its breathtaking landscapes and being the filming location for Middle-earth.",
+        "climate": "Temperate maritime with sharp regional contrasts; mild temperatures year-round.",
+        "modes": [
+            "Car Rental",
+            "Campervan",
+            "Bus"
+        ]
+    },
+    "Singapore": {
+        "description": "A sunny, tropical island city-state in Southeast Asia, known for its cleanliness, efficiency, and melting pot of cultures.",
+        "climate": "Tropical rainforest climate, hot and humid with no distinct seasons.",
+        "modes": [
+            "MRT (Metro)",
+            "Bus",
+            "Taxi"
+        ]
+    },
+    "Malaysia": {
+        "description": "A Southeast Asian country known for its beaches, rainforests, and a mix of Malay, Chinese, Indian, and European cultural influences.",
+        "climate": "Equatorial climate, hot and humid year-round with monsoon seasons.",
+        "modes": [
+            "Grab (Ride-hail)",
+            "Monorail",
+            "Bus"
+        ]
+    },
+    "Indonesia": {
+        "description": "The world's largest archipelago, home to diverse ethnic groups, stunning volcanoes, and the spiritual heart of Bali.",
+        "climate": "Tropical with two seasons: wet and dry; warm temperatures year-round.",
+        "modes": [
+            "Gojek",
+            "Ferry",
+            "Bus"
+        ]
+    },
+    "India": {
+        "description": "A vast South Asian country with a diverse landscape from the Himalayas to the Indian Ocean coast, rich in history and spirituality.",
+        "climate": "Varies from tropical in the south to temperate in the north; dominated by monsoons.",
+        "modes": [
+            "Train",
+            "Auto-rickshaw",
+            "Bus"
+        ]
+    }
+}

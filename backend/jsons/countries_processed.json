@@ -1,0 +1,5166 @@
+[
+    {
+        "country": "Andorra",
+        "destinationDescription": "A tiny, independent principality situated between France and Spain in the Pyrenees mountains. It is known for its ski resorts and a tax-haven status that encourages duty-free shopping.",
+        "capital": "Andorra la Vella",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "cat": "Catalan"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Alpine climate with cold, snowy winters and mild, pleasant summers.",
+        "transportationModes": [
+            "Bus",
+            "Taxi",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Port of Spain",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "TTD",
+            "name": "Trinidad and Tobago dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Serbia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Belgrade",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "srp": "Serbian"
+        },
+        "currency": {
+            "code": "RSD",
+            "name": "Serbian dinar",
+            "symbol": "дин."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "United Kingdom",
+        "destinationDescription": "An island nation in northwestern Europe made up of England, Scotland, Wales, and Northern Ireland. It features historic castles, rolling countryside, and vibrant cities like London.",
+        "capital": "London",
+        "timezone": "UTC-08:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Temperate maritime climate with cool summers, mild winters, and frequent rainfall.",
+        "transportationModes": [
+            "Train",
+            "Bus",
+            "Tube/Metro"
+        ]
+    },
+    {
+        "country": "Russia",
+        "destinationDescription": "The largest country in the world, spanning Eastern Europe and Northern Asia. It offers diverse landscapes from the icy tundra to the historic splendor of Moscow and Saint Petersburg.",
+        "capital": "Moscow",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "rus": "Russian"
+        },
+        "currency": {
+            "code": "RUB",
+            "name": "Russian ruble",
+            "symbol": "₽"
+        },
+        "weatherSummary": "Varies significantly, but generally continental with very cold winters and warm summers.",
+        "transportationModes": [
+            "Train",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Hong Kong",
+        "destinationDescription": "A dynamic city and special administrative region of China known for its iconic skyline, bustling harbor, and fusion of Eastern and Western cultures.",
+        "capital": "City of Victoria",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "eng": "English",
+            "zho": "Chinese"
+        },
+        "currency": {
+            "code": "HKD",
+            "name": "Hong Kong dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Subtropical with hot, humid summers and mild, dry winters.",
+        "transportationModes": [
+            "MTR (Metro)",
+            "Ferry",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Western Sahara",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "El Aaiún",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "ber": "Berber",
+            "mey": "Hassaniya",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "DZD",
+            "name": "Algerian dinar",
+            "symbol": "دج"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Uruguay",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "Montevideo",
+        "timezone": "UTC-03:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "UYU",
+            "name": "Uruguayan peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Barbados",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Bridgetown",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "BBD",
+            "name": "Barbadian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Palestine",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Ramallah",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "EGP",
+            "name": "Egyptian pound",
+            "symbol": "E£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mexico",
+        "destinationDescription": "A vibrant country in North America known for its rich history, ancient Mayan and Aztec ruins, stunning beaches, and world-renowned cuisine.",
+        "capital": "Mexico City",
+        "timezone": "UTC-08:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "MXN",
+            "name": "Mexican peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Varies from tropical to desert, generally warm and sunny year-round.",
+        "transportationModes": [
+            "Bus",
+            "Metro",
+            "Taxi"
+        ]
+    },
+    {
+        "country": "Malawi",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Lilongwe",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English",
+            "nya": "Chewa"
+        },
+        "currency": {
+            "code": "MWK",
+            "name": "Malawian kwacha",
+            "symbol": "MK"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Antarctica",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "N/A",
+        "timezone": "UTC-03:00",
+        "languages": {},
+        "currency": {
+            "code": "N/A",
+            "name": "N/A",
+            "symbol": "N/A"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "New Caledonia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
+        "capital": "Nouméa",
+        "timezone": "UTC+11:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XPF",
+            "name": "CFP franc",
+            "symbol": "₣"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Svalbard and Jan Mayen",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Longyearbyen",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "nor": "Norwegian"
+        },
+        "currency": {
+            "code": "NOK",
+            "name": "krone",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Norfolk Island",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:30 region.",
+        "capital": "Kingston",
+        "timezone": "UTC+11:30",
+        "languages": {
+            "eng": "English",
+            "pih": "Norfuk"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Christmas Island",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
+        "capital": "Flying Fish Cove",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mongolia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
+        "capital": "Ulan Bator",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "mon": "Mongolian"
+        },
+        "currency": {
+            "code": "MNT",
+            "name": "Mongolian tögrög",
+            "symbol": "₮"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Latvia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Riga",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "lav": "Latvian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Brunei",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
+        "capital": "Bandar Seri Begawan",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "msa": "Malay"
+        },
+        "currency": {
+            "code": "BND",
+            "name": "Brunei dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ukraine",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Kyiv",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ukr": "Ukrainian"
+        },
+        "currency": {
+            "code": "UAH",
+            "name": "Ukrainian hryvnia",
+            "symbol": "₴"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "North Korea",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
+        "capital": "Pyongyang",
+        "timezone": "UTC+09:00",
+        "languages": {
+            "kor": "Korean"
+        },
+        "currency": {
+            "code": "KPW",
+            "name": "North Korean won",
+            "symbol": "₩"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Finland",
+        "destinationDescription": "A Northern European nation bordering Scandinavia and Russia, famous for its pristine lakes, northern lights, and being the home of Santa Claus in Lapland.",
+        "capital": "Helsinki",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "fin": "Finnish",
+            "swe": "Swedish"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Cold temperate climate with long, snowy winters and short, mild summers.",
+        "transportationModes": [
+            "Train",
+            "Bus",
+            "Tram"
+        ]
+    },
+    {
+        "country": "Anguilla",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "The Valley",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Azerbaijan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Baku",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "aze": "Azerbaijani"
+        },
+        "currency": {
+            "code": "AZN",
+            "name": "Azerbaijani manat",
+            "symbol": "₼"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cayman Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "George Town",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "KYD",
+            "name": "Cayman Islands dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Uzbekistan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Tashkent",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "rus": "Russian",
+            "uzb": "Uzbek"
+        },
+        "currency": {
+            "code": "UZS",
+            "name": "Uzbekistani soʻm",
+            "symbol": "so'm"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ireland",
+        "destinationDescription": "The 'Emerald Isle' is known for its lush green landscapes, ancient Celtic history, friendly pubs, and the dramatic coastline of the Wild Atlantic Way.",
+        "capital": "Dublin",
+        "timezone": "UTC",
+        "languages": {
+            "eng": "English",
+            "gle": "Irish"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate maritime climate, mild and humid with frequent rain showers.",
+        "transportationModes": [
+            "Bus",
+            "Train",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Jersey",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Saint Helier",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French",
+            "nrf": "Jèrriais"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Rwanda",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Kigali",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French",
+            "kin": "Kinyarwanda"
+        },
+        "currency": {
+            "code": "RWF",
+            "name": "Rwandan franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Sarajevo",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "bos": "Bosnian",
+            "hrv": "Croatian",
+            "srp": "Serbian"
+        },
+        "currency": {
+            "code": "BAM",
+            "name": "Bosnia and Herzegovina convertible mark",
+            "symbol": "KM"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Poland",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Warsaw",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "pol": "Polish"
+        },
+        "currency": {
+            "code": "PLN",
+            "name": "Polish złoty",
+            "symbol": "zł"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Portugal",
+        "destinationDescription": "A coastal nation in Southern Europe known for its seafaring history, port wine, stunning Algarve beaches, and the historic charm of Lisbon and Porto.",
+        "capital": "Lisbon",
+        "timezone": "UTC-01:00",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Mediterranean climate with hot, dry summers and mild, rainy winters.",
+        "transportationModes": [
+            "Train",
+            "Tram",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Haiti",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Port-au-Prince",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "fra": "French",
+            "hat": "Haitian Creole"
+        },
+        "currency": {
+            "code": "HTG",
+            "name": "Haitian gourde",
+            "symbol": "G"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Iran",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:30 region.",
+        "capital": "Tehran",
+        "timezone": "UTC+03:30",
+        "languages": {
+            "fas": "Persian (Farsi)"
+        },
+        "currency": {
+            "code": "IRR",
+            "name": "Iranian rial",
+            "symbol": "﷼"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "French Southern and Antarctic Lands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Port-aux-Français",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ethiopia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Addis Ababa",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "amh": "Amharic"
+        },
+        "currency": {
+            "code": "ETB",
+            "name": "Ethiopian birr",
+            "symbol": "Br"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Kazakhstan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Astana",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "kaz": "Kazakh",
+            "rus": "Russian"
+        },
+        "currency": {
+            "code": "KZT",
+            "name": "Kazakhstani tenge",
+            "symbol": "₸"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mali",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Bamako",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Nicaragua",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Managua",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "NIO",
+            "name": "Nicaraguan córdoba",
+            "symbol": "C$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Germany",
+        "destinationDescription": "A major European power known for its historic cities, fairytale castles, the Black Forest, and world-class beer culture.",
+        "capital": "Berlin",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "deu": "German"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate seasonal climate with moderate rainfall and distinct seasons.",
+        "transportationModes": [
+            "Train (ICE)",
+            "S-Bahn/U-Bahn",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Estonia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Tallinn",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "est": "Estonian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tunisia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Tunis",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "TND",
+            "name": "Tunisian dinar",
+            "symbol": "د.ت"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saint Martin",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Marigot",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cameroon",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Yaoundé",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Micronesia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
+        "capital": "Palikir",
+        "timezone": "UTC+10:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Sint Maarten",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Philipsburg",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French",
+            "nld": "Dutch"
+        },
+        "currency": {
+            "code": "ANG",
+            "name": "Netherlands Antillean guilder",
+            "symbol": "ƒ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cyprus",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Nicosia",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ell": "Greek",
+            "tur": "Turkish"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Morocco",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Rabat",
+        "timezone": "UTC",
+        "languages": {
+            "ara": "Arabic",
+            "ber": "Berber"
+        },
+        "currency": {
+            "code": "MAD",
+            "name": "Moroccan dirham",
+            "symbol": "د.م."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Pitcairn Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-08:00 region.",
+        "capital": "Adamstown",
+        "timezone": "UTC-08:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "NZD",
+            "name": "New Zealand dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Curaçao",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Willemstad",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English",
+            "nld": "Dutch",
+            "pap": "Papiamento"
+        },
+        "currency": {
+            "code": "ANG",
+            "name": "Netherlands Antillean guilder",
+            "symbol": "ƒ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Aruba",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Oranjestad",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "nld": "Dutch",
+            "pap": "Papiamento"
+        },
+        "currency": {
+            "code": "AWG",
+            "name": "Aruban florin",
+            "symbol": "ƒ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Spain",
+        "destinationDescription": "A diverse European country known for its passion, tapas, historical architecture like the Alhambra, and sunny Costa del Sol.",
+        "capital": "Madrid",
+        "timezone": "UTC",
+        "languages": {
+            "spa": "Spanish",
+            "cat": "Catalan",
+            "eus": "Basque",
+            "glc": "Galician"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Mediterranean with hot, dry summers and mild winters.",
+        "transportationModes": [
+            "AVE (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Gabon",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Libreville",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Åland Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Mariehamn",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "swe": "Swedish"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Denmark",
+        "destinationDescription": "A Scandinavian country comprising the Jutland Peninsula and numerous islands, known for its high quality of life and design.",
+        "capital": "Copenhagen",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "dan": "Danish"
+        },
+        "currency": {
+            "code": "DKK",
+            "name": "Danish krone",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Temperate climate, mild and humid with frequent rainfall.",
+        "transportationModes": [
+            "Bicycle",
+            "Train",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Martinique",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Fort-de-France",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Saint John's",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Eswatini",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Mbabane",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English",
+            "ssw": "Swazi"
+        },
+        "currency": {
+            "code": "SZL",
+            "name": "Swazi lilangeni",
+            "symbol": "L"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Taiwan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
+        "capital": "Taipei",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "zho": "Chinese"
+        },
+        "currency": {
+            "code": "TWD",
+            "name": "New Taiwan dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Vanuatu",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
+        "capital": "Port Vila",
+        "timezone": "UTC+11:00",
+        "languages": {
+            "bis": "Bislama",
+            "eng": "English",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "VUV",
+            "name": "Vanuatu vatu",
+            "symbol": "Vt"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cook Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-10:00 region.",
+        "capital": "Avarua",
+        "timezone": "UTC-10:00",
+        "languages": {
+            "eng": "English",
+            "rar": "Cook Islands Māori"
+        },
+        "currency": {
+            "code": "CKD",
+            "name": "Cook Islands dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cocos (Keeling) Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:30 region.",
+        "capital": "West Island",
+        "timezone": "UTC+06:30",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cape Verde",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-01:00 region.",
+        "capital": "Praia",
+        "timezone": "UTC-01:00",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "CVE",
+            "name": "Cape Verdean escudo",
+            "symbol": "Esc"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Belarus",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Minsk",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "bel": "Belarusian",
+            "rus": "Russian"
+        },
+        "currency": {
+            "code": "BYN",
+            "name": "Belarusian ruble",
+            "symbol": "Br"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Czechia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Prague",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ces": "Czech",
+            "slk": "Slovak"
+        },
+        "currency": {
+            "code": "CZK",
+            "name": "Czech koruna",
+            "symbol": "Kč"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Peru",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Lima",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "aym": "Aymara",
+            "que": "Quechua",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "PEN",
+            "name": "Peruvian sol",
+            "symbol": "S/ "
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Timor-Leste",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
+        "capital": "Dili",
+        "timezone": "UTC+09:00",
+        "languages": {
+            "por": "Portuguese",
+            "tet": "Tetum"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Namibia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Windhoek",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "afr": "Afrikaans",
+            "deu": "German",
+            "eng": "English",
+            "her": "Herero",
+            "hgm": "Khoekhoe",
+            "kwn": "Kwangali",
+            "loz": "Lozi",
+            "ndo": "Ndonga",
+            "tsn": "Tswana"
+        },
+        "currency": {
+            "code": "NAD",
+            "name": "Namibian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tokelau",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
+        "capital": "Fakaofo",
+        "timezone": "UTC+13:00",
+        "languages": {
+            "eng": "English",
+            "smo": "Samoan",
+            "tkl": "Tokelauan"
+        },
+        "currency": {
+            "code": "NZD",
+            "name": "New Zealand dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "DR Congo",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Kinshasa",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French",
+            "kon": "Kikongo",
+            "lin": "Lingala",
+            "lua": "Tshiluba",
+            "swa": "Swahili"
+        },
+        "currency": {
+            "code": "CDF",
+            "name": "Congolese franc",
+            "symbol": "FC"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saint Lucia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Castries",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Suriname",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "Paramaribo",
+        "timezone": "UTC-03:00",
+        "languages": {
+            "nld": "Dutch"
+        },
+        "currency": {
+            "code": "SRD",
+            "name": "Surinamese dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Burundi",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Gitega",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "fra": "French",
+            "run": "Kirundi"
+        },
+        "currency": {
+            "code": "BIF",
+            "name": "Burundian franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Georgia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Tbilisi",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "kat": "Georgian"
+        },
+        "currency": {
+            "code": "GEL",
+            "name": "lari",
+            "symbol": "₾"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ghana",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Accra",
+        "timezone": "UTC",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GHS",
+            "name": "Ghanaian cedi",
+            "symbol": "₵"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "British Indian Ocean Territory",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
+        "capital": "Diego Garcia",
+        "timezone": "UTC+06:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Egypt",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Cairo",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "EGP",
+            "name": "Egyptian pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "French Guiana",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "Cayenne",
+        "timezone": "UTC-03:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Marshall Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "Majuro",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "eng": "English",
+            "mah": "Marshallese"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guinea-Bissau",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Bissau",
+        "timezone": "UTC",
+        "languages": {
+            "por": "Portuguese",
+            "pov": "Upper Guinea Creole"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Fiji",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "Suva",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "eng": "English",
+            "fij": "Fijian",
+            "hif": "Fiji Hindi"
+        },
+        "currency": {
+            "code": "FJD",
+            "name": "Fijian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Zambia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Lusaka",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "ZMW",
+            "name": "Zambian kwacha",
+            "symbol": "ZK"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Iceland",
+        "destinationDescription": "A Nordic island nation defined by its dramatic landscape with volcanoes, geysers, hot springs, and lava fields.",
+        "capital": "Reykjavik",
+        "timezone": "UTC",
+        "languages": {
+            "isl": "Icelandic"
+        },
+        "currency": {
+            "code": "ISK",
+            "name": "Icelandic króna",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Subpolar oceanic climate, cold and windy with frequent weather changes.",
+        "transportationModes": [
+            "Car Rental",
+            "Bus",
+            "Plane"
+        ]
+    },
+    {
+        "country": "Bermuda",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Hamilton",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "BMD",
+            "name": "Bermudian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Brazil",
+        "destinationDescription": "A vast South American country known for its festive Carnival, the Amazon rainforest, and iconic beaches like Copacabana.",
+        "capital": "Brasília",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "BRL",
+            "name": "Brazilian real",
+            "symbol": "R$"
+        },
+        "weatherSummary": "Mostly tropical, with a temperate climate in the southern regions.",
+        "transportationModes": [
+            "Bus",
+            "Metro",
+            "Plane"
+        ]
+    },
+    {
+        "country": "Palau",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+09:00 region.",
+        "capital": "Ngerulmud",
+        "timezone": "UTC+09:00",
+        "languages": {
+            "eng": "English",
+            "pau": "Palauan"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Sudan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Khartoum",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "eng": "English"
+        },
+        "currency": {
+            "code": "SDG",
+            "name": "Sudanese pound",
+            "symbol": "ج.س"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Australia",
+        "destinationDescription": "A massive island continent known for the Outback, the Great Barrier Reef, and unique wildlife like kangaroos and koalas.",
+        "capital": "Canberra",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Generally arid to semi-arid, with temperate climates in the southeast and southwest.",
+        "transportationModes": [
+            "Train",
+            "Bus",
+            "Plane"
+        ]
+    },
+    {
+        "country": "Cambodia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
+        "capital": "Phnom Penh",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "khm": "Khmer"
+        },
+        "currency": {
+            "code": "KHR",
+            "name": "Cambodian riel",
+            "symbol": "៛"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "New Zealand",
+        "destinationDescription": "An island country in the southwestern Pacific Ocean, famous for its breathtaking landscapes and being the filming location for Middle-earth.",
+        "capital": "Wellington",
+        "timezone": "UTC-11:00",
+        "languages": {
+            "eng": "English",
+            "mri": "Māori",
+            "nzs": "New Zealand Sign Language"
+        },
+        "currency": {
+            "code": "NZD",
+            "name": "New Zealand dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Temperate maritime with sharp regional contrasts; mild temperatures year-round.",
+        "transportationModes": [
+            "Car Rental",
+            "Campervan",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Philippines",
+        "destinationDescription": "An archipelago of over 7,000 islands known for its incredible biodiversity, white sand beaches, and friendly, hospitable locals.",
+        "capital": "Manila",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "eng": "English",
+            "fil": "Filipino"
+        },
+        "currency": {
+            "code": "PHP",
+            "name": "Philippine peso",
+            "symbol": "₱"
+        },
+        "weatherSummary": "Tropical maritime climate; hot, humid, and prone to monsoons.",
+        "transportationModes": [
+            "Jeepney",
+            "Tricycle",
+            "Ferry"
+        ]
+    },
+    {
+        "country": "Burkina Faso",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Ouagadougou",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Faroe Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "Tórshavn",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "dan": "Danish",
+            "fao": "Faroese"
+        },
+        "currency": {
+            "code": "DKK",
+            "name": "Danish krone",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Sierra Leone",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Freetown",
+        "timezone": "UTC",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "SLE",
+            "name": "Leone",
+            "symbol": "Le"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Grenada",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "St. George's",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bolivia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Sucre",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "aym": "Aymara",
+            "grn": "Guaraní",
+            "que": "Quechua",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "BOB",
+            "name": "Bolivian boliviano",
+            "symbol": "Bs."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Switzerland",
+        "destinationDescription": "A landlocked mountainous country in Central Europe, famous for the Alps, luxury watches, and high-quality cheese and chocolate.",
+        "capital": "Bern",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French",
+            "gsw": "Swiss German",
+            "ita": "Italian",
+            "roh": "Romansh"
+        },
+        "currency": {
+            "code": "CHF",
+            "name": "Swiss franc",
+            "symbol": "Fr."
+        },
+        "weatherSummary": "Temperate, but varies with altitude; snowy in the mountains and mild in the valleys.",
+        "transportationModes": [
+            "Train",
+            "Tram",
+            "Boat"
+        ]
+    },
+    {
+        "country": "Saint Vincent and the Grenadines",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Kingstown",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ecuador",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Quito",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Seychelles",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Victoria",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "crs": "Seychellois Creole",
+            "eng": "English",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "SCR",
+            "name": "Seychellois rupee",
+            "symbol": "₨"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "South Africa",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Pretoria",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "afr": "Afrikaans",
+            "eng": "English",
+            "nbl": "Southern Ndebele",
+            "nso": "Northern Sotho",
+            "sot": "Southern Sotho",
+            "ssw": "Swazi",
+            "tsn": "Tswana",
+            "tso": "Tsonga",
+            "ven": "Venda",
+            "xho": "Xhosa",
+            "zul": "Zulu"
+        },
+        "currency": {
+            "code": "ZAR",
+            "name": "South African rand",
+            "symbol": "R"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "India",
+        "destinationDescription": "A vast South Asian country with a diverse landscape from the Himalayas to the Indian Ocean coast, rich in history and spirituality.",
+        "capital": "New Delhi",
+        "timezone": "UTC+05:30",
+        "languages": {
+            "eng": "English",
+            "hin": "Hindi",
+            "tam": "Tamil"
+        },
+        "currency": {
+            "code": "INR",
+            "name": "Indian rupee",
+            "symbol": "₹"
+        },
+        "weatherSummary": "Varies from tropical in the south to temperate in the north; dominated by monsoons.",
+        "transportationModes": [
+            "Train",
+            "Auto-rickshaw",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Liberia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Monrovia",
+        "timezone": "UTC",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "LRD",
+            "name": "Liberian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "South Korea",
+        "destinationDescription": "A tech-forward nation with a rich heritage, famous for its palaces, mountain temples, and global K-pop influence in cities like Seoul.",
+        "capital": "Seoul",
+        "timezone": "UTC+09:00",
+        "languages": {
+            "kor": "Korean"
+        },
+        "currency": {
+            "code": "KRW",
+            "name": "South Korean won",
+            "symbol": "₩"
+        },
+        "weatherSummary": "Temperate with four distinct seasons; cold winters and humid, hot summers.",
+        "transportationModes": [
+            "KTX (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Lithuania",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Vilnius",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "lit": "Lithuanian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Singapore",
+        "destinationDescription": "A sunny, tropical island city-state in Southeast Asia, known for its cleanliness, efficiency, and melting pot of cultures.",
+        "capital": "Singapore",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "eng": "English",
+            "zho": "Chinese",
+            "msa": "Malay",
+            "tam": "Tamil"
+        },
+        "currency": {
+            "code": "SGD",
+            "name": "Singapore dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Tropical rainforest climate, hot and humid with no distinct seasons.",
+        "transportationModes": [
+            "MRT (Metro)",
+            "Bus",
+            "Taxi"
+        ]
+    },
+    {
+        "country": "Puerto Rico",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "San Juan",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Belize",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Belmopan",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "bjz": "Belizean Creole",
+            "eng": "English",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "BZD",
+            "name": "Belize dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Netherlands",
+        "destinationDescription": "Known for its flat landscape of canals, tulip fields, windmills, and cycling routes.",
+        "capital": "Amsterdam",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "nld": "Dutch"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate maritime with cool summers and mild winters.",
+        "transportationModes": [
+            "Bicycle",
+            "Train",
+            "Tram"
+        ]
+    },
+    {
+        "country": "Eritrea",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Asmara",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "eng": "English",
+            "tir": "Tigrinya"
+        },
+        "currency": {
+            "code": "ERN",
+            "name": "Eritrean nakfa",
+            "symbol": "Nfk"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Montserrat",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Plymouth",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Réunion",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Saint-Denis",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "South Georgia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-02:00 region.",
+        "capital": "King Edward Point",
+        "timezone": "UTC-02:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bangladesh",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
+        "capital": "Dhaka",
+        "timezone": "UTC+06:00",
+        "languages": {
+            "ben": "Bengali"
+        },
+        "currency": {
+            "code": "BDT",
+            "name": "Bangladeshi taka",
+            "symbol": "৳"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Yemen",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Sana'a",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "YER",
+            "name": "Yemeni rial",
+            "symbol": "﷼"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Norway",
+        "destinationDescription": "Famous for its deep coastal fjords, mountains, and the midnight sun; a paradise for outdoor enthusiasts.",
+        "capital": "Oslo",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "nno": "Norwegian Nynorsk",
+            "nob": "Norwegian Bokmål",
+            "smi": "Sami"
+        },
+        "currency": {
+            "code": "NOK",
+            "name": "Norwegian krone",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Temperate maritime along the coast; colder and more continental inland.",
+        "transportationModes": [
+            "Ferry",
+            "Train",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Slovenia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Ljubljana",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "slv": "Slovene"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Oman",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Muscat",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "OMR",
+            "name": "Omani rial",
+            "symbol": "ر.ع."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mozambique",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Maputo",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "MZN",
+            "name": "Mozambican metical",
+            "symbol": "MT"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Libya",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Tripoli",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "LYD",
+            "name": "Libyan dinar",
+            "symbol": "ل.د"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Chad",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "N'Djamena",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ara": "Arabic",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guyana",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Georgetown",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GYD",
+            "name": "Guyanese dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Kyrgyzstan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
+        "capital": "Bishkek",
+        "timezone": "UTC+06:00",
+        "languages": {
+            "kir": "Kyrgyz",
+            "rus": "Russian"
+        },
+        "currency": {
+            "code": "KGS",
+            "name": "Kyrgyzstani som",
+            "symbol": "с"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Djibouti",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Djibouti",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "DJF",
+            "name": "Djiboutian franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
+        "capital": "Saipan",
+        "timezone": "UTC+10:00",
+        "languages": {
+            "cal": "Carolinian",
+            "cha": "Chamorro",
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "United States",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-12:00 region.",
+        "capital": "Washington, D.C.",
+        "timezone": "UTC-12:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Togo",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Lomé",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Sri Lanka",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:30 region.",
+        "capital": "Sri Jayawardenepura Kotte",
+        "timezone": "UTC+05:30",
+        "languages": {
+            "sin": "Sinhala",
+            "tam": "Tamil"
+        },
+        "currency": {
+            "code": "LKR",
+            "name": "Sri Lankan rupee",
+            "symbol": "Rs  රු"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Comoros",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Moroni",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "fra": "French",
+            "zdj": "Comorian"
+        },
+        "currency": {
+            "code": "KMF",
+            "name": "Comorian franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Cuba",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Havana",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "CUC",
+            "name": "Cuban convertible peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guam",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
+        "capital": "Hagåtña",
+        "timezone": "UTC+10:00",
+        "languages": {
+            "cha": "Chamorro",
+            "eng": "English",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Argentina",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "Buenos Aires",
+        "timezone": "UTC-03:00",
+        "languages": {
+            "grn": "Guaraní",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "ARS",
+            "name": "Argentine peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Wallis and Futuna",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "Mata-Utu",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XPF",
+            "name": "CFP franc",
+            "symbol": "₣"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bhutan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:00 region.",
+        "capital": "Thimphu",
+        "timezone": "UTC+06:00",
+        "languages": {
+            "dzo": "Dzongkha"
+        },
+        "currency": {
+            "code": "BTN",
+            "name": "Bhutanese ngultrum",
+            "symbol": "Nu."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Lebanon",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Beirut",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ara": "Arabic",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "LBP",
+            "name": "Lebanese pound",
+            "symbol": "ل.ل"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Heard Island and McDonald Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "N/A",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "N/A",
+            "name": "N/A",
+            "symbol": "N/A"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Lesotho",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Maseru",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English",
+            "sot": "Sotho"
+        },
+        "currency": {
+            "code": "LSL",
+            "name": "Lesotho loti",
+            "symbol": "L"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Somalia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Mogadishu",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "som": "Somali"
+        },
+        "currency": {
+            "code": "SOS",
+            "name": "Somali shilling",
+            "symbol": "Sh"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Dominica",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Roseau",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Hungary",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Budapest",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "hun": "Hungarian"
+        },
+        "currency": {
+            "code": "HUF",
+            "name": "Hungarian forint",
+            "symbol": "Ft"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Luxembourg",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Luxembourg",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "deu": "German",
+            "fra": "French",
+            "ltz": "Luxembourgish"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "San Marino",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "City of San Marino",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ita": "Italian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Afghanistan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:30 region.",
+        "capital": "Kabul",
+        "timezone": "UTC+04:30",
+        "languages": {
+            "prs": "Dari",
+            "pus": "Pashto",
+            "tuk": "Turkmen"
+        },
+        "currency": {
+            "code": "AFN",
+            "name": "Afghan afghani",
+            "symbol": "؋"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mauritania",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Nouakchott",
+        "timezone": "UTC",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "MRU",
+            "name": "Mauritanian ouguiya",
+            "symbol": "UM"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Algeria",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Algiers",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "DZD",
+            "name": "Algerian dinar",
+            "symbol": "د.ج"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guadeloupe",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Basse-Terre",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Croatia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Zagreb",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "hrv": "Croatian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bulgaria",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Sofia",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "bul": "Bulgarian"
+        },
+        "currency": {
+            "code": "BGN",
+            "name": "Bulgarian lev",
+            "symbol": "лв"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Niue",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
+        "capital": "Alofi",
+        "timezone": "UTC-11:00",
+        "languages": {
+            "eng": "English",
+            "niu": "Niuean"
+        },
+        "currency": {
+            "code": "NZD",
+            "name": "New Zealand dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Indonesia",
+        "destinationDescription": "The world's largest archipelago, home to diverse ethnic groups, stunning volcanoes, and the spiritual heart of Bali.",
+        "capital": "Jakarta",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "ind": "Indonesian"
+        },
+        "currency": {
+            "code": "IDR",
+            "name": "Indonesian rupiah",
+            "symbol": "Rp"
+        },
+        "weatherSummary": "Tropical with two seasons: wet and dry; warm temperatures year-round.",
+        "transportationModes": [
+            "Gojek",
+            "Ferry",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Belgium",
+        "destinationDescription": "Famous for its medieval towns, Renaissance architecture, and as the headquarters of the EU and NATO.",
+        "capital": "Brussels",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "deu": "German",
+            "fra": "French",
+            "nld": "Dutch"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate maritime climate with mild winters and cool summers.",
+        "transportationModes": [
+            "Train",
+            "Tram",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Nauru",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "Yaren",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "eng": "English",
+            "nau": "Nauru"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "French Polynesia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-10:00 region.",
+        "capital": "Papeetē",
+        "timezone": "UTC-10:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XPF",
+            "name": "CFP franc",
+            "symbol": "₣"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Iraq",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Baghdad",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic",
+            "arc": "Aramaic",
+            "ckb": "Sorani"
+        },
+        "currency": {
+            "code": "IQD",
+            "name": "Iraqi dinar",
+            "symbol": "ع.د"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Madagascar",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Antananarivo",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "fra": "French",
+            "mlg": "Malagasy"
+        },
+        "currency": {
+            "code": "MGA",
+            "name": "Malagasy ariary",
+            "symbol": "Ar"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Vietnam",
+        "destinationDescription": "A country known for its bustling cities, serene landscapes like Ha Long Bay, and a world-class street food culture.",
+        "capital": "Hanoi",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "vie": "Vietnamese"
+        },
+        "currency": {
+            "code": "VND",
+            "name": "Vietnamese đồng",
+            "symbol": "₫"
+        },
+        "weatherSummary": "Tropical in the south, monsoonal in the north; generally humid.",
+        "transportationModes": [
+            "Motorbike taxi",
+            "Bus",
+            "Train"
+        ]
+    },
+    {
+        "country": "Mauritius",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Port Louis",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French",
+            "mfe": "Mauritian Creole"
+        },
+        "currency": {
+            "code": "MUR",
+            "name": "Mauritian rupee",
+            "symbol": "₨"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "American Samoa",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
+        "capital": "Pago Pago",
+        "timezone": "UTC-11:00",
+        "languages": {
+            "eng": "English",
+            "smo": "Samoan"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Ivory Coast",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Yamoussoukro",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Caribbean Netherlands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Kralendijk",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English",
+            "nld": "Dutch",
+            "pap": "Papiamento"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Liechtenstein",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Vaduz",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "deu": "German"
+        },
+        "currency": {
+            "code": "CHF",
+            "name": "Swiss franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Italy",
+        "destinationDescription": "Renowned for its art treasures, historic ruins like the Colosseum, and world-famous pizza and pasta across regions from Tuscany to Sicily.",
+        "capital": "Rome",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ita": "Italian",
+            "cat": "Catalan"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Mediterranean with hot, dry summers and mild, wet winters.",
+        "transportationModes": [
+            "Train",
+            "Vaporetto (Venice)",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Basseterre",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "XCD",
+            "name": "Eastern Caribbean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Qatar",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Doha",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "QAR",
+            "name": "Qatari riyal",
+            "symbol": "ر.ق"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Turkey",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Ankara",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "tur": "Turkish"
+        },
+        "currency": {
+            "code": "TRY",
+            "name": "Turkish lira",
+            "symbol": "₺"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "United States Virgin Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Charlotte Amalie",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Angola",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Luanda",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "AOA",
+            "name": "Angolan kwanza",
+            "symbol": "Kz"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Kenya",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Nairobi",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "eng": "English",
+            "swa": "Swahili"
+        },
+        "currency": {
+            "code": "KES",
+            "name": "Kenyan shilling",
+            "symbol": "Sh"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saudi Arabia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Riyadh",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "SAR",
+            "name": "Saudi riyal",
+            "symbol": "ر.س"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "South Sudan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Juba",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "SSP",
+            "name": "South Sudanese pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Turks and Caicos Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Cockburn Town",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Canada",
+        "destinationDescription": "A vast North American country with breathtaking natural beauty, from the Rocky Mountains to the Great Lakes and vibrant multicultural cities.",
+        "capital": "Ottawa",
+        "timezone": "UTC-08:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French"
+        },
+        "currency": {
+            "code": "CAD",
+            "name": "Canadian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Varies from temperate in the south to arctic in the north; cold winters and warm summers.",
+        "transportationModes": [
+            "Train",
+            "Bus",
+            "Plane"
+        ]
+    },
+    {
+        "country": "Niger",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Niamey",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Gibraltar",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Gibraltar",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GIP",
+            "name": "Gibraltar pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Kuwait",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Kuwait City",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "KWD",
+            "name": "Kuwaiti dinar",
+            "symbol": "د.ك"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Venezuela",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Caracas",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "VES",
+            "name": "Venezuelan bolívar soberano",
+            "symbol": "Bs.S."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Gambia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "Banjul",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GMD",
+            "name": "dalasi",
+            "symbol": "D"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Paraguay",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Asunción",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "grn": "Guaraní",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "PYG",
+            "name": "Paraguayan guaraní",
+            "symbol": "₲"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Chile",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Santiago",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "CLP",
+            "name": "Chilean peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "North Macedonia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Skopje",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "mkd": "Macedonian"
+        },
+        "currency": {
+            "code": "MKD",
+            "name": "denar",
+            "symbol": "den"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Macau",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
+        "capital": "N/A",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "por": "Portuguese",
+            "zho": "Chinese"
+        },
+        "currency": {
+            "code": "MOP",
+            "name": "Macanese pataca",
+            "symbol": "P"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Armenia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Yerevan",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "hye": "Armenian"
+        },
+        "currency": {
+            "code": "AMD",
+            "name": "Armenian dram",
+            "symbol": "֏"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Botswana",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Gaborone",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "eng": "English",
+            "tsn": "Tswana"
+        },
+        "currency": {
+            "code": "BWP",
+            "name": "Botswana pula",
+            "symbol": "P"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Nepal",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:45 region.",
+        "capital": "Kathmandu",
+        "timezone": "UTC+05:45",
+        "languages": {
+            "nep": "Nepali"
+        },
+        "currency": {
+            "code": "NPR",
+            "name": "Nepalese rupee",
+            "symbol": "₨"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "São Tomé and Príncipe",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "São Tomé",
+        "timezone": "UTC",
+        "languages": {
+            "por": "Portuguese"
+        },
+        "currency": {
+            "code": "STN",
+            "name": "São Tomé and Príncipe dobra",
+            "symbol": "Db"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Benin",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Porto-Novo",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Solomon Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+11:00 region.",
+        "capital": "Honiara",
+        "timezone": "UTC+11:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "SBD",
+            "name": "Solomon Islands dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guinea",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Conakry",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "GNF",
+            "name": "Guinean franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Mayotte",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Mamoudzou",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Greenland",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Nuuk",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "kal": "Greenlandic"
+        },
+        "currency": {
+            "code": "DKK",
+            "name": "krone",
+            "symbol": "kr."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Monaco",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Monaco",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Pakistan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Islamabad",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "eng": "English",
+            "urd": "Urdu"
+        },
+        "currency": {
+            "code": "PKR",
+            "name": "Pakistani rupee",
+            "symbol": "₨"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Malaysia",
+        "destinationDescription": "A Southeast Asian country known for its beaches, rainforests, and a mix of Malay, Chinese, Indian, and European cultural influences.",
+        "capital": "Kuala Lumpur",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "eng": "English",
+            "msa": "Malay"
+        },
+        "currency": {
+            "code": "MYR",
+            "name": "Malaysian ringgit",
+            "symbol": "RM"
+        },
+        "weatherSummary": "Equatorial climate, hot and humid year-round with monsoon seasons.",
+        "transportationModes": [
+            "Grab (Ride-hail)",
+            "Monorail",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Kosovo",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Pristina",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "sqi": "Albanian",
+            "srp": "Serbian"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Moldova",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Chișinău",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ron": "Romanian"
+        },
+        "currency": {
+            "code": "MDL",
+            "name": "Moldovan leu",
+            "symbol": "L"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tuvalu",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "Funafuti",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "eng": "English",
+            "tvl": "Tuvaluan"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saint Pierre and Miquelon",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-03:00 region.",
+        "capital": "Saint-Pierre",
+        "timezone": "UTC-03:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Senegal",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC region.",
+        "capital": "Dakar",
+        "timezone": "UTC",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "XOF",
+            "name": "West African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Panama",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Panama City",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "PAB",
+            "name": "Panamanian balboa",
+            "symbol": "B/."
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Malta",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Valletta",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "eng": "English",
+            "mlt": "Maltese"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Uganda",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Kampala",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "eng": "English",
+            "swa": "Swahili"
+        },
+        "currency": {
+            "code": "UGX",
+            "name": "Ugandan shilling",
+            "symbol": "Sh"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Albania",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Tirana",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "sqi": "Albanian"
+        },
+        "currency": {
+            "code": "ALL",
+            "name": "Albanian lek",
+            "symbol": "L"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "United Arab Emirates",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+04:00 region.",
+        "capital": "Abu Dhabi",
+        "timezone": "UTC+04:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "AED",
+            "name": "United Arab Emirates dirham",
+            "symbol": "د.إ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Costa Rica",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "San José",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "CRC",
+            "name": "Costa Rican colón",
+            "symbol": "₡"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saint Barthélemy",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Gustavia",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Saint Helena, Ascension and Tristan da Cunha",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "Jamestown",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "Pound sterling",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Israel",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Jerusalem",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ara": "Arabic",
+            "heb": "Hebrew"
+        },
+        "currency": {
+            "code": "ILS",
+            "name": "Israeli new shekel",
+            "symbol": "₪"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Austria",
+        "destinationDescription": "A landlocked Alpine nation known for its imperial history, classical music, and world-renowned ski slopes.",
+        "capital": "Vienna",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "deu": "German"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate continental with cold winters and cool to warm summers.",
+        "transportationModes": [
+            "Train (ÖBB)",
+            "Tram",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Laos",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+07:00 region.",
+        "capital": "Vientiane",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "lao": "Lao"
+        },
+        "currency": {
+            "code": "LAK",
+            "name": "Lao kip",
+            "symbol": "₭"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "France",
+        "destinationDescription": "A global center for art, fashion, and gastronomy, featuring legendary landmarks like the Eiffel Tower and the sun-drenched French Riviera.",
+        "capital": "Paris",
+        "timezone": "UTC-10:00",
+        "languages": {
+            "fra": "French"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Temperate with Mediterranean influences in the south and oceanic in the west.",
+        "transportationModes": [
+            "TGV (Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "Papua New Guinea",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+10:00 region.",
+        "capital": "Port Moresby",
+        "timezone": "UTC+10:00",
+        "languages": {
+            "eng": "English",
+            "hmo": "Hiri Motu",
+            "tpi": "Tok Pisin"
+        },
+        "currency": {
+            "code": "PGK",
+            "name": "Papua New Guinean kina",
+            "symbol": "K"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Dominican Republic",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Santo Domingo",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "DOP",
+            "name": "Dominican peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tonga",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
+        "capital": "Nuku'alofa",
+        "timezone": "UTC+13:00",
+        "languages": {
+            "eng": "English",
+            "ton": "Tongan"
+        },
+        "currency": {
+            "code": "TOP",
+            "name": "Tongan paʻanga",
+            "symbol": "T$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Jamaica",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Kingston",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "eng": "English",
+            "jam": "Jamaican Patois"
+        },
+        "currency": {
+            "code": "JMD",
+            "name": "Jamaican dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bouvet Island",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "N/A",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "nor": "Norwegian"
+        },
+        "currency": {
+            "code": "N/A",
+            "name": "N/A",
+            "symbol": "N/A"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Slovakia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Bratislava",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "slk": "Slovak"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Kiribati",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+12:00 region.",
+        "capital": "South Tarawa",
+        "timezone": "UTC+12:00",
+        "languages": {
+            "eng": "English",
+            "gil": "Gilbertese"
+        },
+        "currency": {
+            "code": "AUD",
+            "name": "Australian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Jordan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Amman",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "JOD",
+            "name": "Jordanian dinar",
+            "symbol": "د.ا"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Maldives",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Malé",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "div": "Maldivian"
+        },
+        "currency": {
+            "code": "MVR",
+            "name": "Maldivian rufiyaa",
+            "symbol": ".ރ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Montenegro",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Podgorica",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "cnr": "Montenegrin"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Japan",
+        "destinationDescription": "An island nation blending ancient traditions with futuristic technology, famous for its temples, mountains, and incredible culinary scene.",
+        "capital": "Tokyo",
+        "timezone": "UTC+09:00",
+        "languages": {
+            "jpn": "Japanese"
+        },
+        "currency": {
+            "code": "JPY",
+            "name": "Japanese yen",
+            "symbol": "¥"
+        },
+        "weatherSummary": "Temperate with four distinct seasons; snowy in the north and subtropical in the south.",
+        "transportationModes": [
+            "Shinkansen (Bullet Train)",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "El Salvador",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "San Salvador",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Colombia",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Bogotá",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "COP",
+            "name": "Colombian peso",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Zimbabwe",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Harare",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "bwg": "Chibarwe",
+            "eng": "English",
+            "kck": "Kalanga",
+            "khi": "Khoisan",
+            "ndc": "Ndau",
+            "nde": "Northern Ndebele",
+            "nya": "Chewa",
+            "sna": "Shona",
+            "sot": "Sotho",
+            "toi": "Tonga",
+            "tsn": "Tswana",
+            "tso": "Tsonga",
+            "ven": "Venda",
+            "xho": "Xhosa",
+            "zib": "Zimbabwean Sign Language"
+        },
+        "currency": {
+            "code": "ZWL",
+            "name": "Zimbabwean dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Equatorial Guinea",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Malabo",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French",
+            "por": "Portuguese",
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "China",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+08:00 region.",
+        "capital": "Beijing",
+        "timezone": "UTC+08:00",
+        "languages": {
+            "zho": "Chinese"
+        },
+        "currency": {
+            "code": "CNY",
+            "name": "Chinese yuan",
+            "symbol": "¥"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Honduras",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Tegucigalpa",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "HNL",
+            "name": "Honduran lempira",
+            "symbol": "L"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Isle of Man",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "Douglas",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "eng": "English",
+            "glv": "Manx"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Republic of the Congo",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Brazzaville",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French",
+            "kon": "Kikongo",
+            "lin": "Lingala"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Myanmar",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+06:30 region.",
+        "capital": "Naypyidaw",
+        "timezone": "UTC+06:30",
+        "languages": {
+            "mya": "Burmese"
+        },
+        "currency": {
+            "code": "MMK",
+            "name": "Burmese kyat",
+            "symbol": "Ks"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Greece",
+        "destinationDescription": "The cradle of Western civilization, featuring thousands of islands, ancient ruins like the Parthenon, and stunning blue-domed buildings.",
+        "capital": "Athens",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ell": "Greek"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Mediterranean with hot, dry summers and mild, rainy winters.",
+        "transportationModes": [
+            "Ferry",
+            "Bus",
+            "Scooter"
+        ]
+    },
+    {
+        "country": "Samoa",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+13:00 region.",
+        "capital": "Apia",
+        "timezone": "UTC+13:00",
+        "languages": {
+            "eng": "English",
+            "smo": "Samoan"
+        },
+        "currency": {
+            "code": "WST",
+            "name": "Samoan tālā",
+            "symbol": "T"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Falkland Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Stanley",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "FKP",
+            "name": "Falkland Islands pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tanzania",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Dodoma",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "eng": "English",
+            "swa": "Swahili"
+        },
+        "currency": {
+            "code": "TZS",
+            "name": "Tanzanian shilling",
+            "symbol": "Sh"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Central African Republic",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Bangui",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "fra": "French",
+            "sag": "Sango"
+        },
+        "currency": {
+            "code": "XAF",
+            "name": "Central African CFA franc",
+            "symbol": "Fr"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Romania",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Bucharest",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ron": "Romanian"
+        },
+        "currency": {
+            "code": "RON",
+            "name": "Romanian leu",
+            "symbol": "lei"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "United States Minor Outlying Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-11:00 region.",
+        "capital": "Washington DC",
+        "timezone": "UTC-11:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Tajikistan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Dushanbe",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "rus": "Russian",
+            "tgk": "Tajik"
+        },
+        "currency": {
+            "code": "TJS",
+            "name": "Tajikistani somoni",
+            "symbol": "ЅМ"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bahamas",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-05:00 region.",
+        "capital": "Nassau",
+        "timezone": "UTC-05:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "BSD",
+            "name": "Bahamian dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Nigeria",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Abuja",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "NGN",
+            "name": "Nigerian naira",
+            "symbol": "₦"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Vatican City",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+01:00 region.",
+        "capital": "Vatican City",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "ita": "Italian",
+            "lat": "Latin"
+        },
+        "currency": {
+            "code": "EUR",
+            "name": "Euro",
+            "symbol": "€"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Bahrain",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+03:00 region.",
+        "capital": "Manama",
+        "timezone": "UTC+03:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "BHD",
+            "name": "Bahraini dinar",
+            "symbol": ".د.ب"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Thailand",
+        "destinationDescription": "A Southeast Asian gem known for its ornate temples, tropical beaches, and vibrant street food culture in cities like Bangkok.",
+        "capital": "Bangkok",
+        "timezone": "UTC+07:00",
+        "languages": {
+            "tha": "Thai"
+        },
+        "currency": {
+            "code": "THB",
+            "name": "Thai baht",
+            "symbol": "฿"
+        },
+        "weatherSummary": "Tropical monsoon climate with hot, rainy, and cool seasons.",
+        "transportationModes": [
+            "Tuk-tuk",
+            "Bus",
+            "BTS (Skytrain)"
+        ]
+    },
+    {
+        "country": "Sweden",
+        "destinationDescription": "A Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains.",
+        "capital": "Stockholm",
+        "timezone": "UTC+01:00",
+        "languages": {
+            "swe": "Swedish"
+        },
+        "currency": {
+            "code": "SEK",
+            "name": "Swedish krona",
+            "symbol": "kr"
+        },
+        "weatherSummary": "Temperate in the south, subarctic in the north; cold winters and mild summers.",
+        "transportationModes": [
+            "Train",
+            "Metro",
+            "Bus"
+        ]
+    },
+    {
+        "country": "British Virgin Islands",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-04:00 region.",
+        "capital": "Road Town",
+        "timezone": "UTC-04:00",
+        "languages": {
+            "eng": "English"
+        },
+        "currency": {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guernsey",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+00:00 region.",
+        "capital": "St. Peter Port",
+        "timezone": "UTC+00:00",
+        "languages": {
+            "eng": "English",
+            "fra": "French",
+            "nfr": "Guernésiais"
+        },
+        "currency": {
+            "code": "GBP",
+            "name": "British pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Guatemala",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC-06:00 region.",
+        "capital": "Guatemala City",
+        "timezone": "UTC-06:00",
+        "languages": {
+            "spa": "Spanish"
+        },
+        "currency": {
+            "code": "GTQ",
+            "name": "Guatemalan quetzal",
+            "symbol": "Q"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Syria",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+02:00 region.",
+        "capital": "Damascus",
+        "timezone": "UTC+02:00",
+        "languages": {
+            "ara": "Arabic"
+        },
+        "currency": {
+            "code": "SYP",
+            "name": "Syrian pound",
+            "symbol": "£"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    },
+    {
+        "country": "Turkmenistan",
+        "destinationDescription": "A beautiful destination known for its unique culture and landscapes in the UTC+05:00 region.",
+        "capital": "Ashgabat",
+        "timezone": "UTC+05:00",
+        "languages": {
+            "rus": "Russian",
+            "tuk": "Turkmen"
+        },
+        "currency": {
+            "code": "TMT",
+            "name": "Turkmenistan manat",
+            "symbol": "m"
+        },
+        "weatherSummary": "Climate varies by region and season.",
+        "transportationModes": [
+            "Taxi",
+            "Bus",
+            "Car Rental"
+        ]
+    }
+]
