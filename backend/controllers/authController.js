@@ -27,7 +27,7 @@ export const googleLogin = async (req, res) => {
                 name: user.name || payload.name,
                 picture: user.picture || payload.picture
             },
-            token
+            token 
         });
     } catch (error) {
         console.error('Auth Error:', error.message);
