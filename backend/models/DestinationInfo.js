@@ -8,10 +8,6 @@ const DestinationInfoSchema = new mongoose.Schema(
       required: true,
       index: true
     },
-    city: {
-      type: String,
-      default: null
-    },
 
     // Descriptions
     destinationDescription: {
