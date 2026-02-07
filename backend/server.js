@@ -6,6 +6,7 @@ import connectDB from './config/db.js';
 import travelPlanRoutes from './routes/travelPlanRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import destinationInfoRoutes from './routes/destinationInfoRoutes.js';
+import helmet from 'helmet';
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(cookieParser());
+app.use(helmet());
 
 const PORT = process.env.PORT || 5000;
 
