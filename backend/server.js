@@ -6,6 +6,7 @@ import connectDB from './config/db.js';
 import travelPlanRoutes from './routes/travelPlanRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import destinationInfoRoutes from './routes/destinationInfoRoutes.js';
+import pexelsRoutes from './routes/pexelsRoutes.js'
 import helmet from 'helmet';
 
 dotenv.config();
@@ -26,6 +27,7 @@ const PORT = process.env.PORT || 5000;
 app.use('/api/auth', authRoutes);
 app.use('/api/plans', travelPlanRoutes);
 app.use('/api/destinations', destinationInfoRoutes);
+app.use('/api/generate-pexels', pexelsRoutes)
 
 const startServer = async () => {
     try {
