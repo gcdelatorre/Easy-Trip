@@ -11,12 +11,13 @@ export const getBackgroundPhoto = async (req, res) => {
         
         const finalQuery = `${query} scenery landmark tourist spot`
         
-        const imageUrl = await searchPhoto(finalQuery)
+        const {imageUrl, photographer} = await searchPhoto(finalQuery)
+
         if (!imageUrl) {
             return res.status(404).json({ message: "Photo not found" });
         }
 
-        res.status(200).json({ message: "Image successfully fetched", imageUrl });
+        res.status(200).json({ message: "Image successfully fetched", imageUrl, photographer });
 
     } catch (err) {
         console.error("Error fetching photo:", err.message);
