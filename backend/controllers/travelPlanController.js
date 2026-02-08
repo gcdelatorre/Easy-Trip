@@ -1,9 +1,15 @@
 import * as travelPlanService from '../services/travelPlanService.js';
+import DestinationInfo from '../models/DestinationInfo.js';
 
 export const generatePlan = async (req, res) => {
     try {
         const { destination, tripLength, interests } = req.body;
         const userId = req.user._id;
+
+        const countryInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${destination}$`, 'i') } });
+        if (!countryInfo) {
+            return res.status(404).json({ message: "Invalid country: Not found in our database" });
+        }
 
         const plan = await travelPlanService.generatePlanService(userId, destination, tripLength, interests);
         res.status(200).json(plan);
@@ -35,7 +41,7 @@ export const getPlanById = async (req, res) => {
             return res.status(404).json({ message: "Plan not found" });
         }
         res.status(200).json(plan);
-    } catch (err) { 
+    } catch (err) {
         console.error("Error fetching plan:", err.message);
         res.status(500).json({ message: "Failed to fetch plan" });
     }
