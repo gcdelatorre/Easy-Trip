@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 
 const DestinationInfoSchema = new mongoose.Schema(
     {
-        // Identification
         country: {
             type: String,
             required: true,
@@ -10,13 +9,11 @@ const DestinationInfoSchema = new mongoose.Schema(
             unique: true
         },
 
-        // Descriptions
         destinationDescription: {
             type: String,
             required: true
         },
 
-        // Geography & basics
         capital: {
             type: String
         },
@@ -24,7 +21,6 @@ const DestinationInfoSchema = new mongoose.Schema(
             type: String
         },
 
-        // Language (MVP: single primary language only)
         primaryLanguage: {
             type: String,
             required: true
@@ -35,22 +31,29 @@ const DestinationInfoSchema = new mongoose.Schema(
             required: true
         },
 
-        // Currency info
         currency: {
             code: { type: String },       // e.g. "JPY"
             name: { type: String },       // e.g. "Japanese Yen"
             symbol: { type: String }      // e.g. "¥"
         },
 
-        // Weather (summary, not live forecast)
         weatherSummary: {
             type: String
         },
 
-        // Transportation (high-level only)
         transportationModes: {
             type: [String],               // ["Train", "Bus", "Taxi"]
             default: []
+        },
+
+        imageUrl: {
+            type: String,
+            required: true
+        },
+
+        photographer: {
+            type: String,
+            required: true
         },
 
         lastUpdated: {
