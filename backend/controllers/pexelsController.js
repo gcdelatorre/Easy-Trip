@@ -14,7 +14,7 @@ export const getBackgroundPhoto = async (req, res) => {
         // validation if its in their plan
         const hasCountryInPlan = await TravelPlan.findOne({
             userId: userId,
-            destination: { $regex: new RegExp(`^${query}$`, 'i') }
+            destination: { $regex: new RegExp(query, 'i') }
         });
 
         if (!hasCountryInPlan) {
