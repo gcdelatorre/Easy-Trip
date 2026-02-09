@@ -5,7 +5,10 @@ const client = createClient(process.env.PEXELS_API_KEY);
 
 export const searchPhoto = async (country, query) => {
     try {
-        const countryInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } });
+        // Normalize: "Paris, France" -> "France"
+        const normalizedCountry = country.includes(',') ? country.split(',').pop().trim() : country.trim();
+
+        const countryInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${normalizedCountry}$`, 'i') } });
 
         if (!countryInfo) {
             return { notFound: true };

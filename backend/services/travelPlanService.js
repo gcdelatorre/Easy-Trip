@@ -1,15 +1,26 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import TravelPlan from '../models/TravelPlan.js';
+import DestinationInfo from '../models/DestinationInfo.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-export const generatePlanService = async (userId, destination, tripLength, interests) => {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+/**
+ * Helper to normalize destination strings and fetch image
+ */
+const getDestinationImage = async (destinationName) => {
+  // Normalize: "Paris, France" -> "France" because in the frontend the selection format would be city, country
+  const country = destinationName.includes(',') ? destinationName.split(',').pop().trim() : destinationName.trim();
+  const info = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } });
+  return info?.imageUrl || null;
+};
 
-    const prompt = `You are an expert travel planner. 
+export const generatePlanService = async (userId, destination, tripLength, interests) => {
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+
+  const prompt = `You are an expert travel planner. 
 Create a complete travel itinerary for a user based on the following inputs:
 
 - Destination: ${destination}
@@ -51,37 +62,49 @@ Notes:
 - Ensure JSON is properly formatted for direct parsing.
 - Avoid extra text outside the JSON.`;
 
-    const result = await model.generateContent(prompt);
-    let text = result.response.text();
+  const result = await model.generateContent(prompt);
+  let text = result.response.text();
 
-    if (text.includes('```json')) {
-        text = text.split('```json')[1].split('```')[0].trim();
-    } else if (text.includes('```')) {
-        text = text.split('```')[1].split('```')[0].trim();
-    }
+  if (text.includes('```json')) {
+    text = text.split('```json')[1].split('```')[0].trim();
+  } else if (text.includes('```')) {
+    text = text.split('```')[1].split('```')[0].trim();
+  }
 
-    const planData = JSON.parse(text);
-    const newPlan = await createPlanService(userId, planData, text);
-    return newPlan;
+  const planData = JSON.parse(text);
+  const newPlan = await createPlanService(userId, planData, text);
+  return newPlan;
 };
 
 export const getAllPlansService = async (userId) => {
-    return await TravelPlan.find({ userId });
+  const plans = await TravelPlan.find({ userId }).lean();
+
+  // Enrich each plan with its corresponding destination image
+  const enrichedPlans = await Promise.all(plans.map(async (plan) => {
+    const imageUrl = await getDestinationImage(plan.destination);
+    return { ...plan, imageUrl };
+  }));
+
+  return enrichedPlans;
 };
 
 export const getPlanByIdService = async (userId, id) => {
-    return await TravelPlan.findOne({ _id: id, userId });
+  const plan = await TravelPlan.findOne({ _id: id, userId }).lean();
+  if (!plan) return null;
+
+  const imageUrl = await getDestinationImage(plan.destination);
+  return { ...plan, imageUrl };
 };
 
 export const deletePlanService = async (userId, id) => {
-    return await TravelPlan.findOneAndDelete({ _id: id, userId });
+  return await TravelPlan.findOneAndDelete({ _id: id, userId });
 };
 
 export const createPlanService = async (userId, plan, rawAIOutput) => {
-    const newPlan = new TravelPlan({
-        userId,
-        ...plan,
-        rawAIOutput
-    });
-    return await newPlan.save();
+  const newPlan = new TravelPlan({
+    userId,
+    ...plan,
+    rawAIOutput
+  });
+  return await newPlan.save();
 };
