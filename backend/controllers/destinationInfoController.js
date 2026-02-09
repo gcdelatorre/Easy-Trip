@@ -14,7 +14,7 @@ export const getDestinationInfoByCountry = async (req, res) => {
             return res.status(404).json({ message: "Destination not found" });
         }
 
-        return res.status(200).json(destinationInfo);
+        return res.status(200).json({ message: "Destination info fetched successfully", destinationInfo });
     } catch (err) {
         console.error("Error fetching destination info:", err.message);
         res.status(500).json({ message: "Failed to fetch destination info" });

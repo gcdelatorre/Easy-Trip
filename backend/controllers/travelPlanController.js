@@ -12,7 +12,7 @@ export const generatePlan = async (req, res) => {
         }
 
         const plan = await travelPlanService.generatePlanService(userId, destination, tripLength, interests);
-        res.status(200).json(plan);
+        res.status(200).json({ message: "Plan generated successfully", plan });
     } catch (err) {
         console.error("Error generating plan:", err.message);
         res.status(500).json({ message: "Failed to generate plan", error: err.message });
@@ -26,7 +26,7 @@ export const getAllPlans = async (req, res) => {
         const userId = req.user._id;
 
         const plans = await travelPlanService.getAllPlansService(userId);
-        res.status(200).json(plans);
+        res.status(200).json({ message: "Plans fetched successfully", plans });
     } catch (err) {
         console.error("Error fetching plans:", err.message);
         res.status(500).json({ message: "Failed to fetch plans" });
@@ -40,7 +40,7 @@ export const getPlanById = async (req, res) => {
         if (!plan) {
             return res.status(404).json({ message: "Plan not found" });
         }
-        res.status(200).json(plan);
+        res.status(200).json({ message: "Plan fetched successfully", plan });
     } catch (err) {
         console.error("Error fetching plan:", err.message);
         res.status(500).json({ message: "Failed to fetch plan" });
