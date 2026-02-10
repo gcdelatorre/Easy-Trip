@@ -17,7 +17,7 @@ const getDestinationImage = async (destinationName) => {
   return info?.imageUrl || null;
 };
 
-export const generatePlanService = async (userId, destination, tripLength, interests) => {
+export const generatePlanService = async (userId, destination, tripLength, interests, groupSize, startDate, endDate) => {
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   const prompt = `You are an expert travel planner. 
@@ -26,6 +26,9 @@ Create a complete travel itinerary for a user based on the following inputs:
 - Destination: ${destination}
 - Trip length: ${tripLength} days
 - Interests: ${interests.join(', ')}
+- Group size: ${groupSize}
+- Start date: ${startDate}
+- End date: ${endDate}
 
 Requirements:
 
@@ -43,6 +46,9 @@ Requirements:
   "destinationDescription": "...",
   "tripLength": ...,
   "interests": [...],
+  "groupSize": ...,
+  "startDate": "...",
+  "endDate": "...",
   "planDays": [
     {
       "day": 1,

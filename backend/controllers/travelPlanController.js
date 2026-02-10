@@ -3,7 +3,7 @@ import DestinationInfo from '../models/DestinationInfo.js';
 
 export const generatePlan = async (req, res) => {
     try {
-        const { destination, tripLength, interests } = req.body;
+        const { destination, tripLength, interests, groupSize, startDate, endDate } = req.body;
         const userId = req.user._id;
 
         const country = destination.includes(',') ? destination.split(',').pop().trim() : destination.trim();
@@ -13,7 +13,7 @@ export const generatePlan = async (req, res) => {
             return res.status(404).json({ message: "Invalid country: Not found in our database" });
         }
 
-        const plan = await travelPlanService.generatePlanService(userId, destination, tripLength, interests);
+        const plan = await travelPlanService.generatePlanService(userId, destination, tripLength, interests, groupSize, startDate, endDate);
         res.status(200).json({ message: "Plan generated successfully", plan });
     } catch (err) {
         console.error("Error generating plan:", err.message);
