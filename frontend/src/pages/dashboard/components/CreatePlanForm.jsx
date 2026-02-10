@@ -8,6 +8,7 @@ import {
     Minus,
     Plus,
 } from "lucide-react";
+import { interests } from "../../../constants/interests";
 
 const destinations = [
     "Tokyo, Japan",
@@ -22,22 +23,7 @@ const destinations = [
     "Patagonia, Argentina",
     "Reykjavik, Iceland",
     "Cape Town, South Africa",
-];
-
-const interests = [
-    "Food & Dining",
-    "History & Culture",
-    "Nature & Hiking",
-    "Beaches & Water",
-    "Nightlife",
-    "Shopping",
-    "Photography",
-    "Architecture",
-    "Adventure Sports",
-    "Art & Museums",
-    "Wellness & Spa",
-    "Local Markets",
-];
+]; // hardcoded for now, will be replaced with API 
 
 export function CreatePlanForm() {
     const [destination, setDestination] = useState("");
@@ -233,8 +219,8 @@ export function CreatePlanForm() {
                                         type="button"
                                         onClick={() => toggleInterest(interest)}
                                         className={`rounded-full border px-3.5 py-2 text-sm transition-colors ${active
-                                                ? "border-accent bg-accent text-accent-foreground"
-                                                : "border-border bg-background text-muted-foreground hover:border-accent/40 hover:text-foreground"
+                                            ? "border-accent bg-accent text-accent-foreground"
+                                            : "border-border bg-background text-muted-foreground hover:border-accent/40 hover:text-foreground"
                                             }`}
                                     >
                                         {interest}

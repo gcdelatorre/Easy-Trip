@@ -1,0 +1,14 @@
+export const interests = [
+    "Food & Dining",
+    "History & Culture",
+    "Nature & Hiking",
+    "Beaches & Water",
+    "Nightlife",
+    "Shopping",
+    "Photography",
+    "Architecture",
+    "Adventure Sports",
+    "Art & Museums",
+    "Wellness & Spa",
+    "Local Markets",
+];

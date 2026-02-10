@@ -40,6 +40,12 @@ const travelPlanSchema = new mongoose.Schema({
         required: true
     },
     interests: [String],
+    groupSize: {
+        type: Number,
+        required: true
+    },
+    startDate: Date,
+    endDate: Date,
     planDays: [planDaySchema],
     rawAIOutput: String
 }, {

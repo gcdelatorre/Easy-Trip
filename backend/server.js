@@ -1,15 +1,15 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import travelPlanRoutes from './routes/travelPlanRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import destinationInfoRoutes from './routes/destinationInfoRoutes.js';
 import pexelsRoutes from './routes/pexelsRoutes.js'
 import helmet from 'helmet';
-
-dotenv.config();
 
 const app = express();
 
@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 // Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/plans', travelPlanRoutes);
+app.use('/api/travel-plans', travelPlanRoutes);
 app.use('/api/destinations', destinationInfoRoutes);
 app.use('/api/generate-pexels', pexelsRoutes)
 

@@ -1,41 +1,26 @@
 import { Link } from "react-router-dom";
 import { Plus } from "lucide-react";
 import { TripCard } from "./components/TripCard";
-
-const trips = [
-    {
-        id: 1,
-        city: "Tokyo",
-        country: "Japan",
-        description: "Temples, street food, and city lights across 7 unforgettable days.",
-        dates: "Mar 12 - Mar 19, 2026",
-        groupSize: "2 travelers",
-        image: "https://images.pexels.com/photos/14695270/pexels-photo-14695270.jpeg",
-        status: "Upcoming",
-    },
-    {
-        id: 2,
-        city: "Bali",
-        country: "Indonesia",
-        description: "Rice terraces, surf spots, and hidden waterfalls over 10 days.",
-        dates: "Jan 5 - Jan 15, 2026",
-        groupSize: "4 travelers",
-        image: "https://images.pexels.com/photos/33342092/pexels-photo-33342092.jpeg",
-        status: "Completed",
-    },
-    {
-        id: 3,
-        city: "Paris",
-        country: "France",
-        description: "Museums, patisseries, and evening walks along the Seine for 5 days.",
-        dates: "Apr 1 - Apr 6, 2026",
-        groupSize: "Solo",
-        image: "https://images.pexels.com/photos/15985572/pexels-photo-15985572.jpeg",
-        status: "Draft",
-    },
-];
+import { useState, useEffect } from "react";
+import { fetchTravelPlans } from "../../services/travelPlanService";
 
 export default function DashboardPage() {
+
+    const [travelPlans, setTravelPlans] = useState([]);
+
+    useEffect(() => {
+        const fetchTravelPlansData = async () => {
+            try {
+                const response = await fetchTravelPlans();
+                // The service returns response.data, which is { message, plans }
+                setTravelPlans(response.plans || []);
+            } catch (err) {
+                console.error("Error fetching travel plans:", err);
+            }
+        };
+        fetchTravelPlansData();
+    }, []);
+
     return (
         <div>
             <div className="flex items-center justify-between">
@@ -56,11 +41,29 @@ export default function DashboardPage() {
                 </Link>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {trips.map((trip) => (
-                    <TripCard key={trip.id} trip={trip} />
-                ))}
-            </div>
+            {travelPlans.length > 0 ? (
+                <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {travelPlans.map((travelPlan) => (
+                        <TripCard key={travelPlan._id} trip={travelPlan} />
+                    ))}
+                </div>
+            ) : (
+                <div className="mt-20 flex flex-col items-center justify-center text-center">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-secondary">
+                        <Plus size={32} className="text-muted-foreground" />
+                    </div>
+                    <h2 className="mt-6 text-xl font-semibold text-foreground">No trips found</h2>
+                    <p className="mt-2 max-w-sm text-muted-foreground">
+                        You haven't created any travel plans yet. Ready to start your next adventure?
+                    </p>
+                    <Link
+                        to="/dashboard/create"
+                        className="mt-8 rounded-full bg-accent px-8 py-3 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90"
+                    >
+                        Create Your First Plan
+                    </Link>
+                </div>
+            )}
 
             {/* Mobile FAB */}
             <Link
