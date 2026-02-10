@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { User, LogOut, ChevronDown, Menu, X } from "lucide-react";
+import { useAuth } from "../../../contexts/AuthContext";
 
 export function DashboardNavbar() {
     const location = useLocation();
     const pathname = location.pathname;
     const [mobileOpen, setMobileOpen] = useState(false);
     const [profileOpen, setProfileOpen] = useState(false);
+    const { user, logout } = useAuth();
 
     const isActive = (path) => pathname === path;
 
@@ -22,7 +24,7 @@ export function DashboardNavbar() {
                         />
                     </Link>
 
-                    <div className="hidden items-center gap-1 md:flex">
+                    <div className="hidden items-center gap-5 md:flex">
                         <Link
                             to="/dashboard"
                             className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${isActive("/dashboard")
@@ -48,10 +50,14 @@ export function DashboardNavbar() {
                             onClick={() => setProfileOpen(!profileOpen)}
                             className="flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary"
                         >
-                            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-accent-foreground">
-                                <User size={14} />
+                            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-accent-foreground overflow-hidden">
+                                {user?.picture ? (
+                                    <img src={user.picture} alt={user.name} className="h-full w-full object-cover" />
+                                ) : (
+                                    <User size={14} />
+                                )}
                             </div>
-                            <span className="max-w-[120px] truncate font-medium">John D.</span>
+                            <span className="max-w-[120px] truncate font-medium">{user?.name || "User"}</span>
                             <ChevronDown size={14} className="text-muted-foreground" />
                         </button>
 
@@ -62,23 +68,20 @@ export function DashboardNavbar() {
                                     onClick={() => setProfileOpen(false)}
                                 />
                                 <div className="absolute right-0 top-full z-50 mt-2 w-48 rounded-xl border border-border bg-card p-1.5 shadow-lg">
-                                    <Link
-                                        to="/dashboard"
-                                        className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary"
-                                        onClick={() => setProfileOpen(false)}
-                                    >
-                                        <User size={15} />
-                                        My Account
-                                    </Link>
+                                    <div className="px-3 py-2 text-xs text-muted-foreground ">
+                                        Signed in as <br /> <span className="font-medium text-foreground">{user?.email}</span>
+                                    </div>
                                     <div className="my-1 h-px bg-border" />
-                                    <Link
-                                        to="/"
-                                        className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-                                        onClick={() => setProfileOpen(false)}
+                                    <button
+                                        onClick={() => {
+                                            logout();
+                                            setProfileOpen(false);
+                                        }}
+                                        className="w-full text-left flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-red-500 transition-colors hover:bg-red-50"
                                     >
                                         <LogOut size={15} />
                                         Sign Out
-                                    </Link>
+                                    </button>
                                 </div>
                             </>
                         )}
@@ -117,19 +120,22 @@ export function DashboardNavbar() {
                         </Link>
                         <div className="mt-2 h-px bg-border" />
                         <div className="flex items-center gap-3 px-4 py-2.5">
-                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-accent-foreground">
-                                <User size={15} />
+                            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-accent-foreground overflow-hidden">
+                                {user?.picture ? (
+                                    <img src={user.picture} alt={user.name} className="h-full w-full object-cover" />
+                                ) : (
+                                    <User size={15} />
+                                )}
                             </div>
-                            <span className="text-sm font-medium text-foreground">John D.</span>
+                            <span className="text-sm font-medium text-foreground">{user?.name || "User"}</span>
                         </div>
-                        <Link
-                            to="/"
-                            className="flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                            onClick={() => setMobileOpen(false)}
+                        <button
+                            onClick={logout}
+                            className="flex w-full items-center gap-2 rounded-lg px-4 py-2.5 text-sm text-red-500 transition-colors hover:bg-red-50"
                         >
                             <LogOut size={15} />
                             Sign Out
-                        </Link>
+                        </button>
                     </div>
                 </div>
             )}

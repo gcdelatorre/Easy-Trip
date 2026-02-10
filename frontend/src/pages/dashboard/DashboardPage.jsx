@@ -32,13 +32,6 @@ export default function DashboardPage() {
                         Your planned adventures, all in one place.
                     </p>
                 </div>
-                <Link
-                    to="/dashboard/create"
-                    className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90 md:flex"
-                >
-                    <Plus size={16} />
-                    New Trip
-                </Link>
             </div>
 
             {travelPlans.length > 0 ? (
