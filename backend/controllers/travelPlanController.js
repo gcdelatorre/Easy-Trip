@@ -6,7 +6,9 @@ export const generatePlan = async (req, res) => {
         const { destination, tripLength, interests } = req.body;
         const userId = req.user._id;
 
-        const countryInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${destination}$`, 'i') } });
+        const country = destination.includes(',') ? destination.split(',').pop().trim() : destination.trim();
+
+        const countryInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } });
         if (!countryInfo) {
             return res.status(404).json({ message: "Invalid country: Not found in our database" });
         }
