@@ -14,14 +14,12 @@ export function TripCard({ trip }) {
 
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                     <div className="flex items-center gap-2">
-                        <MapPin size={14} className="text-white/90" />
-                        <span className="text-xs font-medium uppercase tracking-wider text-white/90">
-                            Adventure
-                        </span>
+                        <MapPin size={18} className="text-white/90" />
+                        <h3 className="mt-1 font-serif text-2xl text-white">
+                            {trip.destination}
+                        </h3>
                     </div>
-                    <h3 className="mt-1 font-serif text-2xl text-white">
-                        {trip.destination}
-                    </h3>
+
                     <p className="mt-1.5 text-sm leading-relaxed text-white/80 line-clamp-2">
                         {trip.destinationDescription}
                     </p>
