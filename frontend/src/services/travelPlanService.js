@@ -2,7 +2,7 @@ import api from "./api";
 
 export const createTravelPlan = async (travelPlanData) => {
     try {
-        const response = await api.post("/travel-plans", travelPlanData);
+        const response = await api.post("/travel-plans/generate", travelPlanData);
         return response.data;
     } catch (err) {
         console.error("Error creating travel plan:", err);
