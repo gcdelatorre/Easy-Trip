@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     MapPin,
     Calendar as CalendarIcon,
@@ -9,6 +10,8 @@ import {
     Plus,
 } from "lucide-react";
 import { interests } from "../../../constants/interests";
+import { createTravelPlan } from "../../../services/travelPlanService";
+import { generateImageUrl } from "../../../services/pexelsService";
 
 const destinations = [
     "Tokyo, Japan",
@@ -26,27 +29,49 @@ const destinations = [
 ]; // hardcoded for now, will be replaced with API 
 
 export function CreatePlanForm() {
-    const [destination, setDestination] = useState("");
-    const [tripLength, setTripLength] = useState(3);
-    const [groupSize, setGroupSize] = useState("");
-    const [selectedInterests, setSelectedInterests] = useState([]);
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
-    const [dateFrom, setDateFrom] = useState("");
-    const [dateTo, setDateTo] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
+    const [formData, setFormData] = useState({
+        destination: "",
+        tripLength: 3,
+        groupSize: "",
+        interests: [],
+        startDate: "",
+        endDate: "",
+    });
+
+    const navigate = useNavigate();
 
     const filteredDestinations = destinations.filter((d) =>
         d.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     const toggleInterest = (interest) => {
-        setSelectedInterests((prev) =>
-            prev.includes(interest)
-                ? prev.filter((i) => i !== interest)
-                : prev.length < 5
-                    ? [...prev, interest]
-                    : prev
-        );
+        setFormData({
+            ...formData, interests: formData.interests.includes(interest)
+                ? formData.interests.filter((i) => i !== interest)
+                : formData.interests.length < 5
+                    ? [...formData.interests, interest]
+                    : formData.interests
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        try {
+            const country = formData.destination.includes(',') ? formData.destination.split(',').pop().trim() : formData.destination.trim();
+            await createTravelPlan(formData);
+            await generateImageUrl(country);
+            navigate("/dashboard"); // will navigate to its own page when we have the page for each trip
+        } catch (error) {
+            console.error("Error creating travel plan:", error);
+            alert("Error creating travel plan. Please try again.");
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -72,10 +97,10 @@ export function CreatePlanForm() {
                             <input
                                 type="text"
                                 placeholder="Search a city or country"
-                                value={destination || searchQuery}
+                                value={formData.destination || searchQuery}
                                 onChange={(e) => {
                                     setSearchQuery(e.target.value);
-                                    setDestination("");
+                                    setFormData({ ...formData, destination: e.target.value });
                                     setSearchOpen(true);
                                 }}
                                 onFocus={() => setSearchOpen(true)}
@@ -95,7 +120,7 @@ export function CreatePlanForm() {
                                                     type="button"
                                                     className="flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm text-foreground transition-colors hover:bg-secondary"
                                                     onClick={() => {
-                                                        setDestination(d);
+                                                        setFormData({ ...formData, destination: d });
                                                         setSearchQuery("");
                                                         setSearchOpen(false);
                                                     }}
@@ -126,27 +151,27 @@ export function CreatePlanForm() {
                                 <button
                                     type="button"
                                     onClick={() =>
-                                        setTripLength((prev) => Math.max(1, prev - 1))
+                                        setFormData({ ...formData, tripLength: Math.max(1, formData.tripLength - 1) })
                                     }
-                                    disabled={tripLength <= 1}
+                                    disabled={formData.tripLength <= 1}
                                     className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-secondary disabled:opacity-30 disabled:cursor-not-allowed"
                                 >
                                     <Minus size={16} />
                                 </button>
                                 <div className="flex-1 text-center">
                                     <span className="text-lg font-semibold text-foreground">
-                                        {tripLength}
+                                        {formData.tripLength}
                                     </span>
                                     <span className="ml-1 text-sm text-muted-foreground">
-                                        {tripLength === 1 ? "day" : "days"}
+                                        {formData.tripLength === 1 ? "day" : "days"}
                                     </span>
                                 </div>
                                 <button
                                     type="button"
                                     onClick={() =>
-                                        setTripLength((prev) => Math.min(14, prev + 1))
+                                        setFormData({ ...formData, tripLength: Math.min(14, formData.tripLength + 1) })
                                     }
-                                    disabled={tripLength >= 14}
+                                    disabled={formData.tripLength >= 14}
                                     className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-secondary disabled:opacity-30 disabled:cursor-not-allowed"
                                 >
                                     <Plus size={16} />
@@ -160,8 +185,8 @@ export function CreatePlanForm() {
                                 Group Size
                             </label>
                             <select
-                                value={groupSize}
-                                onChange={(e) => setGroupSize(e.target.value)}
+                                value={formData.groupSize}
+                                onChange={(e) => setFormData({ ...formData, groupSize: e.target.value })}
                                 className="w-full appearance-none rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                             >
                                 <option value="" disabled>
@@ -184,9 +209,9 @@ export function CreatePlanForm() {
                             </label>
                             <input
                                 type="date"
-                                value={dateFrom}
+                                value={formData.startDate}
                                 min={new Date().toISOString().split("T")[0]}
-                                onChange={(e) => setDateFrom(e.target.value)}
+                                onChange={(e) => setFormData({ ...formData, startDate: e.target.value })}
                                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                             />
                         </div>
@@ -196,9 +221,9 @@ export function CreatePlanForm() {
                             </label>
                             <input
                                 type="date"
-                                value={dateTo}
-                                min={dateFrom || new Date().toISOString().split("T")[0]}
-                                onChange={(e) => setDateTo(e.target.value)}
+                                value={formData.endDate}
+                                min={formData.startDate || new Date().toISOString().split("T")[0]}
+                                onChange={(e) => setFormData({ ...formData, endDate: e.target.value })}
                                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                             />
                         </div>
@@ -212,7 +237,7 @@ export function CreatePlanForm() {
                         </label>
                         <div className="flex flex-wrap gap-2">
                             {interests.map((interest) => {
-                                const active = selectedInterests.includes(interest);
+                                const active = formData.interests.includes(interest);
                                 return (
                                     <button
                                         key={interest}
@@ -233,11 +258,13 @@ export function CreatePlanForm() {
                     {/* Submit */}
                     <div className="mt-2">
                         <button
-                            type="button"
-                            className="flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm"
+                            type="submit"
+                            className={isLoading || formData.destination === "" ? "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm opacity-50 cursor-not-allowed" : "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm"}
+                            onClick={handleSubmit}
+                            disabled={isLoading}
                         >
                             <Sparkles size={18} />
-                            Generate My Itinerary
+                            {isLoading ? "Generating..." : "Generate My Itinerary"}
                         </button>
                         <p className="mt-3 text-center text-xs text-muted-foreground">
                             Free forever. Your itinerary will be ready in seconds.

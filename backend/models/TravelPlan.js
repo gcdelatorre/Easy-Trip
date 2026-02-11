@@ -41,7 +41,7 @@ const travelPlanSchema = new mongoose.Schema({
     },
     interests: [String],
     groupSize: {
-        type: Number,
+        type: String,
         required: true
     },
     startDate: Date,
