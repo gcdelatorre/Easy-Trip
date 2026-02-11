@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from "react";
+import { createContext, useState, useEffect, useContext, useMemo } from "react";
 import authService from "../services/authService";
 
 const AuthContext = createContext();
@@ -13,11 +13,23 @@ export const AuthProvider = ({ children }) => {
         setLoading(false);
     }, []);
 
-    const login = async (idToken) => {
+    const loginWithGoogle = async (idToken) => {
         const data = await authService.loginWithGoogle(idToken);
         setUser(data.user);
         return data;
     };
+
+    const register = async (payload) => {
+        const data = await authService.register(payload);
+        setUser(data.user);
+        return data;
+    };
+
+    const loginWithEmail = async (payload) => {
+        const data = await authService.loginWithEmail(payload);
+        setUser(data.user);
+        return data;
+    }
 
     const logout = async () => {
         await authService.logout();
@@ -25,11 +37,16 @@ export const AuthProvider = ({ children }) => {
         window.location.href = "/";
     };
 
-    return (
-        <AuthContext.Provider value={{ user, login, logout, loading }}>
-            {!loading && children}
-        </AuthContext.Provider>
-    );
+    const value = useMemo(() => ({
+        user,
+        loginWithGoogle,
+        register,
+        loginWithEmail,
+        logout,
+        loading,
+    }), [user, loginWithGoogle, register, loginWithEmail, logout, loading]);
+
+    return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>;
 };
 
 export const useAuth = () => useContext(AuthContext);
