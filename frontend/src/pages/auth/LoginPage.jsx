@@ -6,7 +6,7 @@ import { Mail, Lock, User, ArrowRight } from "lucide-react";
 
 export default function LoginPage() {
     const navigate = useNavigate();
-    const { login } = useAuth();
+    const { loginWithGoogle, register, loginWithEmail } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -25,7 +25,7 @@ export default function LoginPage() {
     const handleGoogleSuccess = async (credentialResponse) => {
         try {
             const { credential } = credentialResponse;
-            await login(credential);
+            await loginWithGoogle(credential);
             navigate("/dashboard");
         } catch (error) {
             console.error("Login failed:", error);
@@ -44,23 +44,14 @@ export default function LoginPage() {
 
         try {
             if (isLogin) {
-                // TODO: Call authService.login(formData.email, formData.password)
-                console.log("Logging in with:", formData.email);
-                // await loginWithEmail(formData.email, formData.password);
+                await loginWithEmail({ email: formData.email, password: formData.password });
             } else {
-                // TODO: Call authService.register(formData.name, formData.email, formData.password)
-                console.log("Registering:", formData);
-                if (formData.password !== formData.confirmPassword) {
-                    alert("Passwords do not match");
-                    setIsLoading(false);
-                    return;
-                }
-                // await register(formData.name, formData.email, formData.password);
+                await register({ name: formData.name, email: formData.email, password: formData.password, confirmPassword: formData.confirmPassword });
             }
-            // navigate("/dashboard");
+            navigate("/dashboard");
         } catch (error) {
             console.error("Auth error:", error);
-            alert(error.message || "Authentication failed");
+            alert(error.response?.data?.message || "Authentication failed");
         } finally {
             setIsLoading(false);
         }
