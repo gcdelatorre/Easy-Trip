@@ -3,6 +3,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { Mail, Lock, User, ArrowRight } from "lucide-react";
+import { useToast } from "../../contexts/ToastContext";
 
 export default function LoginPage() {
     const navigate = useNavigate();
@@ -18,6 +19,8 @@ export default function LoginPage() {
         confirmPassword: ""
     });
 
+    const { success, error, info, warning } = useToast();
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -27,15 +30,14 @@ export default function LoginPage() {
             const { credential } = credentialResponse;
             await loginWithGoogle(credential);
             navigate("/dashboard");
-        } catch (error) {
-            console.error("Login failed:", error);
-            alert("Login failed. Please try again.");
+            success("Login successful");
+        } catch (err) {
+            error(`${err.response?.data?.message || "Login failed, please try again."}`);
         }
     };
 
     const handleGoogleError = () => {
-        console.error("Google Login Error");
-        alert("Google Login Error. Please try again.");
+        error("Google Login Error. Please try again.");
     };
 
     const handleSubmit = async (e) => {
@@ -49,9 +51,9 @@ export default function LoginPage() {
                 await register({ name: formData.name, email: formData.email, password: formData.password, confirmPassword: formData.confirmPassword });
             }
             navigate("/dashboard");
-        } catch (error) {
-            console.error("Auth error:", error);
-            alert(error.response?.data?.message || "Authentication failed");
+            success("Login successful");
+        } catch (err) {
+            error(`${err.response?.data?.message || "Login failed, please try again."}`);
         } finally {
             setIsLoading(false);
         }
@@ -115,7 +117,6 @@ export default function LoginPage() {
                             shape="pill"
                             size="large"
                             text={"continue_with"}
-                            width="100%"
                         />
                     </div>
 

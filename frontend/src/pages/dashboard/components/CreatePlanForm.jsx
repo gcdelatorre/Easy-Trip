@@ -12,6 +12,7 @@ import {
 import { interests } from "../../../constants/interests";
 import { createTravelPlan } from "../../../services/travelPlanService";
 import { generateImageUrl } from "../../../services/pexelsService";
+import { useToast } from "../../../contexts/ToastContext";
 
 const destinations = [
     "Tokyo, Japan",
@@ -29,6 +30,7 @@ const destinations = [
 ]; // hardcoded for now, will be replaced with API 
 
 export function CreatePlanForm() {
+    const { success, error, info, warning } = useToast();
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -66,11 +68,11 @@ export function CreatePlanForm() {
             await createTravelPlan(formData);
             await generateImageUrl(country);
             navigate("/dashboard"); // will navigate to its own page when we have the page for each trip
-        } catch (error) {
-            console.error("Error creating travel plan:", error);
-            alert("Error creating travel plan. Please try again.");
+        } catch (err) {
+            error("Error creating travel plan. Please try again.");
         } finally {
-            setIsLoading(false);
+            setIsLoading(false); // also lets create a spinner while creating/generation of the travel plan. or waiting for the response of the API
+            success("Travel plan created successfully!", 5000);
         }
     };
 
