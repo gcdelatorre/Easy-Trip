@@ -68,7 +68,9 @@ export function CreatePlanForm() {
         setIsLoading(true);
 
         if (!user) {
-            info("View your travel plan by logging in.");
+            sessionStorage.setItem('pendingPlan', JSON.stringify(formData));
+            info("To finalize your travel plan, please log in.");
+            setIsLoading(false);
             navigate("/login");
             return;
         }

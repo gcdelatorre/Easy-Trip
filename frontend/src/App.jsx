@@ -6,12 +6,14 @@ import DashboardPage from './pages/dashboard/DashboardPage';
 import CreatePlanPage from './pages/dashboard/CreatePlanPage';
 import LoginPage from './pages/auth/LoginPage';
 import { ToastProvider } from './contexts/ToastContext';
+import { PostLoginHandler } from './components/auth/PostLoginHandler';
 
 export default function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
         <ToastProvider>
+          <PostLoginHandler />
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
