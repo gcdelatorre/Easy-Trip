@@ -20,7 +20,7 @@ export function Hero() {
                         </p>
                         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                             <Link
-                                to="/signup"
+                                to="/create"
                                 className="rounded-full bg-accent px-8 py-4 text-center text-base font-medium text-accent-foreground transition-opacity hover:opacity-90"
                             >
                                 Generate My Plan

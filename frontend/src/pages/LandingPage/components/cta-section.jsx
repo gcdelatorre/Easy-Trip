@@ -23,7 +23,7 @@ export function CtaSection() {
                                     completely free.
                                 </p>
                                 <Link
-                                    to="/signup"
+                                    to="/create"
                                     className="mt-8 inline-block rounded-full bg-accent px-8 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90"
                                 >
                                     Create Your Trip for Free

@@ -13,6 +13,7 @@ import { interests } from "../../../constants/interests";
 import { createTravelPlan } from "../../../services/travelPlanService";
 import { generateImageUrl } from "../../../services/pexelsService";
 import { useToast } from "../../../contexts/ToastContext";
+import { useAuth } from "../../../contexts/AuthContext";
 
 const destinations = [
     "Tokyo, Japan",
@@ -34,6 +35,8 @@ export function CreatePlanForm() {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [isLoading, setIsLoading] = useState(false);
+
+    const { user } = useAuth();
 
     const [formData, setFormData] = useState({
         destination: "",
@@ -63,6 +66,12 @@ export function CreatePlanForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
+
+        if (!user) {
+            info("View your travel plan by logging in.");
+            navigate("/login");
+            return;
+        }
         try {
             const country = formData.destination.includes(',') ? formData.destination.split(',').pop().trim() : formData.destination.trim();
             await createTravelPlan(formData);

@@ -16,11 +16,11 @@ export default function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<LoginPage />} />
+            <Route path="create" element={<CreatePlanPage />} />
 
             {/* Dashboard Routes with Layout */}
             <Route path="/dashboard" element={<DashboardLayout children={<Outlet />} />}>
               <Route index element={<DashboardPage />} />
-              <Route path="create" element={<CreatePlanPage />} />
             </Route>
           </Routes>
         </ToastProvider>
