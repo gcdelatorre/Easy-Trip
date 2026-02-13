@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import DashboardLayout from './pages/dashboard/DashboardLayout';
 import DashboardPage from './pages/dashboard/DashboardPage';
 import CreatePlanPage from './pages/dashboard/CreatePlanPage';
+import TripDetailsPage from './pages/dashboard/TripDetailsPage';
 import LoginPage from './pages/auth/LoginPage';
 import { ToastProvider } from './contexts/ToastContext';
 import { PostLoginHandler } from './components/auth/PostLoginHandler';
@@ -43,6 +44,7 @@ function AppContent() {
         {/* Dashboard Routes with Layout */}
         <Route path="/dashboard" element={<DashboardLayout children={<Outlet />} />}>
           <Route index element={<DashboardPage />} />
+          <Route path="trip/:tripId" element={<TripDetailsPage />} />
         </Route>
       </Routes>
     </>
