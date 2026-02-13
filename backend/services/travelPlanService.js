@@ -33,8 +33,9 @@ Create a complete travel itinerary for a user based on the following inputs:
 Requirements:
 
 1. Provide a **destinationDescription**: 2-3 sentences summarizing the highlights, culture, and attractions of the destination.
-2. Generate a **day-by-day itinerary** for the entire trip length.
-3. Each day should include 3-5 activities relevant to the interests.
+2. Provide a **highlights**: An array of 4-6 specific spots, landmarks, or famous places mentioned in the itinerary.
+3. Generate a **day-by-day itinerary** for the entire trip length.
+4. Each day should include 3-5 activities relevant to the interests.
 4. For each activity, provide:
    - "name": short activity name
    - "shortDescription": 1-2 sentences describing it
@@ -44,6 +45,7 @@ Requirements:
 {
   "destination": "City, Country",
   "destinationDescription": "...",
+  "highlights": ["Landmark 1", "Spot 2", ...],
   "tripLength": ...,
   "interests": [...],
   "groupSize": ...,
@@ -98,8 +100,10 @@ export const getPlanByIdService = async (userId, id) => {
   const plan = await TravelPlan.findOne({ _id: id, userId }).lean();
   if (!plan) return null;
 
-  const imageUrl = await getDestinationImage(plan.destination);
-  return { ...plan, imageUrl };
+  const country = plan.destination.includes(',') ? plan.destination.split(',').pop().trim() : plan.destination.trim();
+  const destinationInfo = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } }).lean();
+
+  return { ...plan, imageUrl: destinationInfo?.imageUrl || null, destinationInfo };
 };
 
 export const deletePlanService = async (userId, id) => {
