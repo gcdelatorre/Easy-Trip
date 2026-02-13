@@ -34,7 +34,7 @@ export function TripCard({ trip }) {
                         </div>
                         <div className="flex items-center gap-1.5 text-white/70">
                             <Users size={13} />
-                            <span className="text-xs">{trip.groupSize} {trip.groupSize === 1 ? 'traveler' : 'travelers'}</span>
+                            <span className="text-xs">{trip.groupSize}</span>
                         </div>
                     </div>
                 </div>
