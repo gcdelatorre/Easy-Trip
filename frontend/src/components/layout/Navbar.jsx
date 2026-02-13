@@ -43,9 +43,9 @@ export function Navbar() {
                         <div className="flex items-center gap-4">
                             <Link
                                 to="/dashboard"
-                                className="text-sm font-medium text-foreground hover:text-accent"
+                                className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
                             >
-                                Dashboard
+                                Go to Dashboard
                             </Link>
                             <div className="relative">
                                 <button

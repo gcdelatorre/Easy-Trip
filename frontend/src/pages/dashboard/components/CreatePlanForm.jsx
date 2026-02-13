@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import {
     MapPin,
@@ -16,26 +16,13 @@ import { useToast } from "../../../contexts/ToastContext";
 import { useAuth } from "../../../contexts/AuthContext";
 import { useLoading } from "../../../contexts/LoadingContext";
 import { useRefresh } from "../../../contexts/RefreshContext";
-
-const destinations = [
-    "Tokyo, Japan",
-    "Paris, France",
-    "Bali, Indonesia",
-    "Santorini, Greece",
-    "New York, USA",
-    "Barcelona, Spain",
-    "Kyoto, Japan",
-    "Lisbon, Portugal",
-    "Marrakech, Morocco",
-    "Patagonia, Argentina",
-    "Reykjavik, Iceland",
-    "Cape Town, South Africa",
-]; // hardcoded for now, will be replaced with API 
+import { destinations } from "../../../constants/destinations";
 
 export function CreatePlanForm() {
-    const { success, error, info, warning } = useToast();
+    const { success, error, info } = useToast();
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
+    const [debouncedQuery, setDebouncedQuery] = useState("");
     const { loading, startLoading, stopLoading } = useLoading();
     const { startRefresh } = useRefresh();
     const { user } = useAuth();
@@ -51,9 +38,24 @@ export function CreatePlanForm() {
 
     const navigate = useNavigate();
 
-    const filteredDestinations = destinations.filter((d) =>
-        d.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    // Debounce searchQuery
+    useEffect(() => {
+        const handler = setTimeout(() => {
+            setDebouncedQuery(searchQuery);
+        }, 300); // 300ms delay
+
+        return () => clearTimeout(handler);
+    }, [searchQuery]);
+
+    // Optimized filtering with limiting results to top 20
+    const filteredDestinations = useMemo(() => {
+        if (!debouncedQuery) return [];
+
+        const query = debouncedQuery.toLowerCase();
+        return destinations
+            .filter((d) => d.toLowerCase().includes(query))
+            .slice(0, 20);
+    }, [debouncedQuery]);
 
     const toggleInterest = (interest) => {
         setFormData({
