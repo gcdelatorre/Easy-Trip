@@ -50,7 +50,7 @@ export default function DashboardPage() {
                         You haven't created any travel plans yet. Ready to start your next adventure?
                     </p>
                     <Link
-                        to="/dashboard/create"
+                        to="/create"
                         className="mt-8 rounded-full bg-accent px-8 py-3 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90"
                     >
                         Create Your First Plan
@@ -60,7 +60,7 @@ export default function DashboardPage() {
 
             {/* Mobile FAB */}
             <Link
-                to="/dashboard/create"
+                to="/create"
                 className="fixed bottom-6 right-6 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-opacity hover:opacity-90 md:hidden"
                 aria-label="Create new trip"
             >
