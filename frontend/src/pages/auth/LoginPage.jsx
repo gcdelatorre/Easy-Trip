@@ -4,12 +4,13 @@ import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { Mail, Lock, User, ArrowRight } from "lucide-react";
 import { useToast } from "../../contexts/ToastContext";
+import { useLoading } from "../../contexts/LoadingContext";
 
 export default function LoginPage() {
     const navigate = useNavigate();
     const { loginWithGoogle, register, loginWithEmail } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
-    const [isLoading, setIsLoading] = useState(false);
+    const { loading, startLoading, stopLoading } = useLoading();
 
     // Form State
     const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ export default function LoginPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsLoading(true);
+        startLoading(isLogin ? "Signing in..." : "Creating account...");
 
         try {
             if (isLogin) {
@@ -55,7 +56,7 @@ export default function LoginPage() {
         } catch (err) {
             error(`${err.response?.data?.message || "Login failed, please try again."}`);
         } finally {
-            setIsLoading(false);
+            stopLoading();
         }
     };
 
@@ -210,17 +211,11 @@ export default function LoginPage() {
 
                         <button
                             type="submit"
-                            disabled={isLoading}
+                            disabled={loading}
                             className="w-full inline-flex items-center justify-center rounded-xl bg-accent py-2.5 text-sm font-medium text-accent-foreground shadow-sm hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all mt-6"
                         >
-                            {isLoading ? (
-                                "Processing..."
-                            ) : (
-                                <>
-                                    {isLogin ? "Sign In" : "Create Account"}
-                                    <ArrowRight className="ml-2 h-4 w-4" />
-                                </>
-                            )}
+                            {isLogin ? "Sign In" : "Create Account"}
+                            <ArrowRight className="ml-2 h-4 w-4" />
                         </button>
                     </form>
                 </div>

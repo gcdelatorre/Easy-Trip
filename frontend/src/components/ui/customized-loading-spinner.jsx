@@ -1,22 +1,11 @@
-import Image from "next/image";
 import { Spinner } from "./customized-spinner";
 
 export function FullPageSpinner({ isOpen = false, message = "Loading..." }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/40 backdrop-blur-md">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/40">
       <div className="flex flex-col items-center gap-6 rounded-3xl bg-background p-12 shadow-2xl max-w-sm">
-        {/* Logo with subtle animation */}
-        <div className="animate-bounce">
-          <Image
-            src="/images/easy-trip-icon.png"
-            alt="EasyTrip"
-            width={64}
-            height={64}
-            className="h-16 w-16"
-          />
-        </div>
 
         {/* Spinner */}
         <Spinner size="xl" variant="default" />

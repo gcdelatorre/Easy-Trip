@@ -14,6 +14,7 @@ import { createTravelPlan } from "../../../services/travelPlanService";
 import { generateImageUrl } from "../../../services/pexelsService";
 import { useToast } from "../../../contexts/ToastContext";
 import { useAuth } from "../../../contexts/AuthContext";
+import { useLoading } from "../../../contexts/LoadingContext";
 
 const destinations = [
     "Tokyo, Japan",
@@ -34,8 +35,7 @@ export function CreatePlanForm() {
     const { success, error, info, warning } = useToast();
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
-
+    const { loading, startLoading, stopLoading } = useLoading();
     const { user } = useAuth();
 
     const [formData, setFormData] = useState({
@@ -65,12 +65,12 @@ export function CreatePlanForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsLoading(true);
+        startLoading("Creating your travel plan...");
 
         if (!user) {
             sessionStorage.setItem('pendingPlan', JSON.stringify(formData));
             info("To finalize your travel plan, please log in.");
-            setIsLoading(false);
+            stopLoading();
             navigate("/login");
             return;
         }
@@ -79,11 +79,12 @@ export function CreatePlanForm() {
             await createTravelPlan(formData);
             await generateImageUrl(country);
             navigate("/dashboard"); // will navigate to its own page when we have the page for each trip
+            success("Travel plan created successfully!", 5000);
         } catch (err) {
             error("Error creating travel plan. Please try again.");
         } finally {
-            setIsLoading(false); // also lets create a spinner while creating/generation of the travel plan. or waiting for the response of the API
-            success("Travel plan created successfully!", 5000);
+            stopLoading(); // also lets create a spinner while creating/generation of the travel plan. or waiting for the response of the API
+
         }
     };
 
@@ -272,12 +273,12 @@ export function CreatePlanForm() {
                     <div className="mt-2">
                         <button
                             type="submit"
-                            className={isLoading || formData.destination === "" ? "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm opacity-50 cursor-not-allowed" : "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm"}
+                            className={loading || formData.destination === "" ? "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm opacity-50 cursor-not-allowed" : "flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-4 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 shadow-sm"}
+                            disabled={loading}
                             onClick={handleSubmit}
-                            disabled={isLoading}
                         >
                             <Sparkles size={18} />
-                            {isLoading ? "Generating..." : "Generate My Itinerary"}
+                            {loading ? "Generating..." : "Generate My Itinerary"}
                         </button>
                         <p className="mt-3 text-center text-xs text-muted-foreground">
                             Free forever. Your itinerary will be ready in seconds.
