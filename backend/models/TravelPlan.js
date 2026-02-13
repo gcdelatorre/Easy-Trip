@@ -36,7 +36,7 @@ const travelPlanSchema = new mongoose.Schema({
     },
     destinationDescription: String,
     tripLength: {
-        type: Number,
+        type: String,
         required: true
     },
     interests: [String],
