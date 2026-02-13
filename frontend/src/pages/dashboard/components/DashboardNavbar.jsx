@@ -112,7 +112,7 @@ export function DashboardNavbar() {
                             My Trips
                         </Link>
                         <Link
-                            to="/dashboard/create"
+                            to="/create"
                             className="rounded-full bg-accent px-5 py-2.5 text-center text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
                             onClick={() => setMobileOpen(false)}
                         >
