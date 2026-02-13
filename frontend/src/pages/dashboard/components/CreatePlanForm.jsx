@@ -15,6 +15,7 @@ import { generateImageUrl } from "../../../services/pexelsService";
 import { useToast } from "../../../contexts/ToastContext";
 import { useAuth } from "../../../contexts/AuthContext";
 import { useLoading } from "../../../contexts/LoadingContext";
+import { useRefresh } from "../../../contexts/RefreshContext";
 
 const destinations = [
     "Tokyo, Japan",
@@ -36,6 +37,7 @@ export function CreatePlanForm() {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const { loading, startLoading, stopLoading } = useLoading();
+    const { startRefresh } = useRefresh();
     const { user } = useAuth();
 
     const [formData, setFormData] = useState({
@@ -78,7 +80,8 @@ export function CreatePlanForm() {
             const country = formData.destination.includes(',') ? formData.destination.split(',').pop().trim() : formData.destination.trim();
             await createTravelPlan(formData);
             await generateImageUrl(country);
-            navigate("/dashboard"); // will navigate to its own page when we have the page for each trip
+            startRefresh(); // Ping the dashboard to get the new data
+            navigate("/dashboard");
             success("Travel plan created successfully!", 5000);
         } catch (err) {
             error("Error creating travel plan. Please try again.");

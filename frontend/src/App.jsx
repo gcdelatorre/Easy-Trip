@@ -9,6 +9,7 @@ import { ToastProvider } from './contexts/ToastContext';
 import { PostLoginHandler } from './components/auth/PostLoginHandler';
 import { LoadingProvider, useLoading } from './contexts/LoadingContext';
 import { FullPageSpinner } from './components/ui/customized-loading-spinner';
+import { RefreshProvider, useRefresh } from './contexts/RefreshContext';
 
 export default function App() {
   return (
@@ -16,7 +17,9 @@ export default function App() {
       <AuthProvider>
         <ToastProvider>
           <LoadingProvider>
-            <AppContent />
+            <RefreshProvider>
+              <AppContent />
+            </RefreshProvider>
           </LoadingProvider>
         </ToastProvider>
       </AuthProvider>
@@ -26,6 +29,7 @@ export default function App() {
 
 function AppContent() {
   const { loading, message } = useLoading();
+  const { refresh } = useRefresh();
 
   return (
     <>

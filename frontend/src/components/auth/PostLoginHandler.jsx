@@ -3,12 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useToast } from '../../contexts/ToastContext';
 import { createTravelPlan } from '../../services/travelPlanService';
+import { useRefresh } from '../../contexts/RefreshContext';
+import { useLoading } from '../../contexts/LoadingContext';
 
 export function PostLoginHandler() {
     const { user, loading } = useAuth();
     const { success, error, info } = useToast();
+    const { startRefresh } = useRefresh();
     const navigate = useNavigate();
     const isProcessing = useRef(false);
+    const { startLoading, stopLoading } = useLoading();
 
     useEffect(() => {
         const handlePendingPlan = async () => {
@@ -21,18 +25,21 @@ export function PostLoginHandler() {
             try {
                 isProcessing.current = true;
                 const pendingPlan = JSON.parse(pendingPlanRaw);
-                info("Finalizing your travel plan...");
-
+                startLoading("Finalizing your itinerary...");
                 await createTravelPlan(pendingPlan);
+
+                // Signal dashboard to refresh
+                startRefresh();
 
                 // Clear the stash
                 sessionStorage.removeItem('pendingPlan');
 
                 success("Travel plan created successfully!");
+                stopLoading();
                 navigate("/dashboard");
             } catch (err) {
-                console.error("Failed to finalize pending plan:", err);
                 error("Something went wrong while saving your plan.");
+                stopLoading();
                 isProcessing.current = false;
                 // We keep the pending plan in session storage so they can try again or we can handle it
             }

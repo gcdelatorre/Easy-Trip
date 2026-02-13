@@ -42,7 +42,7 @@ Requirements:
 5. Return the entire response in strict JSON format with the following structure:
 
 {
-  "destination": "...",
+  "destination": "City, Country",
   "destinationDescription": "...",
   "tripLength": ...,
   "interests": [...],

@@ -3,23 +3,23 @@ import { Plus } from "lucide-react";
 import { TripCard } from "./components/TripCard";
 import { useState, useEffect } from "react";
 import { fetchTravelPlans } from "../../services/travelPlanService";
+import { useRefresh } from "../../contexts/RefreshContext";
 
 export default function DashboardPage() {
-
+    const { refresh } = useRefresh();
     const [travelPlans, setTravelPlans] = useState([]);
 
     useEffect(() => {
         const fetchTravelPlansData = async () => {
             try {
                 const response = await fetchTravelPlans();
-                // The service returns response.data, which is { message, plans }
                 setTravelPlans(response.plans || []);
             } catch (err) {
                 console.error("Error fetching travel plans:", err);
             }
         };
         fetchTravelPlansData();
-    }, []);
+    }, [refresh]);
 
     return (
         <div>
