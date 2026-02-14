@@ -11,6 +11,7 @@ export default function LoginPage() {
     const { loginWithGoogle, register, loginWithEmail } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
     const { loading, startLoading, stopLoading } = useLoading();
+    const [fieldErrors, setFieldErrors] = useState({})
 
     // Form State
     const [formData, setFormData] = useState({
@@ -20,7 +21,7 @@ export default function LoginPage() {
         confirmPassword: ""
     });
 
-    const { success, error, info, warning } = useToast();
+    const { success, error } = useToast();
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -45,6 +46,13 @@ export default function LoginPage() {
         e.preventDefault();
         startLoading(isLogin ? "Signing in..." : "Creating account...");
 
+
+        if (formData.password !== formData.confirmPassword) {
+            setFieldErrors({ confirmPassword: "Passwords do not match" });
+            stopLoading()
+            return;
+        }
+
         try {
             if (isLogin) {
                 await loginWithEmail({ email: formData.email, password: formData.password });
@@ -53,7 +61,16 @@ export default function LoginPage() {
             }
             navigate("/dashboard");
             success("Login successful");
+            setFieldErrors({});
         } catch (err) {
+            if (err.response?.status === 400 && err.response.data?.errors) {
+                const errors = {};
+                err.response.data.errors.forEach(e => {
+                    const fieldName = e.path[e.path.length - 1];
+                    errors[fieldName] = e.message;
+                });
+                setFieldErrors(errors);
+            }
             error(`${err.response?.data?.message || "Login failed, please try again."}`);
         } finally {
             stopLoading();
@@ -149,6 +166,7 @@ export default function LoginPage() {
                                         required={!isLogin}
                                     />
                                 </div>
+                                {fieldErrors.name && <p className="text-red-500 text-xs">{fieldErrors.name}</p>}
                             </div>
                         )}
 
@@ -166,6 +184,7 @@ export default function LoginPage() {
                                     required
                                 />
                             </div>
+                            {fieldErrors.email && <p className="text-red-500 text-xs">{fieldErrors.email}</p>}
                         </div>
 
                         <div className="space-y-2">
@@ -189,6 +208,7 @@ export default function LoginPage() {
                                     required
                                 />
                             </div>
+                            {fieldErrors.password && <p className="text-red-500 text-xs">{fieldErrors.password}</p>}
                         </div>
 
                         {!isLogin && (
@@ -206,6 +226,7 @@ export default function LoginPage() {
                                         required={!isLogin}
                                     />
                                 </div>
+                                {fieldErrors.confirmPassword && <p className="text-red-500 text-xs">{fieldErrors.confirmPassword}</p>}
                             </div>
                         )}
 
