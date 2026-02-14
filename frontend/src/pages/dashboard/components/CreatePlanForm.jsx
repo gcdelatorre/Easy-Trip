@@ -19,7 +19,7 @@ import { useRefresh } from "../../../contexts/RefreshContext";
 import { destinations } from "../../../constants/destinations";
 
 export function CreatePlanForm() {
-    const { success, error, info } = useToast();
+    const { success, error, info, warning } = useToast();
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [debouncedQuery, setDebouncedQuery] = useState("");
@@ -67,17 +67,57 @@ export function CreatePlanForm() {
         });
     };
 
+    const validateForm = () => {
+        const validationRules = [
+            {
+                check: () => destinations.map((d) => d.toLowerCase()).includes(formData.destination.toLowerCase()),
+                message: "Please select a valid destination"
+            },
+            {
+                check: () => formData.interests.length > 0,
+                message: "Please select at least one interest"
+            },
+            {
+                check: () => formData.groupSize !== "",
+                message: "Please select a group size"
+            },
+            {
+                check: () => formData.tripLength !== "",
+                message: "Please select a trip length"
+            },
+            {
+                check: () => formData.startDate !== "",
+                message: "Please select a start date"
+            },
+            {
+                check: () => formData.endDate !== "",
+                message: "Please select an end date"
+            }
+        ];
+
+        for (const rule of validationRules) {
+            if (!rule.check()) {
+                warning(rule.message);
+                return false;
+            }
+        }
+        return true;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        startLoading("Creating your travel plan...");
 
         if (!user) {
             sessionStorage.setItem('pendingPlan', JSON.stringify(formData));
             info("To finalize your travel plan, please log in.");
-            stopLoading();
             navigate("/login");
             return;
         }
+
+        if (!validateForm()) return;
+
+        startLoading("Creating your travel plan...");
+
         try {
             const country = formData.destination.includes(',') ? formData.destination.split(',').pop().trim() : formData.destination.trim();
             await createTravelPlan(formData);
@@ -89,7 +129,6 @@ export function CreatePlanForm() {
             error("Error creating travel plan. Please try again.");
         } finally {
             stopLoading(); // also lets create a spinner while creating/generation of the travel plan. or waiting for the response of the API
-
         }
     };
 
@@ -115,7 +154,7 @@ export function CreatePlanForm() {
                         <div className="relative">
                             <input
                                 type="text"
-                                placeholder="Search a city or country"
+                                placeholder="Search your destination"
                                 value={formData.destination || searchQuery}
                                 onChange={(e) => {
                                     setSearchQuery(e.target.value);

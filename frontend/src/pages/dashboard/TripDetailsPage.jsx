@@ -50,7 +50,7 @@ export default function TripDetailsPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-8 md:p-12">
                     <div className="rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-md mb-4">
-                        {trip.groupSize} Travelers
+                        {trip.groupSize}
                     </div>
                     <h1 className="font-serif text-4xl md:text-5xl text-white font-medium">
                         {trip.tripLength || trip.planDays?.length} Days in {trip.destination}
