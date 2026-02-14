@@ -14,7 +14,7 @@ export function FullPageSpinner({ isOpen = false, message = "Loading..." }) {
         <div className="text-center">
           <p className="text-base font-semibold text-foreground">{message}</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Crafting your perfect trip
+            Please wait...
             <span className="inline-block animate-pulse">.</span>
             <span className="inline-block animate-pulse animation-delay-100">
               .
