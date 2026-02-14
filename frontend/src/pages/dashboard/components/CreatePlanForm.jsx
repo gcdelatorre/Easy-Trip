@@ -208,9 +208,18 @@ export function CreatePlanForm() {
                             <div className="flex items-center gap-3 rounded-xl border border-border bg-background px-4 py-2">
                                 <button
                                     type="button"
-                                    onClick={() =>
-                                        setFormData({ ...formData, tripLength: Math.max(1, formData.tripLength - 1) })
-                                    }
+                                    onClick={() => {
+                                        const newLength = Math.max(1, formData.tripLength - 1);
+                                        let updates = { tripLength: newLength };
+
+                                        if (formData.startDate) {
+                                            const date = new Date(formData.startDate);
+                                            date.setDate(date.getDate() + (newLength - 1));
+                                            updates.endDate = date.toISOString().split("T")[0];
+                                        }
+
+                                        setFormData({ ...formData, ...updates });
+                                    }}
                                     disabled={formData.tripLength <= 1}
                                     className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-secondary disabled:opacity-30 disabled:cursor-not-allowed"
                                 >
@@ -226,9 +235,18 @@ export function CreatePlanForm() {
                                 </div>
                                 <button
                                     type="button"
-                                    onClick={() =>
-                                        setFormData({ ...formData, tripLength: Math.min(14, formData.tripLength + 1) })
-                                    }
+                                    onClick={() => {
+                                        const newLength = Math.min(14, formData.tripLength + 1);
+                                        let updates = { tripLength: newLength };
+
+                                        if (formData.startDate) {
+                                            const date = new Date(formData.startDate);
+                                            date.setDate(date.getDate() + (newLength - 1));
+                                            updates.endDate = date.toISOString().split("T")[0];
+                                        }
+
+                                        setFormData({ ...formData, ...updates });
+                                    }}
                                     disabled={formData.tripLength >= 14}
                                     className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-foreground transition-colors hover:bg-secondary disabled:opacity-30 disabled:cursor-not-allowed"
                                 >
@@ -269,7 +287,17 @@ export function CreatePlanForm() {
                                 type="date"
                                 value={formData.startDate}
                                 min={new Date().toISOString().split("T")[0]}
-                                onChange={(e) => setFormData({ ...formData, startDate: e.target.value })}
+                                onChange={(e) => {
+                                    const newStart = e.target.value;
+                                    if (newStart && formData.tripLength) {
+                                        const date = new Date(newStart);
+                                        date.setDate(date.getDate() + (formData.tripLength - 1));
+                                        const newEnd = date.toISOString().split("T")[0];
+                                        setFormData({ ...formData, startDate: newStart, endDate: newEnd });
+                                    } else {
+                                        setFormData({ ...formData, startDate: newStart });
+                                    }
+                                }}
                                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                             />
                         </div>
@@ -281,7 +309,24 @@ export function CreatePlanForm() {
                                 type="date"
                                 value={formData.endDate}
                                 min={formData.startDate || new Date().toISOString().split("T")[0]}
-                                onChange={(e) => setFormData({ ...formData, endDate: e.target.value })}
+                                onChange={(e) => {
+                                    const newEnd = e.target.value;
+                                    if (newEnd && formData.tripLength) {
+                                        const date = new Date(newEnd);
+                                        date.setDate(date.getDate() - (formData.tripLength - 1));
+                                        const newStart = date.toISOString().split("T")[0];
+
+                                        // Ensure we don't set a start date in the past
+                                        const today = new Date().toISOString().split("T")[0];
+                                        if (newStart >= today) {
+                                            setFormData({ ...formData, endDate: newEnd, startDate: newStart });
+                                        } else {
+                                            setFormData({ ...formData, endDate: newEnd });
+                                        }
+                                    } else {
+                                        setFormData({ ...formData, endDate: newEnd });
+                                    }
+                                }}
                                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                             />
                         </div>
