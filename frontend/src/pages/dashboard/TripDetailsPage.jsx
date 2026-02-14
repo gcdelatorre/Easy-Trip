@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Users } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetchTravelPlanById } from '../../services/travelPlanService';
 import { useLoading } from '../../contexts/LoadingContext';
@@ -49,7 +50,8 @@ export default function TripDetailsPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-8 md:p-12">
-                    <div className="rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-md mb-4">
+                    <div className="flex items-center gap-2 rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-md mb-4 shadow-sm border border-white/10">
+                        <Users size={16} />
                         {trip.groupSize}
                     </div>
                     <h1 className="font-serif text-4xl md:text-5xl text-white font-medium">

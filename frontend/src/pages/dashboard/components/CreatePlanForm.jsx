@@ -268,11 +268,11 @@ export function CreatePlanForm() {
                                 <option value="" disabled>
                                     How many people?
                                 </option>
-                                <option value="1 Traveler">Solo</option>
-                                <option value="2 Travelers">2 people</option>
-                                <option value="3-4 Travelers">3 to 4 people</option>
-                                <option value="5-8 Travelers">5 to 8 people</option>
-                                <option value="9+ Travelers">9 or more</option>
+                                <option value="1 Traveler">1 Traveler (Solo)</option>
+                                <option value="2 Travelers">2 Travelers</option>
+                                <option value="3-4 Travelers">3-4 Travelers</option>
+                                <option value="5-8 Travelers">5-8 Travelers</option>
+                                <option value="9+ Travelers">9+ Travelers</option>
                             </select>
                         </div>
                     </div>
