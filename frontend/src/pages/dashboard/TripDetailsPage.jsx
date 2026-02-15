@@ -84,7 +84,6 @@ export default function TripDetailsPage() {
                                 <h3 className="font-serif text-xl text-foreground mb-6">Highlights</h3>
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
-                                        console.log("DEBUG: highlights data", trip.highlights),
                                         trip.highlights.map((highlight, idx) => (
                                             <div
                                                 key={idx}

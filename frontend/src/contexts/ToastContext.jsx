@@ -64,10 +64,12 @@ export function ToastProvider({ children }) {
         [addToast]
     );
 
+    const value = React.useMemo(() => ({
+        toasts, addToast, removeToast, success, error, info, warning
+    }), [toasts, addToast, removeToast, success, error, info, warning]);
+
     return (
-        <ToastContext.Provider
-            value={{ toasts, addToast, removeToast, success, error, info, warning }}
-        >
+        <ToastContext.Provider value={value}>
             {children}
             <ToastContainer toasts={toasts} onRemoveToast={removeToast} />
         </ToastContext.Provider>
