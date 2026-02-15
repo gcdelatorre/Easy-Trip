@@ -3,6 +3,20 @@ import 'leaflet/dist/leaflet.css';
 import { useEffect, useState } from 'react';
 import { useTravelPlan } from '@/contexts/TravelPlanContext';
 
+// Fix for default marker icons
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: markerIcon2x,
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+});
+
+
 export function MapView({ height = "h-full", trip }) {
 
     const { currentHighlight } = useTravelPlan()
@@ -17,7 +31,7 @@ export function MapView({ height = "h-full", trip }) {
         <div className={`${height} w-full rounded-lg overflow-hidden`}>
             <MapContainer
                 center={highlightPosition || destinationPosition}
-                zoom={currentHighlight ? 17 :13}
+                zoom={currentHighlight ? 17 : 13}
                 style={{ height: '100%', width: '100%' }}
                 scrollWheelZoom={true}
                 doubleClickZoom={false}
