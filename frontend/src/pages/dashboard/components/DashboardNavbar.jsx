@@ -35,6 +35,15 @@ export function DashboardNavbar() {
                             My Trips
                         </Link>
                         <Link
+                            to="/explore"
+                            className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${isActive("/explore")
+                                ? "bg-secondary text-foreground"
+                                : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                                }`}
+                        >
+                            Explore
+                        </Link>
+                        <Link
                             to="/create"
                             className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
                         >
@@ -101,6 +110,16 @@ export function DashboardNavbar() {
             {mobileOpen && (
                 <div className="border-t border-border bg-card px-6 pb-5 md:hidden">
                     <div className="flex flex-col gap-2 pt-4">
+                        <Link
+                            to="/explore"
+                            className={`rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${isActive("/explore")
+                                ? "bg-secondary text-foreground"
+                                : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                                }`}
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            Explore
+                        </Link>
                         <Link
                             to="/dashboard"
                             className={`rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${isActive("/dashboard")

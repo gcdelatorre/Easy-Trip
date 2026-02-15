@@ -12,6 +12,7 @@ import { LoadingProvider, useLoading } from './contexts/LoadingContext';
 import { FullPageSpinner } from './components/ui/customized-loading-spinner';
 import { RefreshProvider } from './contexts/RefreshContext';
 import { TravelPlanProvider } from './contexts/TravelPlanContext';
+import Explore from './pages/ExplorePage/Explore';
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ function AppContent() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<LoginPage />} />
+        <Route path="/explore" element={<Explore />} />
         <Route path="create" element={<CreatePlanPage />} />
 
         {/* Dashboard Routes with Layout */}

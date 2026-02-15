@@ -38,6 +38,12 @@ export function Navbar() {
                     >
                         Destinations
                     </a>
+                    <Link
+                        to="/explore"
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        Explore
+                    </Link>
 
                     {user ? (
                         <div className="flex items-center gap-4">
@@ -152,9 +158,17 @@ export function Navbar() {
                         <a
                             href="#destinations"
                             className="text-base text-muted-foreground transition-colors hover:text-foreground"
+                            onClick={() => setMobileOpen(false)}
                         >
                             Destinations
                         </a>
+                        <Link
+                            to="/explore"
+                            className="text-base text-muted-foreground transition-colors hover:text-foreground"
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            Explore
+                        </Link>
                         {/* ... existing mobile links ... */}
                         {user ? (
                             <>
