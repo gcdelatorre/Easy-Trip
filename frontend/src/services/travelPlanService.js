@@ -1,6 +1,6 @@
 import api from "./api";
 
-export const createTravelPlan = async (travelPlanData) => {
+const createTravelPlan = async (travelPlanData) => {
     try {
         const response = await api.post("/travel-plans/generate", travelPlanData);
         return response.data;
@@ -10,7 +10,7 @@ export const createTravelPlan = async (travelPlanData) => {
     }
 }
 
-export const fetchTravelPlans = async () => {
+const fetchTravelPlans = async () => {
     try {
         const response = await api.get("/travel-plans");
         return response.data;
@@ -20,7 +20,7 @@ export const fetchTravelPlans = async () => {
     }
 }
 
-export const fetchTravelPlanById = async (id) => {
+const fetchTravelPlanById = async (id) => {
     try {
         const response = await api.get(`/travel-plans/${id}`);
         return response.data;
@@ -30,7 +30,7 @@ export const fetchTravelPlanById = async (id) => {
     }
 }
 
-export const deleteTravelPlan = async (id) => {
+const deleteTravelPlan = async (id) => {
     try {
         const response = await api.delete(`/travel-plans/${id}`);
         return response.data;
@@ -39,3 +39,12 @@ export const deleteTravelPlan = async (id) => {
         throw err;
     }
 }
+
+const travelPlanService = {
+    createTravelPlan,
+    fetchTravelPlans,
+    fetchTravelPlanById,
+    deleteTravelPlan
+};
+
+export default travelPlanService;
