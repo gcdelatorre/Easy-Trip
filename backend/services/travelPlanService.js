@@ -85,7 +85,7 @@ Notes:
 };
 
 export const getAllPlansService = async (userId) => {
-  const plans = await TravelPlan.find({ userId }).lean();
+  const plans = await TravelPlan.find({ userId }).sort({ createdAt: -1 }).lean();
 
   // Enrich each plan with its corresponding destination image
   const enrichedPlans = await Promise.all(plans.map(async (plan) => {
