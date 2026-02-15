@@ -13,6 +13,7 @@ import { FullPageSpinner } from './components/ui/customized-loading-spinner';
 import { RefreshProvider } from './contexts/RefreshContext';
 import { TravelPlanProvider } from './contexts/TravelPlanContext';
 import Explore from './pages/ExplorePage/Explore';
+import NotFound from './pages/NotFoundPage/NotFound';
 
 export default function App() {
   return (
@@ -51,6 +52,9 @@ function AppContent() {
           <Route index element={<DashboardPage />} />
           <Route path="trip/:tripId" element={<TripDetailsPage />} />
         </Route>
+
+        {/* Catch-all 404 Route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )

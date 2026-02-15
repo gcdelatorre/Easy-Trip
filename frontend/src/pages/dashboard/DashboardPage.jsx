@@ -4,10 +4,25 @@ import { TripCard } from "./components/TripCard";
 import { useState, useEffect } from "react";
 import { useRefresh } from "../../contexts/RefreshContext";
 import { useTravelPlan } from "@/contexts/TravelPlanContext";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "@/contexts/AuthContext";
+import { useToast } from "@/contexts/ToastContext";
 
 export default function DashboardPage() {
     const { refresh } = useRefresh();
     const { plans, getAllTravelPlans } = useTravelPlan();
+    const navigate = useNavigate();
+    const { user } = useAuth();
+    const { warning } = useToast();
+
+    useEffect(() => {
+        if (!user) {
+            navigate("/login");
+            warning("Please login first");
+            return;
+        }
+    }, [user])
+
 
     useEffect(() => {
         const fetchTravelPlansData = async () => {
