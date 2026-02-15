@@ -7,13 +7,15 @@ import { TripTabs } from './components/trip-details/TripTabs';
 import { ItineraryDay } from './components/trip-details/ItineraryDay';
 import { TripSidebar } from './components/trip-details/TripSidebar';
 import { useTravelPlan } from '@/contexts/TravelPlanContext';
+import { MapFullscreenModal } from './components/trip-details/MapFullscreenModal';
 
 export default function TripDetailsPage() {
     const { tripId } = useParams();
     const navigate = useNavigate();
     const { startLoading, stopLoading } = useLoading();
     const { error } = useToast();
-    const { currentTrip: trip, getCurrentPlan } = useTravelPlan();
+    const { currentTrip: trip, getCurrentPlan, setCurrentHighlight } = useTravelPlan();
+    const [isOpen, setIsOpen] = useState(false)
 
     const [activeTab, setActiveTab] = useState('overview');
 
@@ -81,16 +83,22 @@ export default function TripDetailsPage() {
                             </div>
 
                             <div>
-                                <h3 className="font-serif text-xl text-foreground mb-6">Highlights</h3>
+                                <h3 className="font-serif text-xl text-foreground mb-2">Highlights</h3>
+                                <p className="text-muted-foreground leading-relaxed text-xs mb-4">Click on any highlight to view it on the map.</p>
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
                                         trip.highlights.map((highlight, idx) => (
-                                            <div
-                                                key={idx}
-                                                className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm"
-                                            >
-                                                {highlight.name}
-                                            </div>
+                                            <button key={idx}>
+                                                <div
+                                                    className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                                                    onClick={() => {
+                                                        setCurrentHighlight(highlight);
+                                                        setIsOpen(true);
+                                                    }}
+                                                >
+                                                    {highlight.name}
+                                                </div>
+                                            </button>
                                         ))
                                     ) : (
                                         // Fallback: Pluck activity names from first few days
@@ -202,6 +210,9 @@ export default function TripDetailsPage() {
                     <TripSidebar trip={trip} />
                 </div>
             </div>
+
+            <MapFullscreenModal isOpen={isOpen} onClose={() => setIsOpen(false)} trip={trip} />
+
         </div>
     );
 }
