@@ -39,8 +39,13 @@ const travelPlanSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    interests: [String],
-    highlights: [String],
+    highlights: [{
+        name: String,
+        coords: {
+            lat: Number,
+            lng: Number
+        }
+    }],
     groupSize: {
         type: String,
         required: true

@@ -130,7 +130,7 @@ export function TripPDF({ trip }) {
                         <Text style={styles.sectionTitle}>Trip Highlights</Text>
                         <View style={styles.highlightGrid}>
                             {trip.highlights.map((highlight, i) => (
-                                <Text key={i} style={styles.highlightBadge}>{highlight}</Text>
+                                <Text key={i} style={styles.highlightBadge}>{highlight.name}</Text>
                             ))}
                         </View>
                     </View>

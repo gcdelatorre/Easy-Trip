@@ -85,12 +85,12 @@ export default function TripDetailsPage() {
                                 <h3 className="font-serif text-xl text-foreground mb-6">Highlights</h3>
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
-                                        trip.highlights.map((highlight) => (
+                                        trip.highlights.map((highlight, idx) => (
                                             <div
-                                                key={highlight}
+                                                key={idx}
                                                 className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm"
                                             >
-                                                {highlight}
+                                                {highlight.name}
                                             </div>
                                         ))
                                     ) : (

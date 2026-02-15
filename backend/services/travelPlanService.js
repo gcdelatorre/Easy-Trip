@@ -33,7 +33,7 @@ Create a complete travel itinerary for a user based on the following inputs:
 Requirements:
 
 1. Provide a **destinationDescription**: 2-3 sentences summarizing the highlights, culture, and attractions of the destination.
-2. Provide a **highlights**: An array of 4-6 specific spots, landmarks, or famous places mentioned in the itinerary.
+2. Provide a **highlights**: An array of 4-5 specific spots, landmarks, or famous places mentioned in the itinerary with their coordinates.
 3. Generate a **day-by-day itinerary** for the entire trip length.
 4. Each day should include 3-5 activities relevant to the interests.
 4. For each activity, provide:
@@ -44,8 +44,12 @@ Requirements:
 
 {
   "destination": "City, Country",
+  "destinationCoords": { "lat": number, "lng": number },
   "destinationDescription": "...",
-  "highlights": ["Landmark 1", "Spot 2", ...],
+  "highlights": [
+    { "name": "Landmark 1", "coords": { "lat": number, "lng": number } },
+    ...
+  ],
   "tripLength": ...,
   "interests": [...],
   "groupSize": ...,
