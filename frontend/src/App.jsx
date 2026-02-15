@@ -11,18 +11,21 @@ import { PostLoginHandler } from './components/auth/PostLoginHandler';
 import { LoadingProvider, useLoading } from './contexts/LoadingContext';
 import { FullPageSpinner } from './components/ui/customized-loading-spinner';
 import { RefreshProvider } from './contexts/RefreshContext';
+import { TravelPlanProvider } from './contexts/TravelPlanContext';
 
 export default function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <ToastProvider>
-          <LoadingProvider>
-            <RefreshProvider>
-              <AppContent />
-            </RefreshProvider>
-          </LoadingProvider>
-        </ToastProvider>
+        <TravelPlanProvider>
+          <ToastProvider>
+            <LoadingProvider>
+              <RefreshProvider>
+                <AppContent />
+              </RefreshProvider>
+            </LoadingProvider>
+          </ToastProvider>
+        </TravelPlanProvider>
       </AuthProvider>
     </BrowserRouter>
   )

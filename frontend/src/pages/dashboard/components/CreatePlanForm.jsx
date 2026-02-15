@@ -10,13 +10,13 @@ import {
     Plus,
 } from "lucide-react";
 import { interests } from "../../../constants/interests";
-import { createTravelPlan } from "../../../services/travelPlanService";
 import { generateImageUrl } from "../../../services/pexelsService";
 import { useToast } from "../../../contexts/ToastContext";
 import { useAuth } from "../../../contexts/AuthContext";
 import { useLoading } from "../../../contexts/LoadingContext";
 import { useRefresh } from "../../../contexts/RefreshContext";
 import { destinations } from "../../../constants/destinations";
+import { useTravelPlan } from "@/contexts/TravelPlanContext";
 
 export function CreatePlanForm() {
     const { success, error, info, warning } = useToast();
@@ -103,6 +103,8 @@ export function CreatePlanForm() {
         }
         return true;
     };
+
+    const { createTravelPlan } = useTravelPlan();
 
     const handleSubmit = async (e) => {
         e.preventDefault();

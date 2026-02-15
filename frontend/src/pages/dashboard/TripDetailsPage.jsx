@@ -1,28 +1,27 @@
 import { useState, useEffect } from 'react';
 import { Users } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { fetchTravelPlanById } from '../../services/travelPlanService';
 import { useLoading } from '../../contexts/LoadingContext';
 import { useToast } from '../../contexts/ToastContext';
 import { TripTabs } from './components/trip-details/TripTabs';
 import { ItineraryDay } from './components/trip-details/ItineraryDay';
 import { TripSidebar } from './components/trip-details/TripSidebar';
+import { useTravelPlan } from '@/contexts/TravelPlanContext';
 
 export default function TripDetailsPage() {
     const { tripId } = useParams();
     const navigate = useNavigate();
     const { startLoading, stopLoading } = useLoading();
     const { error } = useToast();
+    const { currentTrip: trip, getCurrentPlan } = useTravelPlan();
 
     const [activeTab, setActiveTab] = useState('overview');
-    const [trip, setTrip] = useState(null);
 
     useEffect(() => {
         const fetchTrip = async () => {
             startLoading("Loading trip details...");
             try {
-                const data = await fetchTravelPlanById(tripId);
-                setTrip(data.plan);
+                await getCurrentPlan(tripId);
             } catch (err) {
                 console.error("Failed to fetch trip:", err);
                 error("Could not find this travel plan.");
@@ -35,7 +34,7 @@ export default function TripDetailsPage() {
         if (tripId) {
             fetchTrip();
         }
-    }, [tripId, navigate, startLoading, stopLoading, error]);
+    }, [tripId, navigate, startLoading, stopLoading, error, getCurrentPlan]);
 
     if (!trip) return null;
 
@@ -85,6 +84,7 @@ export default function TripDetailsPage() {
                                 <h3 className="font-serif text-xl text-foreground mb-6">Highlights</h3>
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
+                                        console.log("DEBUG: highlights data", trip.highlights),
                                         trip.highlights.map((highlight, idx) => (
                                             <div
                                                 key={idx}

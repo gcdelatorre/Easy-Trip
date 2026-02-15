@@ -2,24 +2,23 @@ import { Link } from "react-router-dom";
 import { Plus } from "lucide-react";
 import { TripCard } from "./components/TripCard";
 import { useState, useEffect } from "react";
-import { fetchTravelPlans } from "../../services/travelPlanService";
 import { useRefresh } from "../../contexts/RefreshContext";
+import { useTravelPlan } from "@/contexts/TravelPlanContext";
 
 export default function DashboardPage() {
     const { refresh } = useRefresh();
-    const [travelPlans, setTravelPlans] = useState([]);
+    const { plans, getAllTravelPlans } = useTravelPlan();
 
     useEffect(() => {
         const fetchTravelPlansData = async () => {
             try {
-                const response = await fetchTravelPlans();
-                setTravelPlans(response.plans || []);
+                await getAllTravelPlans();
             } catch (err) {
                 console.error("Error fetching travel plans:", err);
             }
         };
         fetchTravelPlansData();
-    }, [refresh]);
+    }, [refresh, getAllTravelPlans]);
 
     return (
         <div>
@@ -34,9 +33,9 @@ export default function DashboardPage() {
                 </div>
             </div>
 
-            {travelPlans.length > 0 ? (
+            {plans.length > 0 ? (
                 <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {travelPlans.map((travelPlan) => (
+                    {plans.map((travelPlan) => (
                         <TripCard key={travelPlan._id} trip={travelPlan} />
                     ))}
                 </div>

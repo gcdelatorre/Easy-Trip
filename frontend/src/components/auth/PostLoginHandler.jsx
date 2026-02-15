@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useToast } from '../../contexts/ToastContext';
-import { createTravelPlan } from '../../services/travelPlanService';
 import { useRefresh } from '../../contexts/RefreshContext';
 import { useLoading } from '../../contexts/LoadingContext';
+import { useTravelPlan } from '@/contexts/TravelPlanContext';
 
 export function PostLoginHandler() {
     const { user, loading } = useAuth();
@@ -12,6 +12,7 @@ export function PostLoginHandler() {
     const { startRefresh } = useRefresh();
     const navigate = useNavigate();
     const isProcessing = useRef(false);
+    const { createTravelPlan } = useTravelPlan();
     const { startLoading, stopLoading } = useLoading();
 
     useEffect(() => {
@@ -27,6 +28,7 @@ export function PostLoginHandler() {
                 const pendingPlan = JSON.parse(pendingPlanRaw);
                 startLoading("Finalizing your itinerary...");
                 await createTravelPlan(pendingPlan);
+
 
                 // Signal dashboard to refresh
                 startRefresh();
@@ -46,7 +48,7 @@ export function PostLoginHandler() {
         };
 
         handlePendingPlan();
-    }, [user, loading, navigate, success, error, info]);
+    }, [user, loading, navigate, success, error, info, createTravelPlan, startRefresh, startLoading, stopLoading]);
 
     return null; // This component doesn't render anything
 }
