@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.4",
+    "@react-pdf/renderer": "^4.3.2",
     "add": "^2.0.6",
     "axios": "^1.13.4",
     "class-variance-authority": "^0.7.1",

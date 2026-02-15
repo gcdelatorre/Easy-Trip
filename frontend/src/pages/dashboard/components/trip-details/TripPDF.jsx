@@ -1,0 +1,162 @@
+import { Document, Page, Text, View, StyleSheet, Font } from '@react-pdf/renderer';
+
+// Standard PDF fonts are available by default (Helvetica, Helvetica-Bold, etc.)
+const styles = StyleSheet.create({
+    page: {
+        padding: 40,
+        backgroundColor: '#ffffff',
+        fontFamily: 'Helvetica',
+    },
+    header: {
+        marginBottom: 20,
+        borderBottomWidth: 2,
+        borderBottomColor: '#f3f4f6',
+        paddingBottom: 10,
+    },
+    title: {
+        fontSize: 28,
+        color: '#0f172a',
+        marginBottom: 4,
+        fontWeight: 'bold',
+    },
+    subtitle: {
+        fontSize: 12,
+        color: '#64748b',
+        textTransform: 'uppercase',
+        letterSpacing: 1,
+    },
+    section: {
+        marginTop: 20,
+        marginBottom: 10,
+    },
+    sectionTitle: {
+        fontSize: 16,
+        color: '#0f172a',
+        marginBottom: 8,
+        fontWeight: 'bold',
+        borderBottomWidth: 1,
+        borderBottomColor: '#e2e8f0',
+        paddingBottom: 4,
+    },
+    description: {
+        fontSize: 10,
+        color: '#475569',
+        lineHeight: 1.5,
+        marginBottom: 10,
+    },
+    highlightGrid: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        gap: 8,
+        marginBottom: 20,
+    },
+    highlightBadge: {
+        paddingHorizontal: 10,
+        paddingVertical: 4,
+        backgroundColor: '#f1f5f9',
+        borderRadius: 12,
+        fontSize: 8,
+        color: '#334155',
+    },
+    dayContainer: {
+        marginBottom: 20,
+        padding: 12,
+        backgroundColor: '#f8fafc',
+        borderRadius: 8,
+    },
+    dayTitle: {
+        fontSize: 14,
+        color: '#0f172a',
+        marginBottom: 8,
+        fontWeight: 'bold',
+    },
+    activityContainer: {
+        marginLeft: 10,
+        marginBottom: 10,
+        borderLeftWidth: 1,
+        borderLeftColor: '#cbd5e1',
+        paddingLeft: 10,
+    },
+    activityName: {
+        fontSize: 11,
+        color: '#1e293b',
+        fontWeight: 'bold',
+        marginBottom: 2,
+    },
+    activityDesc: {
+        fontSize: 9,
+        color: '#64748b',
+        lineHeight: 1.4,
+    },
+    footer: {
+        position: 'absolute',
+        bottom: 30,
+        left: 40,
+        right: 40,
+        textAlign: 'center',
+        fontSize: 8,
+        color: '#94a3b8',
+        borderTopWidth: 1,
+        borderTopColor: '#f1f5f9',
+        paddingTop: 10,
+    }
+});
+
+export function TripPDF({ trip }) {
+    const startDateStr = trip.startDate ? new Date(trip.startDate).toLocaleDateString() : 'Flexible Start';
+    const endDateStr = trip.endDate ? new Date(trip.endDate).toLocaleDateString() : 'Flexible End';
+
+    return (
+        <Document>
+            <Page size="A4" style={styles.page}>
+                {/* Header */}
+                <View style={styles.header}>
+                    <Text style={styles.subtitle}>Easy Trip</Text>
+                    <Text style={styles.title}>{trip.destination}</Text>
+                    <Text style={{ fontSize: 10, color: '#64748b', marginTop: 4 }}>
+                        {startDateStr} - {endDateStr} • {trip.groupSize}
+                    </Text>
+                </View>
+
+                {/* Overview */}
+                <View style={styles.section}>
+                    <Text style={styles.sectionTitle}>Overview</Text>
+                    <Text style={styles.description}>{trip.destinationDescription}</Text>
+                </View>
+
+                {/* Highlights */}
+                {trip.highlights && trip.highlights.length > 0 && (
+                    <View style={styles.section}>
+                        <Text style={styles.sectionTitle}>Trip Highlights</Text>
+                        <View style={styles.highlightGrid}>
+                            {trip.highlights.map((highlight, i) => (
+                                <Text key={i} style={styles.highlightBadge}>{highlight}</Text>
+                            ))}
+                        </View>
+                    </View>
+                )}
+
+                {/* Daily Itinerary */}
+                <View style={styles.section}>
+                    <Text style={styles.sectionTitle}>Daily Itinerary</Text>
+                    {trip.planDays?.map((dayPlan) => (
+                        <View key={dayPlan.day} style={styles.dayContainer}>
+                            <Text style={styles.dayTitle}>Day {dayPlan.day}</Text>
+                            {dayPlan.activities?.map((activity, i) => (
+                                <View key={i} style={styles.activityContainer}>
+                                    <Text style={styles.activityName}>{activity.name}</Text>
+                                    <Text style={styles.activityDesc}>{activity.shortDescription}</Text>
+                                </View>
+                            ))}
+                        </View>
+                    ))}
+                </View>
+
+                {/* Footer */}
+                <Text style={styles.footer}>
+                    Generated by Easy Trip - Plan your next adventure at easytrip.vercel.app
+                </Text>
+            </Page>
+        </Document>
+    );
+}

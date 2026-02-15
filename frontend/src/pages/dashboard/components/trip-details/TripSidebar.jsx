@@ -1,4 +1,6 @@
 import { Download, MapPin, Calendar } from 'lucide-react';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import { TripPDF } from './TripPDF';
 
 export function TripSidebar({ trip }) {
     // trip.planDays is an array of days
@@ -30,10 +32,21 @@ export function TripSidebar({ trip }) {
                     </p>
                 </div>
 
-                <button className="w-full mt-6 flex items-center justify-center gap-2 rounded-lg border border-border bg-background px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary/50">
-                    <Download size={16} />
-                    Download PDF
-                </button>
+                <PDFDownloadLink
+                    document={<TripPDF trip={trip} />}
+                    fileName={`${trip.destination.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`}
+                    className="w-full mt-6"
+                >
+                    {({ loading }) => (
+                        <button
+                            disabled={loading}
+                            className="w-full flex items-center justify-center gap-2 rounded-lg border border-border bg-background px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary/50 disabled:opacity-50"
+                        >
+                            <Download size={16} />
+                            {loading ? 'Preparing PDF...' : 'Download PDF'}
+                        </button>
+                    )}
+                </PDFDownloadLink>
             </div>
 
             {/* Quick Info */}
