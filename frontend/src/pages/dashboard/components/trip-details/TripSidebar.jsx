@@ -1,22 +1,36 @@
 import { Download, MapPin, Calendar } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { TripPDF } from './TripPDF';
+import { useState } from 'react';
+import { MapFullscreenModal } from './MapFullscreenModal';
+import { Button } from '@/components/ui/button';
+import { MapView } from './MapView';
 
 export function TripSidebar({ trip }) {
     // trip.planDays is an array of days
     const totalActivities = trip.planDays?.reduce((sum, day) => sum + (day.activities?.length || 0), 0) || 0;
 
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className="sticky top-24 space-y-6">
-            {/* Map Placeholder */}
-            <div className="rounded-xl border border-border bg-secondary/30 p-6 h-80">
-                <div className="w-full h-full rounded-lg bg-gradient-to-br from-muted/40 to-muted/20 flex items-center justify-center border border-border/50">
-                    <div className="text-center">
-                        <MapPin size={32} className="mx-auto text-muted-foreground mb-2" />
-                        <p className="text-xs text-muted-foreground">Map view coming soon</p>
-                    </div>
+            {/* Map Container - Simplified for width */}
+            <div className="rounded-xl border border-border bg-secondary/30 h-80 overflow-hidden relative group">
+                <MapView height="h-full" trip={trip} />
+
+                {/* Floating Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity z-[1000] pointer-events-none">
+                    <Button
+                        className="bg-primary text-primary-foreground hover:bg-primary/80 shadow-2xl pointer-events-auto scale-90 group-hover:scale-100 transition-transform"
+                        onClick={() => setIsOpen(true)}
+                    >
+                        <MapPin size={18} className="mr-2" />
+                        Explore Full Map
+                    </Button>
                 </div>
             </div>
+
+            <MapFullscreenModal isOpen={isOpen} onClose={() => setIsOpen(false)} trip={trip} />
 
             {/* Trip Stats Card */}
             <div className="rounded-xl border border-border bg-card p-6 space-y-4">

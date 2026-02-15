@@ -39,7 +39,7 @@ Requirements:
 4. For each activity, provide:
    - "name": short activity name
    - "shortDescription": 1-2 sentences describing it
-   - Optional "coords": { "lat": number, "lng": number } if known
+   - Optional "coords": { "lat": number, "lng": number } if known (accurate as possible)
 5. Return the entire response in strict JSON format with the following structure:
 
 {

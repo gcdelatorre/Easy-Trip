@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@maptiler/leaflet-maptilersdk": "^4.1.1",
     "@react-oauth/google": "^0.13.4",
     "@react-pdf/renderer": "^4.3.2",
     "add": "^2.0.6",
