@@ -243,11 +243,11 @@ export default function LoginPage() {
 
                 <p className="mt-8 text-center text-xs text-muted-foreground">
                     By continuing, you agree to our{" "}
-                    <Link to="#" className="underline hover:text-accent">
+                    <Link to="/terms" className="underline hover:text-accent">
                         Terms of Service
                     </Link>{" "}
                     and{" "}
-                    <Link to="#" className="underline hover:text-accent">
+                    <Link to="/privacy" className="underline hover:text-accent">
                         Privacy Policy
                     </Link>
                     .

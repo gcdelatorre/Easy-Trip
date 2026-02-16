@@ -58,28 +58,28 @@ export function Footer() {
                         </h4>
                         <ul className="flex flex-col gap-3">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/about"
                                     className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                                 >
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/privacy"
                                     className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                                 >
                                     Privacy
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/terms"
                                     className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                                 >
                                     Terms
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

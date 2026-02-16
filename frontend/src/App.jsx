@@ -14,6 +14,9 @@ import { RefreshProvider } from './contexts/RefreshContext';
 import { TravelPlanProvider } from './contexts/TravelPlanContext';
 import Explore from './pages/ExplorePage/Explore';
 import NotFound from './pages/NotFoundPage/NotFound';
+import AboutPage from './pages/AboutPage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
 
 export default function App() {
   return (
@@ -44,6 +47,9 @@ function AppContent() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<LoginPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="create" element={<CreatePlanPage />} />
         <Route path='/not-found' element={<NotFound />} />
