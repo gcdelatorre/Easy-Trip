@@ -15,6 +15,7 @@ export function TravelPlanProvider({ children }) {
     const [plans, setPlans] = useState([]);
     const [currentTrip, setCurrentTrip] = useState(null);
     const [currentHighlight, setCurrentHighlight] = useState(null);
+    const [selectedItinerary, setSelectedItinerary] = useState(null);
 
     const getAllTravelPlans = useCallback(async () => {
         const data = await travelPlanService.fetchTravelPlans();
@@ -42,8 +43,10 @@ export function TravelPlanProvider({ children }) {
         getCurrentPlan,
         createTravelPlan,
         currentHighlight,
-        setCurrentHighlight
-    }), [plans, currentTrip, getAllTravelPlans, getCurrentPlan, createTravelPlan, currentHighlight, setCurrentHighlight]);
+        setCurrentHighlight,
+        setSelectedItinerary,
+        selectedItinerary
+    }), [plans, currentTrip, getAllTravelPlans, getCurrentPlan, createTravelPlan, currentHighlight, setCurrentHighlight, setSelectedItinerary, selectedItinerary]);
 
     return <TravelPlanContext.Provider value={value}>{children}</TravelPlanContext.Provider>;
 }
