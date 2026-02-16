@@ -14,7 +14,7 @@ export default function TripDetailsPage() {
     const navigate = useNavigate();
     const { startLoading, stopLoading } = useLoading();
     const { error } = useToast();
-    const { currentTrip: trip, getCurrentPlan, setCurrentHighlight } = useTravelPlan();
+    const { currentTrip: trip, getCurrentPlan, setCurrentHighlight, setSelectedItinerary } = useTravelPlan();
     const [isOpen, setIsOpen] = useState(false)
 
     const [activeTab, setActiveTab] = useState('overview');
@@ -88,14 +88,15 @@ export default function TripDetailsPage() {
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
                                         trip.highlights.map((highlight, idx) => (
-                                            <button key={idx}>
-                                                <div
-                                                    className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                                                    onClick={() => {
-                                                        setCurrentHighlight(highlight);
-                                                        setIsOpen(true);
-                                                    }}
-                                                >
+                                            <button 
+                                                key={idx}
+                                                className="p-0 m-0 border-0 bg-transparent focus:outline-none focus:ring-0"
+                                                onClick={() => {
+                                                    setCurrentHighlight(highlight);
+                                                    setIsOpen(true);
+                                                }}
+                                            >
+                                                <div className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors hover:cursor-pointer">
                                                     {highlight.name}
                                                 </div>
                                             </button>
@@ -127,10 +128,20 @@ export default function TripDetailsPage() {
                     {/* Itinerary Tab */}
                     {activeTab === 'itinerary' && (
                         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                            <h2 className="font-serif text-2xl text-foreground">Day-by-Day Itinerary</h2>
+                            <h2 className="font-serif text-2xl text-foreground mb-2">Day-by-Day Itinerary</h2>
+                            <p className="text-muted-foreground leading-relaxed text-xs mb-4">Click on any itinerary to view it on the map.</p>
                             <div className="grid gap-8">
-                                {trip.planDays?.map((dayPlan) => (
-                                    <ItineraryDay key={dayPlan.day} day={dayPlan} />
+                                {trip.planDays?.map((dayPlan, idx) => (
+                                    <button 
+                                        key={idx} 
+                                        className='w-full text-left p-0 m-0 border-0 bg-transparent hover:cursor-pointer focus:outline-none focus:ring-0' 
+                                        onClick={() => {
+                                            setSelectedItinerary(dayPlan);
+                                            setIsOpen(true)
+                                        }}
+                                    >
+                                        <ItineraryDay key={dayPlan.day} day={dayPlan} isOpen={isOpen}/>
+                                    </button>
                                 ))}
                             </div>
                         </div>

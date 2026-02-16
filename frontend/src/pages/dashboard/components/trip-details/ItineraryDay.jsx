@@ -2,7 +2,7 @@ import { Clock } from 'lucide-react';
 
 export function ItineraryDay({ day }) {
     return (
-        <div className="rounded-xl border border-border bg-card p-8 transition-all hover:border-accent/20 hover:shadow-sm">
+        <div className="flex flex-col justify-start rounded-xl border border-border bg-card p-8 transition-all hover:border-accent/20 hover:shadow-sm">
             <div className="mb-6">
                 <span className="text-sm font-medium text-accent">Day {day.day}</span>
                 <h3 className="font-serif text-xl text-foreground mt-2">{day.title || `Day ${day.day} Exploration`}</h3>
