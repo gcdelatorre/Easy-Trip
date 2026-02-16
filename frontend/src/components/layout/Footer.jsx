@@ -85,8 +85,9 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="mt-16 border-t border-border pt-8">
-                    <p className="text-sm text-muted-foreground">
-                        &copy; 2026 Easytrip. All rights reserved.
+                    <p className="text-xs text-muted-foreground">
+                        © {new Date().getFullYear()} • Developed by{" "}
+                        <span className="font-semibold">Gian Carlo De la Torre</span>
                     </p>
                 </div>
             </div>
