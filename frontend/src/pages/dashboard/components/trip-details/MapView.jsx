@@ -16,10 +16,26 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow,
 });
 
+export function MapView({ height = "h-full", trip, isOpen }) {
 
-export function MapView({ height = "h-full", trip }) {
+    const { currentHighlight, setCurrentHighlight, selectedItinerary, setSelectedItinerary } = useTravelPlan()
 
-    const { currentHighlight } = useTravelPlan()
+    useEffect(() => {
+        if (isOpen === false) {
+            setCurrentHighlight(null);
+            setSelectedItinerary(null);
+        }
+    }, [isOpen, setCurrentHighlight, setSelectedItinerary]);
+
+    const itineraryMarkers = selectedItinerary?.activities?.map((activity, idx) => {
+        return (
+            <Marker key={idx} position={[Number(activity?.coords?.lat || 0), Number(activity?.coords?.lng || 0)]}>
+                <Popup>
+                    Destination {idx + 1} <br /> {activity.name}
+                </Popup>
+            </Marker>
+        )
+    })
 
     const highlightPosition = currentHighlight?.coords
         ? [Number(currentHighlight.coords.lat), Number(currentHighlight.coords.lng)]
@@ -37,7 +53,10 @@ export function MapView({ height = "h-full", trip }) {
                 doubleClickZoom={false}
                 dragging={true}
             >
-                {highlightPosition && (
+
+                {selectedItinerary && itineraryMarkers}
+
+                {currentHighlight && (
                     <Marker position={highlightPosition}>
                         <Popup>
                             {currentHighlight?.name}

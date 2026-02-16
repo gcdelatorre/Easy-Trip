@@ -19,7 +19,7 @@ export function MapFullscreenModal({ isOpen, onClose, trip }) {
 
                 {/* Map Container - Now a wide rectangle */}
                 <div className="flex-1 w-full bg-secondary/10">
-                    <MapView height="h-full" trip={trip} />
+                    <MapView height="h-full" trip={trip} isOpen={isOpen} />
                 </div>
             </DialogContent>
         </Dialog>
