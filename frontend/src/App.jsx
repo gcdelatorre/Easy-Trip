@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import LandingPage from './pages/LandingPage/LandingPage';
 import DashboardLayout from './pages/dashboard/DashboardLayout';
@@ -46,6 +46,7 @@ function AppContent() {
         <Route path="/signup" element={<LoginPage />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="create" element={<CreatePlanPage />} />
+        <Route path='/not-found' element={<NotFound />} />
 
         {/* Dashboard Routes with Layout */}
         <Route path="/dashboard" element={<DashboardLayout children={<Outlet />} />}>
@@ -54,7 +55,7 @@ function AppContent() {
         </Route>
 
         {/* Catch-all 404 Route */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/not-found" replace />} />
       </Routes>
     </>
   )
