@@ -13,9 +13,16 @@ const setAuthData = (user, token) => {
 };
 
 const getCurrentUser = () => {
-    const userStr = localStorage.getItem("user");
-    if (userStr) return JSON.parse(userStr);
-    return null;
+    try {
+        const userStr = localStorage.getItem("user");
+        if (userStr) return JSON.parse(userStr);
+        return null;
+    } catch (error) {
+        console.error("Error getting current user:", error);
+        localStorage.removeItem("user");
+        localStorage.removeItem("token"); // clear both to avoid broken session state
+        return null;
+    }
 };
 
 const loginWithGoogle = async (idToken) => {
