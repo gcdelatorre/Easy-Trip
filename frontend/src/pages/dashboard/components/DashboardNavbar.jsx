@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Profiler, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { User, LogOut, ChevronDown, Menu, X } from "lucide-react";
 import { useAuth } from "../../../contexts/AuthContext";
@@ -81,6 +81,16 @@ export function DashboardNavbar() {
                                         Signed in as <br /> <span className="font-medium text-foreground">{user?.email}</span>
                                     </div>
                                     <div className="my-1 h-px bg-border" />
+                                    <button
+                                        onClick={() => {
+                                            logout();
+                                            setProfileOpen(false);
+                                        }}
+                                        className="w-full text-left flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary"
+                                    >
+                                        <User size={15} />
+                                        Profile
+                                    </button>
                                     <button
                                         onClick={() => {
                                             logout();

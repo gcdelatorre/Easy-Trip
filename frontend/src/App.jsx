@@ -14,9 +14,9 @@ import { RefreshProvider } from './contexts/RefreshContext';
 import { TravelPlanProvider } from './contexts/TravelPlanContext';
 import Explore from './pages/ExplorePage/Explore';
 import NotFound from './pages/NotFoundPage/NotFound';
-import AboutPage from './pages/AboutPage';
-import PrivacyPage from './pages/PrivacyPage';
-import TermsPage from './pages/TermsPage';
+import AboutPage from './pages/LandingPage/AboutPage';
+import PrivacyPage from './pages/LandingPage/PrivacyPage';
+import TermsPage from './pages/LandingPage/TermsPage';
 
 export default function App() {
   return (
