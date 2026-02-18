@@ -11,4 +11,6 @@ export const interests = [
     "Art & Museums",
     "Wellness & Spa",
     "Local Markets",
+    "Instagramable Spots",
+    "Tourist Spots",
 ];
