@@ -13,6 +13,7 @@ import { FullPageSpinner } from './components/ui/customized-loading-spinner';
 import { RefreshProvider } from './contexts/RefreshContext';
 import { TravelPlanProvider } from './contexts/TravelPlanContext';
 import Explore from './pages/ExplorePage/Explore';
+import BlogDetail from './pages/ExplorePage/components/BlogDetail';
 import NotFound from './pages/NotFoundPage/NotFound';
 import AboutPage from './pages/LandingPage/AboutPage';
 import PrivacyPage from './pages/LandingPage/PrivacyPage';
@@ -51,6 +52,7 @@ function AppContent() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/explore" element={<Explore />} />
+        <Route path="/explore/:slug" element={<BlogDetail />} />
         <Route path="create" element={<CreatePlanPage />} />
         <Route path='/not-found' element={<NotFound />} />
 
