@@ -3,47 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Clock, Calendar, Share2, Bookmark } from "lucide-react";
 
-const MOCK_ARTICLES = {
-    "kyoto-beauty": {
-        country: "Japan",
-        title: "The Silent Beauty of Kyoto",
-        content: `
-            Kyoto, the former imperial capital of Japan, is a city where time seems to still. Unlike the neon-drenched streets of Tokyo, Kyoto offers a glimpse into Japan's soul through its 1,600 Buddhist temples and 400 Shinto shrines.
-
-            Walking through the Arashiyama Bamboo Grove at dawn is a spiritual experience. The towering green stalks sway gently, creating a soothing rustle that many call the "sound of Kyoto." It's one of the Ministry of Environment's "100 Soundscapes of Japan."
-
-            But the real magic happens in the Gion district. As dusk falls, you might catch a fleeting glimpse of a Geiko or Maiko hurrying to an appointment in their exquisite silk kimonos. It's a reminder of a Japan that meticulously preserves its traditions in the face of modernity.
-
-            Don't miss the Kinkaku-ji (Golden Pavilion), which reflects perfectly in the surrounding pond, or the Fushimi Inari Shrine with its thousands of vermilion torii gates winding up the mountainside. Kyoto isn't just a destination; it's a feeling of profound peace.
-        `,
-        imageUrl: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop",
-        author: "Satoshi Nakamura",
-        date: "Feb 15, 2026",
-        readTime: "6 min read",
-        category: "Cultural"
-    },
-    "amalfi-coast": {
-        country: "Italy",
-        title: "Amalfi Coast: A Cliffside Dream",
-        content: "Experience the vibrant colors and breathtaking Mediterranean views of Italy's most famous coastline. Lemons, luxury, and crystal waters. The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy's Sorrentine Peninsula, in the Campania region.",
-        imageUrl: "https://images.unsplash.com/photo-1460627390041-532a28402358?q=80&w=2070&auto=format&fit=crop",
-        author: "Giuliana Rossi",
-        date: "Feb 12, 2026",
-        readTime: "5 min read",
-        category: "Luxury"
-    },
-    "palawan-island": {
-        country: "Philippines",
-        title: "Island Hopping in Palawan",
-        content: "Crystal clear lagoons, limestone cliffs, and white sandy beaches. Explore why Palawan is consistently voted the world's best island. Home to the Puerto Princesa Subterranean River National Park, one of the New 7 Wonders of Nature.",
-        imageUrl: "https://images.unsplash.com/photo-1518509562904-87459e3634a7?q=80&w=1974&auto=format&fit=crop",
-        author: "Maria Santos",
-        date: "Feb 10, 2026",
-        readTime: "8 min read",
-        category: "Adventure"
-    }
-};
-
 const BlogDetail = () => {
     const { slug } = useParams();
     const article = MOCK_ARTICLES[slug] || MOCK_ARTICLES["kyoto-beauty"];

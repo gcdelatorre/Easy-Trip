@@ -6,62 +6,7 @@ import { Link } from "react-router-dom";
 import { Footer } from "@/components/layout/Footer";
 import { useAuth } from "@/contexts/AuthContext";
 
-const MOCK_BLOGS = [
-    {
-        id: 1,
-        slug: "kyoto-beauty",
-        country: "Japan",
-        title: "The Silent Beauty of Kyoto",
-        excerpt: "Discover the hidden temples and serene Zen gardens that make Kyoto the cultural heart of Japan. A journey through time and tradition.",
-        imageUrl: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2070&auto=format&fit=crop",
-        category: "Cultural"
-    },
-    {
-        id: 2,
-        slug: "amalfi-coast",
-        country: "Italy",
-        title: "Amalfi Coast: A Cliffside Dream",
-        excerpt: "Experience the vibrant colors and breathtaking Mediterranean views of Italy's most famous coastline. Lemons, luxury, and crystal waters.",
-        imageUrl: "https://images.unsplash.com/photo-1460627390041-532a28402358?q=80&w=2070&auto=format&fit=crop",
-        category: "Luxury"
-    },
-    {
-        id: 3,
-        slug: "palawan-island",
-        country: "Philippines",
-        title: "Island Hopping in Palawan",
-        excerpt: "Crystal clear lagoons, limestone cliffs, and white sandy beaches. Explore why Palawan is consistently voted the world's best island.",
-        imageUrl: "https://images.unsplash.com/photo-1518509562904-87459e3634a7?q=80&w=1974&auto=format&fit=crop",
-        category: "Adventure"
-    },
-    {
-        id: 4,
-        slug: "iceland-lights",
-        country: "Iceland",
-        title: "Chasing the Northern Lights",
-        excerpt: "A guide to experiencing the magical Aurora Borealis amidst the volcanic landscapes and glacial lagoons of Iceland.",
-        imageUrl: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=2059&auto=format&fit=crop",
-        category: "Nature"
-    },
-    {
-        id: 5,
-        slug: "marrakech-magic",
-        country: "Morocco",
-        title: "The Magic of Marrakech",
-        excerpt: "Lose yourself in the vibrant souks, historic riads, and the enchanting gardens of the Red City. A sensory explosion.",
-        imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=2073&auto=format&fit=crop",
-        category: "Exotic"
-    },
-    {
-        id: 6,
-        slug: "zermatt-alps",
-        country: "Switzerland",
-        title: "Alpine Bliss in Zermatt",
-        excerpt: "Skiing under the shadow of the Matterhorn. Discover the ultimate winter wonderland and Swiss hospitality.",
-        imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop",
-        category: "Winter"
-    }
-];
+const MOCK_BLOGS = [];
 
 export default function Explore() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -145,14 +90,8 @@ export default function Explore() {
                 {filteredBlogs.length === 0 && (
                     <div className="text-center py-20 bg-secondary/20 rounded-3xl border border-dashed border-border">
                         <p className="text-muted-foreground font-serif text-xl italic">
-                            Missing something? We haven't explored that place yet.
+                            Blogs will be posted soon.
                         </p>
-                        <button
-                            onClick={() => setSearchQuery("")}
-                            className="mt-4 text-accent text-sm font-medium hover:underline"
-                        >
-                            Clear search
-                        </button>
                     </div>
                 )}
             </main>
