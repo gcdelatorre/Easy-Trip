@@ -31,6 +31,12 @@ app.use('/api/travel-plans', travelPlanRoutes);
 app.use('/api/destinations', destinationInfoRoutes);
 app.use('/api/generate-pexels', pexelsRoutes)
 
+// health check, for keeping the server awake
+app.get("/api/health", (req, res) => {
+    console.log("Triggered")
+    res.json({ message: "Server is running" });
+});
+
 const startServer = async () => {
     try {
         await connectDB();
