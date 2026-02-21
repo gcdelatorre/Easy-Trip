@@ -72,6 +72,9 @@ export default function TripDetailsPage() {
                     {/* Tabs */}
                     <TripTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
+
+                    {/** we are gonna display here the cards of deep links for flights, bookings, tours/activites maybe lets create a component */}
+
                     {/* Overview Tab */}
                     {activeTab === 'overview' && (
                         <div className="space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -88,7 +91,7 @@ export default function TripDetailsPage() {
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
                                         trip.highlights.map((highlight, idx) => (
-                                            <button 
+                                            <button
                                                 key={idx}
                                                 className="p-0 m-0 border-0 bg-transparent focus:outline-none focus:ring-0"
                                                 onClick={() => {
@@ -132,15 +135,15 @@ export default function TripDetailsPage() {
                             <p className="text-muted-foreground leading-relaxed text-xs mb-4">Click on any itinerary to view it on the map.</p>
                             <div className="grid gap-8">
                                 {trip.planDays?.map((dayPlan, idx) => (
-                                    <button 
-                                        key={idx} 
-                                        className='w-full text-left p-0 m-0 border-0 bg-transparent hover:cursor-pointer focus:outline-none focus:ring-0' 
+                                    <button
+                                        key={idx}
+                                        className='w-full text-left p-0 m-0 border-0 bg-transparent hover:cursor-pointer focus:outline-none focus:ring-0'
                                         onClick={() => {
                                             setSelectedItinerary(dayPlan);
                                             setIsOpen(true)
                                         }}
                                     >
-                                        <ItineraryDay key={dayPlan.day} day={dayPlan} isOpen={isOpen}/>
+                                        <ItineraryDay key={dayPlan.day} day={dayPlan} isOpen={isOpen} />
                                     </button>
                                 ))}
                             </div>
