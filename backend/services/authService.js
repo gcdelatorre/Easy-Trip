@@ -71,11 +71,18 @@ export const findOrCreateUser = async (googlePayload) => {
             oauthId: sub,
             oauthProvider: 'google',
         });
-    } else if (!user.oauthId) {
-        // Link existing email user to Google OAuth if they haven't used it before
-        user.oauthId = sub;
-        user.oauthProvider = 'google';
-        await user.save();
+    } else {
+        let updated = false;
+        if (!user.oauthId) {
+            user.oauthId = sub;
+            user.oauthProvider = 'google';
+            updated = true;
+        }
+        if (!user.picture && picture) {
+            user.picture = picture;
+            updated = true;
+        }
+        if (updated) await user.save();
     }
 
     return user;

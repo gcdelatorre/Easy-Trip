@@ -81,16 +81,16 @@ export function DashboardNavbar() {
                                         Signed in as <br /> <span className="font-medium text-foreground">{user?.email}</span>
                                     </div>
                                     <div className="my-1 h-px bg-border" />
-                                    <button
+                                    {/* <button
                                         onClick={() => {
-                                            logout();
+                                            // TODO: Navigate to profile
                                             setProfileOpen(false);
                                         }}
                                         className="w-full text-left flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary"
                                     >
                                         <User size={15} />
                                         Profile
-                                    </button>
+                                    </button> */}
                                     <button
                                         onClick={() => {
                                             logout();
