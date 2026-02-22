@@ -8,6 +8,9 @@ import { ItineraryDay } from './components/trip-details/ItineraryDay';
 import { TripSidebar } from './components/trip-details/TripSidebar';
 import { useTravelPlan } from '@/contexts/TravelPlanContext';
 import { MapFullscreenModal } from './components/trip-details/MapFullscreenModal';
+import { FlightsCard } from '../../components/Trip Essentials/FlightsCard';
+import { AirbnbCard } from '../../components/Trip Essentials/AirbnbCard';
+import { ViatorCard } from '../../components/Trip Essentials/ViatorCard';
 
 export default function TripDetailsPage() {
     const { tripId } = useParams();
@@ -123,6 +126,12 @@ export default function TripDetailsPage() {
                                             {interest}
                                         </div>
                                     ))}
+                                </div>
+                                <h3 className="font-serif text-xl text-foreground mb-4 mt-10">Trip Essentials</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-8">
+                                    <FlightsCard />
+                                    <AirbnbCard />
+                                    <ViatorCard />
                                 </div>
                             </div>
                         </div>
