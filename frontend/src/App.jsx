@@ -18,19 +18,22 @@ import NotFound from './pages/NotFoundPage/NotFound';
 import AboutPage from './pages/LandingPage/AboutPage';
 import PrivacyPage from './pages/LandingPage/PrivacyPage';
 import TermsPage from './pages/LandingPage/TermsPage';
+import { TravelDetailsProvider } from './contexts/TravelDetailsContext';
 
 export default function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
         <TravelPlanProvider>
-          <ToastProvider>
-            <LoadingProvider>
-              <RefreshProvider>
-                <AppContent />
-              </RefreshProvider>
-            </LoadingProvider>
-          </ToastProvider>
+          <TravelDetailsProvider>
+            <ToastProvider>
+              <LoadingProvider>
+                <RefreshProvider>
+                  <AppContent />
+                </RefreshProvider>
+              </LoadingProvider>
+            </ToastProvider>
+          </TravelDetailsProvider>
         </TravelPlanProvider>
       </AuthProvider>
     </BrowserRouter>
