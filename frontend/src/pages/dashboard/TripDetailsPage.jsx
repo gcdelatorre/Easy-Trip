@@ -12,19 +12,21 @@ import { FlightsCard } from '../../components/Trip Essentials/FlightsCard';
 import { AirbnbCard } from '../../components/Trip Essentials/AirbnbCard';
 import { ViatorCard } from '../../components/Trip Essentials/ViatorCard';
 
+import { TripDetailsSkeleton } from './components/trip-details/TripDetailsSkeleton';
+
 export default function TripDetailsPage() {
     const { tripId } = useParams();
     const navigate = useNavigate();
-    const { startLoading, stopLoading } = useLoading();
     const { error } = useToast();
     const { currentTrip: trip, getCurrentPlan, setCurrentHighlight, setSelectedItinerary } = useTravelPlan();
     const [isOpen, setIsOpen] = useState(false)
+    const [pageLoading, setPageLoading] = useState(true);
 
     const [activeTab, setActiveTab] = useState('overview');
 
     useEffect(() => {
         const fetchTrip = async () => {
-            startLoading("Loading trip details...");
+            setPageLoading(true);
             try {
                 await getCurrentPlan(tripId);
             } catch (err) {
@@ -32,16 +34,16 @@ export default function TripDetailsPage() {
                 error("Could not find this travel plan.");
                 navigate("/dashboard");
             } finally {
-                stopLoading();
+                setPageLoading(false);
             }
         };
 
         if (tripId) {
             fetchTrip();
         }
-    }, [tripId, navigate, startLoading, stopLoading, error, getCurrentPlan]);
+    }, [tripId, navigate, error, getCurrentPlan]);
 
-    if (!trip) return null;
+    if (pageLoading || !trip) return <TripDetailsSkeleton />;
 
     return (
         <div className="pb-12">

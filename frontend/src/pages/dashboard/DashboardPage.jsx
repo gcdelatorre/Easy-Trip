@@ -7,6 +7,7 @@ import { useTravelPlan } from "@/contexts/TravelPlanContext";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/contexts/ToastContext";
+import { DashboardSkeleton } from "./components/DashboardSkeleton";
 
 export default function DashboardPage() {
     const { refresh } = useRefresh();
@@ -14,6 +15,7 @@ export default function DashboardPage() {
     const navigate = useNavigate();
     const { user } = useAuth();
     const { warning } = useToast();
+    const [pageLoading, setPageLoading] = useState(true);
 
     useEffect(() => {
         if (!user) {
@@ -26,14 +28,19 @@ export default function DashboardPage() {
 
     useEffect(() => {
         const fetchTravelPlansData = async () => {
+            setPageLoading(true);
             try {
                 await getAllTravelPlans();
             } catch (err) {
                 console.error("Error fetching travel plans:", err);
+            } finally {
+                setPageLoading(false);
             }
         };
         fetchTravelPlansData();
     }, [refresh, getAllTravelPlans]);
+
+    if (pageLoading) return <DashboardSkeleton />;
 
     return (
         <div>
