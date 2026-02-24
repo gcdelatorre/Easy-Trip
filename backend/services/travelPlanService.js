@@ -13,7 +13,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const getDestinationImage = async (destinationName) => {
   // Normalize: "Paris, France" -> "France" because in the frontend the selection format would be city, country
   const country = destinationName.includes(',') ? destinationName.split(',').pop().trim() : destinationName.trim();
-  const info = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } });
+  const info = await DestinationInfo.findOne({ country: { $regex: new RegExp(`^${country}$`, 'i') } }).select('imageUrl').lean();
   return info?.imageUrl || null;
 };
 
@@ -89,7 +89,10 @@ Notes:
 };
 
 export const getAllPlansService = async (userId) => {
-  const plans = await TravelPlan.find({ userId }).sort({ createdAt: -1 }).lean();
+  const plans = await TravelPlan.find({ userId })
+    .select('destination destinationDescription startDate endDate groupSize createdAt')
+    .sort({ createdAt: -1 })
+    .lean();
 
   // Enrich each plan with its corresponding destination image
   const enrichedPlans = await Promise.all(plans.map(async (plan) => {
