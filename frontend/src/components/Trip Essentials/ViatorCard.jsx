@@ -1,8 +1,9 @@
+import { memo } from "react";
 import { Ticket01Icon, ArrowRight01Icon } from "hugeicons-react";
 import { useTravelDetails } from "../../contexts/TravelDetailsContext";
 import { useTravelPlan } from "../../contexts/TravelPlanContext";
 
-export function ViatorCard() {
+export const ViatorCard = memo(function ViatorCard() {
     const { viatorLink } = useTravelDetails();
     const { currentTrip } = useTravelPlan();
 
@@ -40,4 +41,4 @@ export function ViatorCard() {
             <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-accent/5 blur-3xl transition-opacity group-hover:opacity-100" />
         </a>
     );
-}
+});

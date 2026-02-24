@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { CalendarDays, Users, MapPin } from "lucide-react";
+import { memo } from "react";
 
-export function TripCard({ trip }) {
+export const TripCard = memo(function TripCard({ trip }) {
     return (
         <Link to={`/dashboard/trip/${trip._id}`} className="group block">
             <div className="relative overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-md">
@@ -41,4 +42,4 @@ export function TripCard({ trip }) {
             </div>
         </Link>
     );
-}
+})

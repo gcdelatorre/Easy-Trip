@@ -1,6 +1,7 @@
 import { Clock } from 'lucide-react';
+import { memo } from 'react';
 
-export function ItineraryDay({ day }) {
+export const ItineraryDay = memo(function ItineraryDay({ day }) {
     return (
         <div className="flex flex-col justify-start rounded-xl border border-border bg-card p-8 transition-all hover:border-accent/20 hover:shadow-sm">
             <div className="mb-6">
@@ -33,4 +34,4 @@ export function ItineraryDay({ day }) {
             </div>
         </div>
     );
-}
+});

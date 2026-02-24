@@ -1,12 +1,12 @@
+import { memo, useState } from 'react';
 import { Download, MapPin, Calendar } from 'lucide-react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { TripPDF } from './TripPDF';
-import { useState } from 'react';
 import { MapFullscreenModal } from './MapFullscreenModal';
 import { Button } from '@/components/ui/button';
 import { MapView } from './MapView';
 
-export function TripSidebar({ trip }) {
+export const TripSidebar = memo(function TripSidebar({ trip }) {
     // trip.planDays is an array of days
     const totalActivities = trip.planDays?.reduce((sum, day) => sum + (day.activities?.length || 0), 0) || 0;
 
@@ -79,4 +79,4 @@ export function TripSidebar({ trip }) {
             </div>
         </div>
     );
-}
+});

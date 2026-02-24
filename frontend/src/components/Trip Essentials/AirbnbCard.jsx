@@ -1,8 +1,9 @@
+import { memo } from "react";
 import { Home01Icon, ArrowRight01Icon } from "hugeicons-react";
 import { useTravelDetails } from "../../contexts/TravelDetailsContext";
 import { useTravelPlan } from "../../contexts/TravelPlanContext";
 
-export function AirbnbCard() {
+export const AirbnbCard = memo(function AirbnbCard() {
     const { airbnbLink } = useTravelDetails();
     const { currentTrip } = useTravelPlan();
 
@@ -40,4 +41,4 @@ export function AirbnbCard() {
             <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-accent/5 blur-3xl transition-opacity group-hover:opacity-100" />
         </a>
     );
-}
+});

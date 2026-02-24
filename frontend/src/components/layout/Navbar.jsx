@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 import { useAuth } from "../../contexts/AuthContext";
 
-export function Navbar() {
+export const Navbar = memo(function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [profileOpen, setProfileOpen] = useState(false);
     const { user, logout } = useAuth();
@@ -169,7 +169,6 @@ export function Navbar() {
                         >
                             Explore
                         </Link>
-                        {/* ... existing mobile links ... */}
                         {user ? (
                             <>
                                 <Link
@@ -200,4 +199,4 @@ export function Navbar() {
             )}
         </nav>
     );
-}
+});

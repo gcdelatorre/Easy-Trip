@@ -1,8 +1,9 @@
+import { memo } from "react";
 import { Airplane01Icon, ArrowRight01Icon } from "hugeicons-react";
 import { useTravelDetails } from "../../contexts/TravelDetailsContext";
 import { useTravelPlan } from "../../contexts/TravelPlanContext";
 
-export function FlightsCard() {
+export const FlightsCard = memo(function FlightsCard() {
     const { googleFlightLink } = useTravelDetails();
     const { currentTrip } = useTravelPlan();
 
@@ -40,4 +41,4 @@ export function FlightsCard() {
             <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-accent/5 blur-3xl transition-opacity group-hover:opacity-100" />
         </a>
     );
-}
+});

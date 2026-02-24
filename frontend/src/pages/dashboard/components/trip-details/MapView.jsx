@@ -1,6 +1,7 @@
+import { memo, useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useState } from 'react';
 import { useTravelPlan } from '@/contexts/TravelPlanContext';
 
 // Fix for default marker icons
@@ -16,7 +17,7 @@ L.Icon.Default.mergeOptions({
     shadowUrl: markerShadow,
 });
 
-export function MapView({ height = "h-full", trip, isOpen }) {
+export const MapView = memo(function MapView({ height = "h-full", trip, isOpen }) {
 
     const { currentHighlight, setCurrentHighlight, selectedItinerary, setSelectedItinerary } = useTravelPlan()
 
@@ -71,4 +72,4 @@ export function MapView({ height = "h-full", trip, isOpen }) {
             </MapContainer>
         </div>
     );
-}
+});

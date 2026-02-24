@@ -1,4 +1,6 @@
-export function TripTabs({ activeTab, onTabChange }) {
+import { memo } from 'react';
+
+export const TripTabs = memo(function TripTabs({ activeTab, onTabChange }) {
     const tabs = [
         { id: 'overview', label: 'Overview' },
         { id: 'itinerary', label: 'Itinerary' },
@@ -12,8 +14,8 @@ export function TripTabs({ activeTab, onTabChange }) {
                     key={tab.id}
                     onClick={() => onTabChange(tab.id)}
                     className={`px-4 py-3 text-sm font-medium transition-all relative ${activeTab === tab.id
-                            ? 'text-foreground'
-                            : 'text-muted-foreground hover:text-foreground'
+                        ? 'text-foreground'
+                        : 'text-muted-foreground hover:text-foreground'
                         }`}
                 >
                     {tab.label}
@@ -24,4 +26,4 @@ export function TripTabs({ activeTab, onTabChange }) {
             ))}
         </div>
     );
-}
+});

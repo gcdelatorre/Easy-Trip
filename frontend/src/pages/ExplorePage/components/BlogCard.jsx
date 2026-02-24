@@ -1,8 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { memo } from "react"
 
-const BlogCard = ({ country, title, excerpt, imageUrl, category, slug }) => {
+const BlogCard = memo(function BlogCard({ country, title, excerpt, imageUrl, category, slug }) {
     return (
         <Link to={`/explore/${slug}`}>
             <motion.div
@@ -36,6 +36,6 @@ const BlogCard = ({ country, title, excerpt, imageUrl, category, slug }) => {
             </motion.div>
         </Link>
     );
-};
+});
 
 export default BlogCard;
