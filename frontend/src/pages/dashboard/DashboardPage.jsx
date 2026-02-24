@@ -43,13 +43,13 @@ export default function DashboardPage() {
     if (pageLoading) return <DashboardSkeleton />;
 
     return (
-        <div>
+        <div className="animate-in fade-in duration-500">
             <div className="flex items-center justify-between">
                 <div>
                     <h1 className="font-serif text-3xl text-foreground md:text-4xl">
                         My Trips
                     </h1>
-                    <p className="mt-1 text-sm text-muted-foreground">
+                    <p className="mt-1 text-sm text-accent">
                         Your planned adventures, all in one place.
                     </p>
                 </div>

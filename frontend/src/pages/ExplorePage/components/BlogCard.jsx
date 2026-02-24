@@ -14,6 +14,7 @@ const BlogCard = memo(function BlogCard({ country, title, excerpt, imageUrl, cat
                         src={imageUrl}
                         alt={title}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-80" />
                 </div>

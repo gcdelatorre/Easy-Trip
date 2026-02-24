@@ -61,7 +61,7 @@ const BlogDetail = () => {
 
                 {/* Hero Image */}
                 <div className="aspect-[21/9] rounded-3xl overflow-hidden mb-12 shadow-medium">
-                    <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
+                    <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
 
                 {/* Content */}

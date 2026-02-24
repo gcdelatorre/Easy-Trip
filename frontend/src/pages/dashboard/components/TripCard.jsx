@@ -10,6 +10,7 @@ export const TripCard = memo(function TripCard({ trip }) {
                     src={trip.imageUrl || "https://images.pexels.com/photos/33342092/pexels-photo-33342092.jpeg"}
                     alt={trip.destination}
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105 lg:h-64"
+                    loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 

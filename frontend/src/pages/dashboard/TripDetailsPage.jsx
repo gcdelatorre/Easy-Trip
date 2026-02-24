@@ -22,10 +22,9 @@ export default function TripDetailsPage() {
     const [isOpen, setIsOpen] = useState(false)
     const [pageLoading, setPageLoading] = useState(true);
 
-    const [activeTab, setActiveTab] = useState('overview');
-
     useEffect(() => {
         const fetchTrip = async () => {
+            if (!tripId) return;
             setPageLoading(true);
             try {
                 await getCurrentPlan(tripId);
@@ -37,16 +36,15 @@ export default function TripDetailsPage() {
                 setPageLoading(false);
             }
         };
+        fetchTrip();
+    }, [tripId, getCurrentPlan, navigate, error]);
 
-        if (tripId) {
-            fetchTrip();
-        }
-    }, [tripId, navigate, error, getCurrentPlan]);
+    const [activeTab, setActiveTab] = useState('overview');
 
     if (pageLoading || !trip) return <TripDetailsSkeleton />;
 
     return (
-        <div className="pb-12">
+        <div className="pb-12 animate-in fade-in duration-500">
             {/* Hero Section */}
             <div className="relative -mx-6 -mt-6 mb-12 overflow-hidden rounded-b-[2rem] shadow-lg">
                 <img
@@ -92,7 +90,7 @@ export default function TripDetailsPage() {
 
                             <div>
                                 <h3 className="font-serif text-xl text-foreground mb-2">Highlights</h3>
-                                <p className="text-muted-foreground leading-relaxed text-xs mb-4">Click on any highlight to view it on the map.</p>
+                                <p className="text-accent leading-relaxed text-xs mb-4">Click on any highlight to view it on the map.</p>
                                 <div className="flex flex-wrap gap-3">
                                     {trip.highlights?.length > 0 ? (
                                         trip.highlights.map((highlight, idx) => (
@@ -143,7 +141,7 @@ export default function TripDetailsPage() {
                     {activeTab === 'itinerary' && (
                         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
                             <h2 className="font-serif text-2xl text-foreground mb-2">Day-by-Day Itinerary</h2>
-                            <p className="text-muted-foreground leading-relaxed text-xs mb-4">Click on any itinerary to view it on the map.</p>
+                            <p className="text-accent leading-relaxed text-xs mb-4">Click on any itinerary to view it on the map.</p>
                             <div className="grid gap-8">
                                 {trip.planDays?.map((dayPlan, idx) => (
                                     <button

@@ -42,6 +42,7 @@ export function Hero() {
                                         src="https://images.pexels.com/photos/14695270/pexels-photo-14695270.jpeg"
                                         alt="Tropical beach with crystal clear water"
                                         className="h-64 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-80"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <div className="overflow-hidden rounded-2xl">
@@ -49,6 +50,7 @@ export function Hero() {
                                         src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?"
                                         alt="Historic Lisbon tram on cobblestone street"
                                         className="h-40 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-52"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -58,6 +60,7 @@ export function Hero() {
                                         src="https://images.pexels.com/photos/15985572/pexels-photo-15985572.jpeg"
                                         alt="Amalfi Coast colorful buildings on cliffs"
                                         className="h-40 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-52"
+                                        loading="lazy"
                                     />
                                 </div>
                                 <div className="overflow-hidden rounded-2xl">
@@ -65,6 +68,7 @@ export function Hero() {
                                         src="https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg"
                                         alt="Swiss Alps mountain landscape"
                                         className="h-64 w-full object-cover transition-transform duration-500 hover:scale-105 lg:h-80"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
