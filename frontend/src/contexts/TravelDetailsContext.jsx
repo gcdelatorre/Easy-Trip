@@ -1,15 +1,11 @@
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import React, { createContext, useState, useCallback, useEffect } from 'react';
 import { useTravelPlan } from '@/contexts/TravelPlanContext';
 
 const TravelDetailsContext = createContext();
+export { TravelDetailsContext };
 
-export const useTravelDetails = () => {
-    const context = useContext(TravelDetailsContext);
-    if (!context) {
-        throw new Error('useTravelDetails must be used within TravelDetailsProvider');
-    }
-    return context;
-};
+// Hook re-exported for backward compatibility — defined in @/hooks/useTravelDetails
+export { useTravelDetails } from "../hooks/useTravelDetails";
 
 export function TravelDetailsProvider({ children }) {
     const { currentTrip } = useTravelPlan();

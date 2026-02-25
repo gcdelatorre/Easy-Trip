@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Navbar } from "../../components/layout/Navbar";
 import { Hero } from "./components/hero";
 import { HowItWorks } from "./components/how-it-works";
@@ -6,7 +7,7 @@ import { Destinations } from "./components/destinations";
 import { CtaSection } from "./components/cta-section";
 import { Footer } from "../../components/layout/Footer";
 
-export default function LandingPage() {
+const LandingPage = memo(function LandingPage() {
     return (
         <div className="min-h-screen bg-background">
             <Navbar />
@@ -18,4 +19,6 @@ export default function LandingPage() {
             <Footer />
         </div>
     );
-}
+});
+
+export default LandingPage;

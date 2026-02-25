@@ -8,8 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/contexts/ToastContext";
 import { DashboardSkeleton } from "./components/DashboardSkeleton";
+import { memo } from "react";
 
-export default function DashboardPage() {
+export default memo(function DashboardPage() {
     const { refresh } = useRefresh();
     const { plans, getAllTravelPlans } = useTravelPlan();
     const navigate = useNavigate();
@@ -89,4 +90,4 @@ export default function DashboardPage() {
             </Link>
         </div>
     );
-}
+});
