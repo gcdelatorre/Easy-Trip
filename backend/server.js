@@ -10,6 +10,7 @@ import authRoutes from './routes/authRoutes.js';
 import destinationInfoRoutes from './routes/destinationInfoRoutes.js';
 import pexelsRoutes from './routes/pexelsRoutes.js'
 import helmet from 'helmet';
+import blogRoutes from './routes/blogRoutes.js'
 
 const app = express();
 app.set('trust proxy', 1); // Trust first proxy (Render/Vercel)
@@ -30,6 +31,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/travel-plans', travelPlanRoutes);
 app.use('/api/destinations', destinationInfoRoutes);
 app.use('/api/generate-pexels', pexelsRoutes)
+app.use('/api/blogs', blogRoutes)
 
 // health check, for keeping the server awake
 app.get("/api/health", (req, res) => {

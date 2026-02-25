@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import DestinationInfo from '../models/DestinationInfo.js';
+import Blog from '../models/Blog.js';
 import connectDB from '../config/db.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
-const PROCESSED_DATA_PATH = path.join(__dirname, '../jsons/countries_processed.json');
+const PROCESSED_DATA_PATH = path.join(__dirname, '../jsons/blogs.json');
 
 const seedDestinations = async () => {
     try {
@@ -23,23 +23,23 @@ const seedDestinations = async () => {
             throw new Error(`File not found: ${PROCESSED_DATA_PATH}. Please run transformCountries.js and enrichLocalData.js first.`);
         }
 
-        const countries = JSON.parse(fs.readFileSync(PROCESSED_DATA_PATH, 'utf8'));
-        console.log(`Found ${countries.length} countries to seed.`);
+        const blogs = JSON.parse(fs.readFileSync(PROCESSED_DATA_PATH, 'utf8'));
+        console.log(`Found ${blogs.length} blogs to seed.`);
 
         console.log('Starting lightning-fast seeding...');
         const startTime = Date.now();
 
         // Use Promise.all with chunks or just a loop for 250 records (loop is fine for 250)
-        for (let i = 0; i < countries.length; i++) {
-            const countryData = countries[i];
-            const countryName = countryData.country;
+        for (let i = 0; i < blogs.length; i++) {
+            const blogData = blogs[i];
+            const blogName = blogData.country;
 
-            process.stdout.write(`\rSeeding [${i + 1}/${countries.length}] ${countryName}...`);
+            process.stdout.write(`\rSeeding [${i + 1}/${blogs.length}] ${blogName}...`);
 
-            await DestinationInfo.findOneAndUpdate(
-                { country: countryName },
+            await Blog.findOneAndUpdate(
+                { country: blogName },
                 {
-                    ...countryData,
+                    ...blogData,
                     lastUpdated: new Date()
                 },
                 { upsert: true, new: true }
