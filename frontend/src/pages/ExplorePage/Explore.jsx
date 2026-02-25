@@ -1,23 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useDeferredValue } from "react";
 import BlogCard from "./components/BlogCard";
-import { motion } from "framer-motion";
-import { Search, ArrowLeft } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, ArrowLeft, Loader2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/layout/Footer";
 import { useAuth } from "@/contexts/AuthContext";
+import { useBlogs } from "@/hooks/useBlogs";
 
-const MOCK_BLOGS = [];
+const TABS = ["For You", "Trending", "Cultural", "Nature", "Luxury", "Adventure", "Food", "Historical", "Winter", "Exotic"];
+
+const CATEGORY_MAP = {
+    "For You": null,
+    "Trending": null,
+    "Cultural": "Cultural",
+    "Nature": "Nature",
+    "Luxury": "Luxury",
+    "Adventure": "Adventure",
+    "Food": "Food",
+    "Historical": "Historical",
+    "Winter": "Winter",
+    "Exotic": "Exotic",
+};
 
 export default function Explore() {
     const [searchQuery, setSearchQuery] = useState("");
     const [activeTab, setActiveTab] = useState("For You");
-    const { user } = useAuth()
+    const { user } = useAuth();
 
-    const filteredBlogs = MOCK_BLOGS.filter(blog =>
-        blog.country.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        blog.category.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    // Debounce the search so we don't re-fetch on every keystroke
+    const deferredSearch = useDeferredValue(searchQuery);
+
+    const { blogs, loading, error } = useBlogs(deferredSearch);
+
+    // Client-side category filtering
+    const categoryFilter = CATEGORY_MAP[activeTab];
+    const filteredBlogs = categoryFilter
+        ? blogs.filter(b => b.category === categoryFilter)
+        : blogs;
 
     return (
         <div className="min-h-screen bg-background">
@@ -58,7 +77,7 @@ export default function Explore() {
                     </div>
 
                     <div className="flex items-center gap-2 overflow-x-auto no-scrollbar w-full md:w-auto">
-                        {["For You", "Trending", "Culture", "Nature", "Luxury"].map((tab) => (
+                        {TABS.map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
@@ -73,32 +92,61 @@ export default function Explore() {
                     </div>
                 </div>
 
-                {/* Content Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {filteredBlogs.map((blog, index) => (
-                        <motion.div
-                            key={blog.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.025 }}
-                        >
-                            <BlogCard {...blog} />
-                        </motion.div>
-                    ))}
-                </div>
-
-                {filteredBlogs.length === 0 && (
-                    <div className="text-center py-20 bg-secondary/20 rounded-3xl border border-dashed border-border">
-                        <p className="text-muted-foreground font-serif text-xl italic">
-                            Blogs will be posted soon.
-                        </p>
+                {/* Loading skeletons */}
+                {loading && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                        {Array.from({ length: 6 }).map((_, i) => (
+                            <div key={i} className="rounded-2xl bg-secondary/30 animate-pulse">
+                                <div className="h-64 rounded-t-2xl bg-secondary/50" />
+                                <div className="p-5 space-y-3">
+                                    <div className="h-3 w-1/3 bg-secondary/60 rounded-full" />
+                                    <div className="h-5 w-3/4 bg-secondary/60 rounded-full" />
+                                    <div className="h-3 w-full bg-secondary/50 rounded-full" />
+                                    <div className="h-3 w-2/3 bg-secondary/50 rounded-full" />
+                                </div>
+                            </div>
+                        ))}
                     </div>
+                )}
+
+                {/* Error state */}
+                {error && !loading && (
+                    <div className="text-center py-20">
+                        <p className="text-muted-foreground">Could not load stories. Please try again later.</p>
+                    </div>
+                )}
+
+                {/* Content Grid */}
+                {!loading && !error && (
+                    <AnimatePresence mode="popLayout">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                            {filteredBlogs.map((blog, index) => (
+                                <motion.div
+                                    key={blog._id || blog.slug}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ delay: index * 0.025 }}
+                                >
+                                    <BlogCard {...blog} />
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        {filteredBlogs.length === 0 && (
+                            <div className="text-center py-20 bg-secondary/20 rounded-3xl border border-dashed border-border">
+                                <p className="text-muted-foreground font-serif text-xl italic">
+                                    No stories found for "{searchQuery || activeTab}".
+                                </p>
+                            </div>
+                        )}
+                    </AnimatePresence>
                 )}
             </main>
 
             <Footer />
-
         </div>
     );
 }
+
 
