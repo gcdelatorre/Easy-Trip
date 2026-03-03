@@ -16,8 +16,9 @@ Travelers (casual, frequent, solo, families) struggle to plan trips efficiently.
 - ✅ Generate a personalized travel plan quickly.
 - ✅ View itineraries in a clear, day-by-day format.
 - ✅ Save and revisit past or current plans.
-- 🕒 See destinations and activities on an interactive map *(In Progress)*.
-- 🕒 Download plans as a PDF for offline access *(In Progress)*.
+- ✅ See destinations and activities on an interactive map.
+- ✅ Download plans as a PDF for offline access.
+- ✅ Automatic Deep Links for flights, hotels, activities/tours.
 
 ---
 
@@ -36,7 +37,6 @@ We are focused on the core planning experience today, but we have big plans for 
 - ❌ **Real-time Integration**: Live prices for flights, time schedules, hotels, and local activities.
 - ❌ **Social Layer**: Features for sharing itineraries, following other travelers, and commenting.
 - ❌ **Advanced AI**: Moving beyond generation to deep personalization and self-hosted model support.
-- ❌ **Mobile-First App**: Native mobile optimizations for seamless on-the-ground planning.
 
 ---
 
